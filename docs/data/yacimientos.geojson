@@ -1,7 +1,7 @@
 {
  "type": "FeatureCollection",
  "metadata": {
-  "count": 209,
+  "count": 202,
   "descripcion": "Yacimientos de la cultura ibérica"
  },
  "features": [
@@ -824,76 +824,6 @@
     "imagen": null,
     "imagenes": [],
     "url_wikipedia": "https://ca.wikipedia.org/wiki/Castellot_de_la_Roca_Roja",
-    "url_oficial": null,
-    "fuente": "wikidata"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -0.638447,
-     38.4404
-    ]
-   },
-   "properties": {
-    "nombre": "Castillo de Agost",
-    "tipo": "yacimiento",
-    "epoca": "",
-    "descripcion": "El castillo de Agost se encuentra en la parte más alta del casco antiguo de la localidad española de Agost, en la provincia de Alicante.",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/5/53/Castillo_de_Agost_02.jpg",
-    "imagenes": [
-     {
-      "titulo": "Agost y su castillo, de noche.JPG",
-      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Agost_y_su_castillo%2C_de_noche.JPG/500px-Agost_y_su_castillo%2C_de_noche.JPG",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Agost_y_su_castillo%2C_de_noche.JPG",
-      "autor": "Antonio Gómez~commonswiki",
-      "licencia": "CC BY-SA 4.0",
-      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Agost_y_su_castillo,_de_noche.JPG"
-     },
-     {
-      "titulo": "Castillo de Agost 01.jpg",
-      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Castillo_de_Agost_01.jpg/500px-Castillo_de_Agost_01.jpg",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Castillo_de_Agost_01.jpg",
-      "autor": "Varondán",
-      "licencia": "CC BY-SA 4.0",
-      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Castillo_de_Agost_01.jpg"
-     },
-     {
-      "titulo": "Castillo de Agost 02.jpg",
-      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Castillo_de_Agost_02.jpg/500px-Castillo_de_Agost_02.jpg",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/5/53/Castillo_de_Agost_02.jpg",
-      "autor": "Varondán",
-      "licencia": "CC BY-SA 4.0",
-      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Castillo_de_Agost_02.jpg"
-     },
-     {
-      "titulo": "Castillo de Agost 03.jpg",
-      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Castillo_de_Agost_03.jpg/500px-Castillo_de_Agost_03.jpg",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Castillo_de_Agost_03.jpg",
-      "autor": "Varondán",
-      "licencia": "CC BY-SA 4.0",
-      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Castillo_de_Agost_03.jpg"
-     },
-     {
-      "titulo": "El Castillo de Agost.JPG",
-      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/El_Castillo_de_Agost.JPG/500px-El_Castillo_de_Agost.JPG",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/El_Castillo_de_Agost.JPG",
-      "autor": "Antonio Gómez~commonswiki",
-      "licencia": "CC BY-SA 4.0",
-      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:El_Castillo_de_Agost.JPG"
-     },
-     {
-      "titulo": "Ermita de San Pedro desde el castillo de Agost.jpg",
-      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Ermita_de_San_Pedro_desde_el_castillo_de_Agost.jpg/500px-Ermita_de_San_Pedro_desde_el_castillo_de_Agost.jpg",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Ermita_de_San_Pedro_desde_el_castillo_de_Agost.jpg",
-      "autor": "Varondán",
-      "licencia": "CC BY-SA 4.0",
-      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Ermita_de_San_Pedro_desde_el_castillo_de_Agost.jpg"
-     }
-    ],
-    "url_wikipedia": "https://es.wikipedia.org/wiki/Castillo_de_Agost",
     "url_oficial": null,
     "fuente": "wikidata"
    }
@@ -2848,76 +2778,6 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -0.638339,
-     38.4411
-    ]
-   },
-   "properties": {
-    "nombre": "Ermita de las Santas Justa y Rufina (Agost)",
-    "tipo": "yacimiento",
-    "epoca": "",
-    "descripcion": "La Ermita de las Santas Justa y Rufina se localiza en el municipio de Agost, Alicante, España. Fue construida en 1821, siendo reformada en 1912 y restaurada muy cuidadosamente en 1995.​ Es una ermita de pequeñas dimensiones situada entre medianeras que se muestra como la expresión del oficio de alfarero, cuyas patronas son las santas titulares. \nEn el edificio de planta casi cuadrada, la cúpula sobre pechinas, se apoya en un tambor de poca altura remarcado por una cornisa de color gris que resalta sobre las paredes pintadas en blanco.",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/6/60/Ermita_de_las_Santas_Justa_y_Rufina_%28Agost%29.jpg",
-    "imagenes": [
-     {
-      "titulo": "Ermita de las Santas Justa y Rufina (Agost).jpg",
-      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Ermita_de_las_Santas_Justa_y_Rufina_%28Agost%29.jpg/500px-Ermita_de_las_Santas_Justa_y_Rufina_%28Agost%29.jpg",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Ermita_de_las_Santas_Justa_y_Rufina_%28Agost%29.jpg",
-      "autor": "B25es",
-      "licencia": "CC BY-SA 3.0",
-      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Ermita_de_las_Santas_Justa_y_Rufina_(Agost).jpg"
-     },
-     {
-      "titulo": "Ermita de les santes Justa i Rufina, Agost 01.jpg",
-      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Ermita_de_les_santes_Justa_i_Rufina%2C_Agost_01.jpg/500px-Ermita_de_les_santes_Justa_i_Rufina%2C_Agost_01.jpg",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/d/df/Ermita_de_les_santes_Justa_i_Rufina%2C_Agost_01.jpg",
-      "autor": "19Tarrestnom65",
-      "licencia": "CC BY-SA 4.0",
-      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Ermita_de_les_santes_Justa_i_Rufina,_Agost_01.jpg"
-     },
-     {
-      "titulo": "Ermita de les santes Justa i Rufina, Agost 02.jpg",
-      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Ermita_de_les_santes_Justa_i_Rufina%2C_Agost_02.jpg/500px-Ermita_de_les_santes_Justa_i_Rufina%2C_Agost_02.jpg",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Ermita_de_les_santes_Justa_i_Rufina%2C_Agost_02.jpg",
-      "autor": "19Tarrestnom65",
-      "licencia": "CC BY-SA 4.0",
-      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Ermita_de_les_santes_Justa_i_Rufina,_Agost_02.jpg"
-     },
-     {
-      "titulo": "Ermita de les santes Justa i Rufina, Agost 03.jpg",
-      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Ermita_de_les_santes_Justa_i_Rufina%2C_Agost_03.jpg/500px-Ermita_de_les_santes_Justa_i_Rufina%2C_Agost_03.jpg",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/5/58/Ermita_de_les_santes_Justa_i_Rufina%2C_Agost_03.jpg",
-      "autor": "19Tarrestnom65",
-      "licencia": "CC BY-SA 4.0",
-      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Ermita_de_les_santes_Justa_i_Rufina,_Agost_03.jpg"
-     },
-     {
-      "titulo": "Ermita de les santes Justa i Rufina, Agost 04.jpg",
-      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Ermita_de_les_santes_Justa_i_Rufina%2C_Agost_04.jpg/500px-Ermita_de_les_santes_Justa_i_Rufina%2C_Agost_04.jpg",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/6/68/Ermita_de_les_santes_Justa_i_Rufina%2C_Agost_04.jpg",
-      "autor": "19Tarrestnom65",
-      "licencia": "CC BY-SA 4.0",
-      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Ermita_de_les_santes_Justa_i_Rufina,_Agost_04.jpg"
-     },
-     {
-      "titulo": "Ermita de les santes Justa i Rufina, Agost 05.jpg",
-      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Ermita_de_les_santes_Justa_i_Rufina%2C_Agost_05.jpg/500px-Ermita_de_les_santes_Justa_i_Rufina%2C_Agost_05.jpg",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Ermita_de_les_santes_Justa_i_Rufina%2C_Agost_05.jpg",
-      "autor": "19Tarrestnom65",
-      "licencia": "CC BY-SA 4.0",
-      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Ermita_de_les_santes_Justa_i_Rufina,_Agost_05.jpg"
-     }
-    ],
-    "url_wikipedia": "https://es.wikipedia.org/wiki/Ermita_de_las_Santas_Justa_y_Rufina_(Agost)",
-    "url_oficial": null,
-    "fuente": "wikidata"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
      1.62068,
      41.21202
     ]
@@ -4038,76 +3898,6 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -0.64,
-     38.439806
-    ]
-   },
-   "properties": {
-    "nombre": "Museo de alfarería (Agost)",
-    "tipo": "yacimiento",
-    "epoca": "",
-    "descripcion": "El museo de Alfarería de Agost (Alicante, España) nació en 1981 por iniciativa privada de la etnóloga alemana Ilse Schütz que durante diecinueve años fue su propietaria y directora, hasta que, en marzo de 2000, el Ayuntamiento de Agost se hizo cargo de los costes de personal y mantenimiento del Museo.",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Museo_de_la_alfarer%C3%ADa_de_Agost_07.jpg",
-    "imagenes": [
-     {
-      "titulo": "Museo de la alfarería de Agost 01.jpg",
-      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Museo_de_la_alfarer%C3%ADa_de_Agost_01.jpg/500px-Museo_de_la_alfarer%C3%ADa_de_Agost_01.jpg",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Museo_de_la_alfarer%C3%ADa_de_Agost_01.jpg",
-      "autor": "19Tarrestnom65",
-      "licencia": "CC BY-SA 4.0",
-      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Museo_de_la_alfarer%C3%ADa_de_Agost_01.jpg"
-     },
-     {
-      "titulo": "Museo de la alfarería de Agost 02.jpg",
-      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Museo_de_la_alfarer%C3%ADa_de_Agost_02.jpg/500px-Museo_de_la_alfarer%C3%ADa_de_Agost_02.jpg",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Museo_de_la_alfarer%C3%ADa_de_Agost_02.jpg",
-      "autor": "19Tarrestnom65",
-      "licencia": "CC BY-SA 4.0",
-      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Museo_de_la_alfarer%C3%ADa_de_Agost_02.jpg"
-     },
-     {
-      "titulo": "Museo de la alfarería de Agost 03.jpg",
-      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Museo_de_la_alfarer%C3%ADa_de_Agost_03.jpg/500px-Museo_de_la_alfarer%C3%ADa_de_Agost_03.jpg",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/9/95/Museo_de_la_alfarer%C3%ADa_de_Agost_03.jpg",
-      "autor": "19Tarrestnom65",
-      "licencia": "CC BY-SA 4.0",
-      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Museo_de_la_alfarer%C3%ADa_de_Agost_03.jpg"
-     },
-     {
-      "titulo": "Museo de la alfarería de Agost 04.jpg",
-      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Museo_de_la_alfarer%C3%ADa_de_Agost_04.jpg/500px-Museo_de_la_alfarer%C3%ADa_de_Agost_04.jpg",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Museo_de_la_alfarer%C3%ADa_de_Agost_04.jpg",
-      "autor": "19Tarrestnom65",
-      "licencia": "CC BY-SA 4.0",
-      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Museo_de_la_alfarer%C3%ADa_de_Agost_04.jpg"
-     },
-     {
-      "titulo": "Museo de la alfarería de Agost 06.jpg",
-      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Museo_de_la_alfarer%C3%ADa_de_Agost_06.jpg/500px-Museo_de_la_alfarer%C3%ADa_de_Agost_06.jpg",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Museo_de_la_alfarer%C3%ADa_de_Agost_06.jpg",
-      "autor": "19Tarrestnom65",
-      "licencia": "CC BY-SA 4.0",
-      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Museo_de_la_alfarer%C3%ADa_de_Agost_06.jpg"
-     },
-     {
-      "titulo": "Museo de la alfarería de Agost 07.jpg",
-      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Museo_de_la_alfarer%C3%ADa_de_Agost_07.jpg/500px-Museo_de_la_alfarer%C3%ADa_de_Agost_07.jpg",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Museo_de_la_alfarer%C3%ADa_de_Agost_07.jpg",
-      "autor": "19Tarrestnom65",
-      "licencia": "CC BY-SA 4.0",
-      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Museo_de_la_alfarer%C3%ADa_de_Agost_07.jpg"
-     }
-    ],
-    "url_wikipedia": "https://es.wikipedia.org/wiki/Museo_de_Alfarería_(Agost)",
-    "url_oficial": "https://www.turismodeagost.com/museo-de-la-alfareria/",
-    "fuente": "wikidata"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
      -2.540091,
      37.749364
     ]
@@ -5219,76 +5009,6 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     2.066667,
-     41.396667
-    ]
-   },
-   "properties": {
-    "nombre": "Poblado íbero Peña del Moro",
-    "tipo": "poblado",
-    "epoca": "",
-    "descripcion": "El poblado íbero Peña del Moro es un yacimiento arqueológico situado en la peña del Moro, en Cataluña (España). \nA partir de finales de la Edad del Bronce la población íbera del Bajo Llobregat, que pertenecía a la tribu de los layetanos, se fue agrupando en pequeños poblados, como el de la peña del Moro. Se trataba de un poblado de segunda categoría, es decir, de dimensión mediana, probablemente dependiente del poblado de primera categoría de Montjuïc.",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/0/03/Penya_del_Moro_Mapa.jpg",
-    "imagenes": [
-     {
-      "titulo": "Mirador de la Penya del Moro -.jpg",
-      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Mirador_de_la_Penya_del_Moro_-.jpg/500px-Mirador_de_la_Penya_del_Moro_-.jpg",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Mirador_de_la_Penya_del_Moro_-.jpg",
-      "autor": "Pere prlpz",
-      "licencia": "CC BY-SA 4.0",
-      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Mirador_de_la_Penya_del_Moro_-.jpg"
-     },
-     {
-      "titulo": "Penya del Moro - 20210808 163132.jpg",
-      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Penya_del_Moro_-_20210808_163132.jpg/500px-Penya_del_Moro_-_20210808_163132.jpg",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Penya_del_Moro_-_20210808_163132.jpg",
-      "autor": "pere prlpz",
-      "licencia": "CC BY-SA 3.0",
-      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Penya_del_Moro_-_20210808_163132.jpg"
-     },
-     {
-      "titulo": "Penya del Moro - 20210808 163234.jpg",
-      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Penya_del_Moro_-_20210808_163234.jpg/500px-Penya_del_Moro_-_20210808_163234.jpg",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/0/04/Penya_del_Moro_-_20210808_163234.jpg",
-      "autor": "pere prlpz",
-      "licencia": "CC BY-SA 3.0",
-      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Penya_del_Moro_-_20210808_163234.jpg"
-     },
-     {
-      "titulo": "Penya del Moro - 20210808 163247.jpg",
-      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Penya_del_Moro_-_20210808_163247.jpg/500px-Penya_del_Moro_-_20210808_163247.jpg",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Penya_del_Moro_-_20210808_163247.jpg",
-      "autor": "pere prlpz",
-      "licencia": "CC BY-SA 3.0",
-      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Penya_del_Moro_-_20210808_163247.jpg"
-     },
-     {
-      "titulo": "Penya del Moro - 20210808 163347.jpg",
-      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Penya_del_Moro_-_20210808_163347.jpg/500px-Penya_del_Moro_-_20210808_163347.jpg",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Penya_del_Moro_-_20210808_163347.jpg",
-      "autor": "pere prlpz",
-      "licencia": "CC BY-SA 3.0",
-      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Penya_del_Moro_-_20210808_163347.jpg"
-     },
-     {
-      "titulo": "Penya del Moro Mapa.jpg",
-      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Penya_del_Moro_Mapa.jpg/500px-Penya_del_Moro_Mapa.jpg",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/0/03/Penya_del_Moro_Mapa.jpg",
-      "autor": "Till F. Teenck",
-      "licencia": "CC BY-SA 2.5",
-      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Penya_del_Moro_Mapa.jpg"
-     }
-    ],
-    "url_wikipedia": "https://es.wikipedia.org/wiki/Poblado_íbero_Peña_del_Moro",
-    "url_oficial": null,
-    "fuente": "wikidata"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
      1.071389,
      41.709167
     ]
@@ -5966,27 +5686,6 @@
     ],
     "url_wikipedia": "https://ca.wikipedia.org/wiki/Poblat_ibèric_de_Puig_del_Castell",
     "url_oficial": "https://www.canovesisamalus.cat/129-turisme/llocs-dinteres/poblat-iberic-del-puig-del-castell-de-samalus.html",
-    "fuente": "wikidata"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     0.605472,
-     41.174936
-    ]
-   },
-   "properties": {
-    "nombre": "Poblat ibèric de Sant Miquel",
-    "tipo": "poblado",
-    "epoca": "",
-    "descripcion": "L'establiment ibèric de Sant Miquel és el jaciment arqueològic d'un poblat ibèric situat dalt d'un turó a la població de Vinebre, (Ribera d'Ebre), inclòs a l'Inventari del Patrimoni Arqueològic i Paleontològic de Catalunya.\nEs troba a l'alçada del camí que mena a l'ermita de Sant Miquel. Hi conviuen restes d'època ibèrica amb les d'un establiment romà.",
-    "imagen": null,
-    "imagenes": [],
-    "url_wikipedia": "https://ca.wikipedia.org/wiki/Poblat_ibèric_de_Sant_Miquel",
-    "url_oficial": null,
     "fuente": "wikidata"
    }
   },
@@ -7323,27 +7022,6 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -0.6006,
-     39.6289
-    ]
-   },
-   "properties": {
-    "nombre": "Tossal de Sant Miquel (Edeta)",
-    "tipo": "poblado",
-    "epoca": "ss. V-II a.C.",
-    "descripcion": "Capital ibérica de la Edetania, en Llíria.",
-    "imagen": null,
-    "imagenes": [],
-    "url_wikipedia": "https://es.wikipedia.org/wiki/Tossal_de_Sant_Miquel",
-    "url_oficial": null,
-    "fuente": "curado"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
      -0.161717,
      38.525275
     ]
@@ -7416,27 +7094,6 @@
      }
     ],
     "url_wikipedia": "https://ca.wikipedia.org/wiki/Turó_de_Castellar_(Dosrius)",
-    "url_oficial": null,
-    "fuente": "wikidata"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     2.273292,
-     41.803528
-    ]
-   },
-   "properties": {
-    "nombre": "Turó del Montgrós",
-    "tipo": "poblado",
-    "epoca": "",
-    "descripcion": "El Turó de Montgròs, és un poblat i fortificació ibèrica del període del bronze que es troba al terme municipal del Brull dins del Parc Natural del Montseny.\nEra una important fortificació amb antecedents en l'edat de bronze, que controlava el coll Formic, una de les vies de penetració a la plana de Vic des de la costa. Cap a l'any 450 aC, s'aixecà una gran muralla de doble parament, precedida d'un fossat, que tancava l'istme de la península del Montgròs (el Brull).",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Muralles_de_Montgr%C3%B2s.jpg?utm_source=ca.wikipedia.org&utm_campaign=api&utm_content=original",
-    "imagenes": [],
-    "url_wikipedia": "https://ca.wikipedia.org/wiki/Turó_de_Montgròs",
     "url_oficial": null,
     "fuente": "wikidata"
    }
@@ -7925,7 +7582,7 @@
     ],
     "url_wikipedia": "https://es.wikipedia.org/wiki/Yacimiento_arqueológico_de_La_Alcudia",
     "url_oficial": null,
-    "fuente": "wikidata+curado"
+    "fuente": "curado+wikidata"
    }
   },
   {

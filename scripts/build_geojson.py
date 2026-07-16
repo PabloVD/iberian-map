@@ -75,17 +75,41 @@ def load_curated():
     return rows
 
 
+SAME_POINT_METERS = 50  # tan cerca que se asume el mismo yacimiento (aunque el nombre difiera)
+
+
 def find_duplicate(site, existing):
     n = normalize(site["nombre"])
     for e in existing:
         d = haversine((site["lat"], site["lon"]), (e["lat"], e["lon"]))
+        if d <= SAME_POINT_METERS:  # prácticamente el mismo punto -> mismo sitio
+            return e
         if d <= DEDUP_METERS:
             en = normalize(e["nombre"])
             if n and en and (n in en or en in n or n == en):
                 return e
-            if d <= 120:  # prácticamente el mismo punto
-                return e
     return None
+
+
+# Campos ordenados por "riqueza" para decidir qué registro conservar al fusionar.
+_INFO_FIELDS = ("imagen_principal", "commons_cat", "descripcion", "qid",
+                "url_wikipedia", "url_oficial", "epoca")
+
+
+def _richness(rec):
+    return sum(1 for f in _INFO_FIELDS if rec.get(f))
+
+
+def merge_records(keep, drop):
+    """Funde `drop` dentro de `keep`, rellenando huecos y combinando fuentes."""
+    fuentes = set()
+    for rec in (keep, drop):
+        fuentes.update(p for p in rec.get("fuente", "").split("+") if p)
+    for k, v in drop.items():
+        if v and not keep.get(k):
+            keep[k] = v
+    keep["fuente"] = "+".join(sorted(fuentes))
+    return keep
 
 
 def main():
@@ -93,19 +117,28 @@ def main():
     galleries = json.load(open(IMGS, encoding="utf-8"))
     curated = load_curated()
 
-    merged = list(wikidata)
-    added = 0
-    for c in curated:
-        dup = find_duplicate(c, merged)
-        if dup:
-            # el CSV rellena huecos y puede aportar época.
-            for k in ("epoca", "descripcion", "url_oficial", "imagen_principal"):
-                if c.get(k) and not dup.get(k):
-                    dup[k] = c[k]
-            dup["fuente"] = dup.get("fuente", "") + "+curado"
+    # Wikidata primero (registros más ricos), luego el CSV curado. El deduplicado
+    # pasa sobre TODA la lista: fusiona también Wikipedia-vs-Wikipedia (p. ej. el
+    # mismo yacimiento con artículo en es y en ca -> QID distinto, coords casi iguales).
+    for w in wikidata:
+        w.setdefault("epoca", "")
+    combined = list(wikidata) + list(curated)
+
+    merged = []
+    fused = 0
+    for site in combined:
+        dup = find_duplicate(site, merged)
+        if dup is None:
+            merged.append(site)
+            continue
+        fused += 1
+        # Conservamos el registro más completo como base y fundimos el otro dentro.
+        if _richness(site) > _richness(dup):
+            merge_records(site, dup)
+            merged[merged.index(dup)] = site
         else:
-            merged.append(c)
-            added += 1
+            merge_records(dup, site)
+    added = sum(1 for s in merged if s.get("fuente", "") == "curado")
 
     features = []
     for s in merged:
@@ -138,8 +171,8 @@ def main():
         json.dump(fc, f, ensure_ascii=False, indent=1)
 
     con_img = sum(1 for f in features if f["properties"]["imagen"])
-    print(f"GeoJSON con {len(features)} yacimientos ({added} añadidos del CSV, "
-          f"{con_img} con imagen) -> {OUT}")
+    print(f"GeoJSON con {len(features)} yacimientos ({fused} duplicados fusionados, "
+          f"{added} añadidos del CSV, {con_img} con imagen) -> {OUT}")
 
 
 if __name__ == "__main__":
