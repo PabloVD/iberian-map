@@ -88,22 +88,50 @@ function hoverHtml(p) {
     </div>`;
 }
 
-/* ---------- Lightbox ---------- */
+/* ---------- Lightbox (con navegación estilo galería) ---------- */
 const lightbox = document.getElementById("lightbox");
 const lbImg = document.getElementById("lb-img");
 const lbCap = document.getElementById("lb-cap");
-function openLightbox(im) {
+const lbPrev = document.querySelector(".lb-prev");
+const lbNext = document.querySelector(".lb-next");
+let lbImages = [];
+let lbIdx = 0;
+
+function renderLb() {
+  const im = lbImages[lbIdx];
+  if (!im) return;
   lbImg.src = im.url || im.thumb;
   lbImg.alt = im.titulo || "";
-  lbCap.innerHTML = `${escapeHtml(im.autor)} · ${escapeHtml(im.licencia)}` +
+  const counter = lbImages.length > 1 ? `${lbIdx + 1}/${lbImages.length} · ` : "";
+  lbCap.innerHTML = counter + `${escapeHtml(im.autor)} · ${escapeHtml(im.licencia)}` +
     (im.descripcion_pagina
       ? ` · <a href="${im.descripcion_pagina}" target="_blank" rel="noopener">Commons</a>` : "");
+  const multi = lbImages.length > 1;
+  lbPrev.classList.toggle("hidden", !multi);
+  lbNext.classList.toggle("hidden", !multi);
+}
+function openLightbox(images, idx) {
+  lbImages = images || [];
+  lbIdx = idx || 0;
+  renderLb();
   lightbox.classList.remove("hidden");
 }
 function closeLightbox() { lightbox.classList.add("hidden"); lbImg.src = ""; }
-lightbox.addEventListener("click", (e) => { if (e.target !== lbImg) closeLightbox(); });
+function navLb(delta) {
+  if (!lbImages.length) return;
+  lbIdx = (lbIdx + delta + lbImages.length) % lbImages.length;
+  renderLb();
+}
+lbPrev.onclick = (e) => { e.stopPropagation(); navLb(-1); };
+lbNext.onclick = (e) => { e.stopPropagation(); navLb(1); };
+lightbox.addEventListener("click", (e) => { if (e.target === lightbox) closeLightbox(); });
 document.querySelector(".lb-close").onclick = closeLightbox;
-document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeLightbox(); });
+document.addEventListener("keydown", (e) => {
+  if (lightbox.classList.contains("hidden")) return;
+  if (e.key === "Escape") closeLightbox();
+  else if (e.key === "ArrowLeft") navLb(-1);
+  else if (e.key === "ArrowRight") navLb(1);
+});
 
 /* ---------- Panel lateral ---------- */
 const panel = document.getElementById("panel");
@@ -149,7 +177,7 @@ function openPanel(feature) {
   // Enlazar clics de la galería al lightbox.
   panelContent.querySelectorAll(".gallery figure").forEach((fig) => {
     fig.querySelector("img").onclick = () =>
-      openLightbox(feature.properties.imagenes[+fig.dataset.idx]);
+      openLightbox(feature.properties.imagenes, +fig.dataset.idx);
   });
   panel.classList.remove("hidden");
 }

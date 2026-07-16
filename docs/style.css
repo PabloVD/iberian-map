@@ -64,12 +64,16 @@ body {
 /* ---- Tooltip (hover) ---- */
 .leaflet-tooltip.hover-card {
   background: var(--panel-bg); border: none; border-radius: 8px;
-  box-shadow: var(--shadow); padding: 0; overflow: hidden; width: 180px;
+  box-shadow: var(--shadow); padding: 0; overflow: hidden;
+  width: 230px; max-width: 230px; white-space: normal;
 }
-.hover-card img { display: block; width: 100%; height: 96px; object-fit: cover; }
-.hover-card .hc-body { padding: 6px 9px; }
-.hover-card .hc-name { font-weight: 650; font-size: .85rem; line-height: 1.2; }
-.hover-card .hc-type { font-size: .72rem; color: var(--accent); text-transform: capitalize; }
+.hover-card img { display: block; width: 100%; height: 140px; object-fit: cover; }
+.hover-card .hc-body { padding: 7px 10px; }
+.hover-card .hc-name {
+  font-weight: 650; font-size: .88rem; line-height: 1.25;
+  white-space: normal; overflow-wrap: anywhere;
+}
+.hover-card .hc-type { font-size: .72rem; color: var(--accent); text-transform: capitalize; margin-top: 2px; }
 
 /* ---- Panel lateral (click) ---- */
 #panel {
@@ -132,6 +136,19 @@ body {
   width: 40px; height: 40px; border: none; border-radius: 50%;
   background: rgba(255,255,255,.15); color: #fff; font-size: 1.6rem;
   cursor: pointer; line-height: 1;
+}
+.lb-nav {
+  position: fixed; top: 50%; transform: translateY(-50%); z-index: 1001;
+  width: 52px; height: 72px; border: none; border-radius: 8px;
+  background: rgba(255,255,255,.12); color: #fff; font-size: 2.6rem;
+  cursor: pointer; line-height: 1; display: flex; align-items: center;
+  justify-content: center; transition: background .12s;
+}
+.lb-nav:hover { background: rgba(255,255,255,.28); }
+.lb-prev { left: 14px; }
+.lb-next { right: 14px; }
+@media (max-width: 620px) {
+  .lb-nav { width: 42px; height: 60px; font-size: 2rem; }
 }
 
 .hidden { display: none !important; }
