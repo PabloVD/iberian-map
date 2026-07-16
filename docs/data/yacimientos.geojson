@@ -1,7 +1,7 @@
 {
  "type": "FeatureCollection",
  "metadata": {
-  "count": 196,
+  "count": 198,
   "descripcion": "Yacimientos de la cultura ibérica"
  },
  "features": [
@@ -4266,6 +4266,30 @@
     "url_wikipedia_ca": "https://ca.wikipedia.org/wiki/Forns_romans_de_la_Fornaca_de_Vilassar_de_Dalt",
     "url_oficial": "http://www.vilassardedalt.org/entitats/museu",
     "fuente": "wikidata"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.4665,
+     41.4835
+    ]
+   },
+   "properties": {
+    "nombre_es": "Gebut",
+    "nombre_ca": "Gebut",
+    "tipo": "poblado",
+    "epoca": "Edad del Hierro",
+    "descripcion_es": "Poblado ibérico de los ilergetes en Soses (Segrià), excavado desde 1940; conserva una calzada central.",
+    "descripcion_ca": "",
+    "imagen": null,
+    "imagenes": [],
+    "url_wikipedia_es": "https://ca.wikipedia.org/wiki/Llista_de_poblacions_ib%C3%A8riques_de_Catalunya",
+    "url_wikipedia_ca": null,
+    "url_oficial": null,
+    "fuente": "curado"
    }
   },
   {
@@ -10437,6 +10461,30 @@
     "url_wikipedia_ca": "https://ca.wikipedia.org/wiki/Turó_de_Castellar_(Dosrius)",
     "url_oficial": null,
     "fuente": "wikidata"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.27867,
+     41.46592
+    ]
+   },
+   "properties": {
+    "nombre_es": "Turó de Montgat",
+    "nombre_ca": "Turó de Montgat",
+    "tipo": "poblado",
+    "epoca": "Edad del Hierro",
+    "descripcion_es": "Poblado ibérico layetano sobre un cerro junto a la costa, en Montgat (Maresme).",
+    "descripcion_ca": "",
+    "imagen": null,
+    "imagenes": [],
+    "url_wikipedia_es": "https://ca.wikipedia.org/wiki/Llista_de_poblacions_ib%C3%A8riques_de_Catalunya",
+    "url_wikipedia_ca": null,
+    "url_oficial": null,
+    "fuente": "curado"
    }
   },
   {
