@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mapa de yacimientos de la cultura ibérica</title>
+  <meta name="description" content="Mapa interactivo de los yacimientos arqueológicos de la cultura ibérica prerromana en la península ibérica." />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="map"></div>
+
+  <header id="topbar">
+    <h1>Yacimientos de la cultura ibérica</h1>
+    <span id="count" class="count"></span>
+  </header>
+
+  <div id="controls">
+    <input id="search" type="search" placeholder="Buscar yacimiento…" autocomplete="off" />
+    <div id="filters"></div>
+  </div>
+
+  <aside id="panel" class="hidden" aria-live="polite">
+    <button id="panel-close" aria-label="Cerrar">×</button>
+    <div id="panel-content"></div>
+  </aside>
+
+  <footer id="credits">
+    Datos: <a href="https://www.wikidata.org" target="_blank" rel="noopener">Wikidata</a> ·
+    Imágenes: <a href="https://commons.wikimedia.org" target="_blank" rel="noopener">Wikimedia Commons</a> ·
+    Base: <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+  <script src="map.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+:root {
+  --bg: #f5f1e8;
+  --ink: #2b2117;
+  --accent: #a0522d;
+  --panel-bg: #fffdf8;
+  --shadow: 0 2px 12px rgba(0,0,0,.18);
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: var(--ink);
+}
+
+#map { position: absolute; inset: 0; z-index: 1; background: #aad3df; }
+
+/* ---- Barra superior ---- */
+#topbar {
+  position: absolute; top: 0; left: 0; right: 0; z-index: 500;
+  display: flex; align-items: baseline; gap: 12px;
+  padding: 10px 16px;
+  background: linear-gradient(180deg, rgba(43,33,23,.82), rgba(43,33,23,0));
+  color: #fff; pointer-events: none;
+}
+#topbar h1 { font-size: 1.15rem; margin: 0; font-weight: 650; text-shadow: 0 1px 3px rgba(0,0,0,.5); }
+.count { font-size: .85rem; opacity: .9; }
+
+/* ---- Controles ---- */
+#controls {
+  position: absolute; top: 52px; left: 12px; z-index: 600;
+  width: 240px; max-width: calc(100vw - 24px);
+  background: var(--panel-bg); border-radius: 10px;
+  box-shadow: var(--shadow); padding: 10px;
+}
+#search {
+  width: 100%; padding: 8px 10px; font-size: .9rem;
+  border: 1px solid #d8cdbb; border-radius: 8px; margin-bottom: 8px;
+}
+#filters { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: .8rem; padding: 4px 9px; border-radius: 999px;
+  border: 1.5px solid; cursor: pointer; user-select: none;
+  background: #fff; transition: background .12s;
+}
+.chip.off { opacity: .4; }
+.chip .dot { width: 10px; height: 10px; border-radius: 50%; }
+
+/* ---- Marcadores ---- */
+.pin {
+  width: 16px; height: 16px; border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg); border: 2px solid #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,.4);
+}
+
+/* ---- Tooltip (hover) ---- */
+.leaflet-tooltip.hover-card {
+  background: var(--panel-bg); border: none; border-radius: 8px;
+  box-shadow: var(--shadow); padding: 0; overflow: hidden; width: 180px;
+}
+.hover-card img { display: block; width: 100%; height: 96px; object-fit: cover; }
+.hover-card .hc-body { padding: 6px 9px; }
+.hover-card .hc-name { font-weight: 650; font-size: .85rem; line-height: 1.2; }
+.hover-card .hc-type { font-size: .72rem; color: var(--accent); text-transform: capitalize; }
+
+/* ---- Panel lateral (click) ---- */
+#panel {
+  position: absolute; top: 0; right: 0; z-index: 700;
+  width: 360px; max-width: 90vw; height: 100%;
+  background: var(--panel-bg); box-shadow: -3px 0 16px rgba(0,0,0,.2);
+  overflow-y: auto; transition: transform .22s ease;
+}
+#panel.hidden { transform: translateX(105%); }
+#panel-close {
+  position: sticky; top: 8px; float: right; margin: 8px;
+  width: 32px; height: 32px; border: none; border-radius: 50%;
+  background: rgba(0,0,0,.06); font-size: 1.3rem; cursor: pointer; line-height: 1;
+}
+#panel-content { padding: 8px 18px 28px; }
+#panel-content h2 { margin: 6px 0 2px; font-size: 1.25rem; }
+.p-type { color: var(--accent); text-transform: capitalize; font-weight: 600; font-size: .9rem; }
+.p-epoca { color: #6b5d4a; font-size: .85rem; margin-bottom: 10px; }
+.p-desc { font-size: .92rem; line-height: 1.5; }
+.p-links { margin: 14px 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.p-links a {
+  font-size: .82rem; text-decoration: none; color: #fff; background: var(--accent);
+  padding: 6px 12px; border-radius: 7px;
+}
+.gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-top: 10px; }
+.gallery figure { margin: 0; }
+.gallery img { width: 100%; height: 100px; object-fit: cover; border-radius: 6px; cursor: pointer; }
+.gallery figcaption { font-size: .65rem; color: #8a7c68; line-height: 1.2; margin-top: 2px; }
+.p-source { margin-top: 16px; font-size: .72rem; color: #9a8c78; }
+
+/* ---- Créditos ---- */
+#credits {
+  position: absolute; bottom: 0; right: 0; z-index: 500;
+  font-size: .68rem; background: rgba(255,253,248,.85);
+  padding: 3px 8px; border-top-left-radius: 8px;
+}
+#credits a { color: var(--accent); }
+
+.hidden { display: none !important; }
+
+@media (max-width: 620px) {
+  #controls { top: 46px; width: calc(100vw - 24px); }
+  #panel { width: 100%; }
+}

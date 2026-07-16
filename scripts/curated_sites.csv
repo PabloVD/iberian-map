@@ -1,0 +1,7 @@
+nombre,lat,lon,tipo,epoca,descripcion,url_info,url_imagen
+# Yacimientos añadidos a mano (parte "híbrida"). Amplía esta lista libremente.
+# url_imagen: SOLO imágenes de licencia libre (p. ej. Wikimedia Commons). Déjalo vacío si no tienes una.
+# Los duplicados con Wikidata se fusionan por cercanía de coordenadas + nombre.
+La Alcúdia d'Elx,38.2416,-0.6959,poblado,ss. V a.C. - VII d.C.,"Ciudad iberorromana donde se halló la Dama de Elche.",https://es.wikipedia.org/wiki/La_Alcudia,
+Tossal de Sant Miquel (Edeta),39.6289,-0.6006,poblado,ss. V-II a.C.,"Capital ibérica de la Edetania, en Llíria.",https://es.wikipedia.org/wiki/Tossal_de_Sant_Miquel,
+Contrebia Leukade,42.0464,-1.9686,poblado,Edad del Hierro,"Ciudad celtíbera excavada en roca, en Aguilar del Río Alhama.",https://es.wikipedia.org/wiki/Contrebia_Leukade,
