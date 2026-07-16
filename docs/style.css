@@ -87,9 +87,15 @@ body {
   font-size: .82rem; text-decoration: none; color: #fff; background: var(--accent);
   padding: 6px 12px; border-radius: 7px;
 }
-.gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-top: 10px; }
-.gallery figure { margin: 0; }
-.gallery img { width: 100%; height: 100px; object-fit: cover; border-radius: 6px; cursor: pointer; }
+/* Mosaico de 2 columnas: cada imagen conserva su proporción real (sin recortes). */
+.gallery { columns: 2; column-gap: 6px; margin-top: 10px; }
+.gallery figure { margin: 0 0 8px; break-inside: avoid; }
+.gallery img {
+  display: block; width: 100%; height: auto;
+  border-radius: 6px; cursor: pointer; background: #efe9dd;
+  transition: filter .12s;
+}
+.gallery img:hover { filter: brightness(1.05); }
 .gallery figcaption { font-size: .65rem; color: #8a7c68; line-height: 1.2; margin-top: 2px; }
 .p-source { margin-top: 16px; font-size: .72rem; color: #9a8c78; }
 
