@@ -1,14 +1,17 @@
-"""Fusiona todas las fuentes en un único GeoJSON que consume la web.
+"""Fusiona todas las fuentes en un único GeoJSON (bilingüe) que consume la web.
 
 Entradas:
-  data/sources/wikidata.json         (yacimientos Wikipedia/Wikidata)
+  data/sources/wikidata.json         (yacimientos Wikipedia/Wikidata, bilingüe)
   data/sources/commons_images.json   (galerías por QID)
   scripts/curated_sites.csv          (añadidos manuales)
+  scripts/exclude_qids.txt           (QIDs a descartar a mano, opcional)
 
 Salida:
-  data/yacimientos.geojson           (FeatureCollection de puntos)
+  docs/data/yacimientos.geojson      (FeatureCollection de puntos)
 
-Deduplica por nombre normalizado + cercanía de coordenadas.
+- Filtra falsos positivos por P31 (lista negra).
+- Clasifica el tipo por P31 (con respaldo por palabras clave).
+- Deduplica por nombre normalizado + cercanía de coordenadas.
 """
 import csv
 import json
@@ -22,10 +25,61 @@ ROOT = os.path.dirname(HERE)
 WD = os.path.join(ROOT, "data", "sources", "wikidata.json")
 IMGS = os.path.join(ROOT, "data", "sources", "commons_images.json")
 CSV_FILE = os.path.join(HERE, "curated_sites.csv")
-# El GeoJSON final se sirve desde docs/ (lo que publica GitHub Pages).
+EXCLUDE_FILE = os.path.join(HERE, "exclude_qids.txt")
 OUT = os.path.join(ROOT, "docs", "data", "yacimientos.geojson")
 
-DEDUP_METERS = 600  # dos puntos más cercanos que esto y con nombre afín = mismo sitio
+DEDUP_METERS = 600
+SAME_POINT_METERS = 50
+
+# --- Filtro de falsos positivos por P31 (Wikidata "instance of") ---
+# Se descarta un yacimiento solo si TODOS sus P31 están en esta lista negra
+# (así se conservan sitios reales tipados como "castillo", p. ej. Giribaile).
+# Solo tipos INEQUÍVOCAMENTE no-arqueológicos. Se evitan a propósito montaña,
+# colina, área protegida o "entidad singular de población", porque Wikidata suele
+# tipar ahí el accidente geográfico y no la arqueología, y arrastraría sitios
+# reales (Villaricos, Puig de la Nau, Tossal de la Cala, El Molón…). Lo dudoso se
+# gestiona a mano en exclude_qids.txt.
+BLOCKLIST_TYPES = {
+    "Q16970", "Q317557", "Q56750657",             # iglesia / iglesia parroquial / ermita
+    "Q33506",                                       # museo
+    "Q2624046", "Q46831",                           # sierra / cordillera (rangos montañosos)
+    "Q2074737", "Q123754112", "Q532",              # municipio(s) / pueblo
+    "Q3257686", "Q11939023",                        # localidad / núcleo de población
+}
+
+# --- Clasificación de tipo por P31 (prioridad de arriba a abajo) ---
+TYPE_BY_P31 = [
+    ("necrópolis",    {"Q200141", "Q173387", "Q56055312"}),
+    ("santuario",     {"Q29553"}),
+    ("cueva",         {"Q35509", "Q11269813"}),
+    ("poblado",       {"Q100268926", "Q192601", "Q486972", "Q22674925", "Q350895"}),
+    ("ciudad",        {"Q15661340", "Q2202509", "Q213468", "Q918230", "Q756780",
+                       "Q133442", "Q2974842", "Q515"}),
+    ("fortificación", {"Q23413", "Q57346", "Q81917", "Q12518"}),
+    ("yacimiento",    {"Q839954", "Q1291195", "Q48794661", "Q3363945", "Q21752084"}),
+]
+
+# Respaldo por palabras clave (multilingüe) cuando P31 no basta.
+TYPE_KEYWORDS = [
+    ("necrópolis",   ["necrópolis", "necropoli", "necrópoli", "necropolis"]),
+    ("santuario",    ["santuario", "santuari", "templo", "temple"]),
+    ("cueva",        ["cueva", "cova", "abrigo", "gruta"]),
+    ("fortificación", ["castillo", "castell", "muralla", "torre", "fortaleza", "fortalesa"]),
+    ("ciudad",       ["ciudad", "ciutat", "municipium", "colonia", "urbs"]),
+    ("poblado",      ["poblado", "poblat", "oppidum", "castro", "asentamiento",
+                      "asentament", "poblament"]),
+]
+
+
+def load_exclude_qids():
+    qids = set()
+    if os.path.exists(EXCLUDE_FILE):
+        with open(EXCLUDE_FILE, encoding="utf-8") as f:
+            for line in f:
+                line = line.split("#", 1)[0].strip()
+                if line:
+                    qids.add(line)
+    return qids
 
 
 def normalize(name):
@@ -49,6 +103,28 @@ def haversine(a, b):
     return 2 * r * math.asin(math.sqrt(h))
 
 
+def classify(site):
+    """Tipo del yacimiento: primero por P31, luego por palabras clave."""
+    p31 = set(site.get("p31") or [])
+    for tipo, qids in TYPE_BY_P31:
+        if p31 & qids:
+            return tipo
+    blob = " ".join(filter(None, [site.get("nombre"), site.get("nombre_ca"),
+                                   site.get("descripcion_es"),
+                                   site.get("descripcion_ca")])).lower()
+    for tipo, kws in TYPE_KEYWORDS:
+        if any(k in blob for k in kws):
+            return tipo
+    return "yacimiento"
+
+
+def is_false_positive(site, exclude):
+    if site.get("qid") in exclude:
+        return True
+    p31 = site.get("p31") or []
+    return bool(p31) and all(t in BLOCKLIST_TYPES for t in p31)
+
+
 def load_curated():
     rows = []
     if not os.path.exists(CSV_FILE):
@@ -58,31 +134,34 @@ def load_curated():
         for r in reader:
             if not r.get("nombre") or not r.get("lat"):
                 continue
+            nombre = r["nombre"].strip()
             rows.append({
                 "qid": None,
-                "nombre": r["nombre"].strip(),
+                "nombre": nombre,
+                "nombre_es": nombre,
+                "nombre_ca": None,
+                "descripcion_es": (r.get("descripcion") or "").strip(),
+                "descripcion_ca": "",
                 "lat": float(r["lat"]),
                 "lon": float(r["lon"]),
-                "tipo": (r.get("tipo") or "yacimiento").strip() or "yacimiento",
+                "tipo": (r.get("tipo") or "").strip() or None,
                 "epoca": (r.get("epoca") or "").strip(),
-                "descripcion": (r.get("descripcion") or "").strip(),
-                "url_wikipedia": (r.get("url_info") or "").strip() or None,
+                "url_wikipedia_es": (r.get("url_info") or "").strip() or None,
+                "url_wikipedia_ca": None,
                 "url_oficial": None,
                 "imagen_principal": (r.get("url_imagen") or "").strip() or None,
                 "commons_cat": None,
+                "p31": [],
                 "fuente": "curado",
             })
     return rows
-
-
-SAME_POINT_METERS = 50  # tan cerca que se asume el mismo yacimiento (aunque el nombre difiera)
 
 
 def find_duplicate(site, existing):
     n = normalize(site["nombre"])
     for e in existing:
         d = haversine((site["lat"], site["lon"]), (e["lat"], e["lon"]))
-        if d <= SAME_POINT_METERS:  # prácticamente el mismo punto -> mismo sitio
+        if d <= SAME_POINT_METERS:
             return e
         if d <= DEDUP_METERS:
             en = normalize(e["nombre"])
@@ -91,9 +170,8 @@ def find_duplicate(site, existing):
     return None
 
 
-# Campos ordenados por "riqueza" para decidir qué registro conservar al fusionar.
-_INFO_FIELDS = ("imagen_principal", "commons_cat", "descripcion", "qid",
-                "url_wikipedia", "url_oficial", "epoca")
+_INFO_FIELDS = ("imagen_principal", "commons_cat", "descripcion_es", "descripcion_ca",
+                "qid", "url_wikipedia_es", "url_oficial", "epoca")
 
 
 def _richness(rec):
@@ -101,7 +179,6 @@ def _richness(rec):
 
 
 def merge_records(keep, drop):
-    """Funde `drop` dentro de `keep`, rellenando huecos y combinando fuentes."""
     fuentes = set()
     for rec in (keep, drop):
         fuentes.update(p for p in rec.get("fuente", "").split("+") if p)
@@ -116,23 +193,23 @@ def main():
     wikidata = json.load(open(WD, encoding="utf-8"))
     galleries = json.load(open(IMGS, encoding="utf-8"))
     curated = load_curated()
+    exclude = load_exclude_qids()
 
-    # Wikidata primero (registros más ricos), luego el CSV curado. El deduplicado
-    # pasa sobre TODA la lista: fusiona también Wikipedia-vs-Wikipedia (p. ej. el
-    # mismo yacimiento con artículo en es y en ca -> QID distinto, coords casi iguales).
-    for w in wikidata:
+    # Filtrar falsos positivos (iglesias, montañas, museos, municipios…).
+    kept = [s for s in wikidata if not is_false_positive(s, exclude)]
+    dropped_fp = len(wikidata) - len(kept)
+    for w in kept:
         w.setdefault("epoca", "")
-    combined = list(wikidata) + list(curated)
 
-    merged = []
-    fused = 0
+    # Deduplicado sobre toda la lista (Wikidata primero, luego CSV curado).
+    combined = kept + list(curated)
+    merged, fused = [], 0
     for site in combined:
         dup = find_duplicate(site, merged)
         if dup is None:
             merged.append(site)
             continue
         fused += 1
-        # Conservamos el registro más completo como base y fundimos el otro dentro.
         if _richness(site) > _richness(dup):
             merge_records(site, dup)
             merged[merged.index(dup)] = site
@@ -143,25 +220,30 @@ def main():
     features = []
     for s in merged:
         imgs = galleries.get(s.get("qid"), []) if s.get("qid") else []
-        imagen = s.get("imagen_principal") or (imgs[0]["thumb"] if imgs else None)
+        # La imagen de hover = primera de la galería (coherente con el clic).
+        imagen = (imgs[0]["thumb"] if imgs else None) or s.get("imagen_principal")
+        tipo = s.get("tipo") or classify(s)
         features.append({
             "type": "Feature",
-            "geometry": {"type": "Point", "coordinates": [round(s["lon"], 6),
-                                                           round(s["lat"], 6)]},
+            "geometry": {"type": "Point",
+                         "coordinates": [round(s["lon"], 6), round(s["lat"], 6)]},
             "properties": {
-                "nombre": s["nombre"],
-                "tipo": s.get("tipo", "yacimiento"),
+                "nombre_es": s.get("nombre_es") or s.get("nombre"),
+                "nombre_ca": s.get("nombre_ca") or s.get("nombre_es") or s.get("nombre"),
+                "tipo": tipo,
                 "epoca": s.get("epoca", ""),
-                "descripcion": s.get("descripcion", ""),
+                "descripcion_es": s.get("descripcion_es", ""),
+                "descripcion_ca": s.get("descripcion_ca", ""),
                 "imagen": imagen,
                 "imagenes": imgs,
-                "url_wikipedia": s.get("url_wikipedia"),
+                "url_wikipedia_es": s.get("url_wikipedia_es"),
+                "url_wikipedia_ca": s.get("url_wikipedia_ca"),
                 "url_oficial": s.get("url_oficial"),
                 "fuente": s.get("fuente", ""),
             },
         })
 
-    features.sort(key=lambda f: f["properties"]["nombre"])
+    features.sort(key=lambda f: f["properties"]["nombre_es"] or "")
     fc = {"type": "FeatureCollection",
           "metadata": {"count": len(features),
                        "descripcion": "Yacimientos de la cultura ibérica"},
@@ -171,8 +253,15 @@ def main():
         json.dump(fc, f, ensure_ascii=False, indent=1)
 
     con_img = sum(1 for f in features if f["properties"]["imagen"])
-    print(f"GeoJSON con {len(features)} yacimientos ({fused} duplicados fusionados, "
-          f"{added} añadidos del CSV, {con_img} con imagen) -> {OUT}")
+    con_link = sum(1 for f in features if f["properties"]["url_oficial"])
+    tipos = {}
+    for f in features:
+        tipos[f["properties"]["tipo"]] = tipos.get(f["properties"]["tipo"], 0) + 1
+    print(f"GeoJSON con {len(features)} yacimientos "
+          f"({dropped_fp} falsos positivos filtrados, {fused} duplicados fusionados, "
+          f"{added} del CSV, {con_img} con imagen, {con_link} con enlace oficial)")
+    print("Tipos:", dict(sorted(tipos.items(), key=lambda x: -x[1])))
+    print("->", OUT)
 
 
 if __name__ == "__main__":

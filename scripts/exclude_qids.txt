@@ -1,0 +1,5 @@
+# QIDs de Wikidata a descartar manualmente del mapa (uno por línea).
+# Útil para falsos positivos que el filtro por P31 no atrapa.
+# Ejemplo:
+#   Q12345  # motivo
+Q11948805  # sierra del Ventós: es un rango montañoso, no un yacimiento

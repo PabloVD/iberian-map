@@ -32,6 +32,23 @@ def api_get(url, params, retries=3, pause=0.2):
     raise RuntimeError(f"API falló tras {retries} intentos: {url}\n{last_exc}")
 
 
+def rest_json(url, retries=2, pause=0.15):
+    """GET a una URL REST que devuelve JSON (p. ej. la REST API de Wikipedia).
+
+    Devuelve None si falla (p. ej. 404 cuando el artículo no existe)."""
+    for attempt in range(retries):
+        try:
+            r = _session.get(url, timeout=60)
+            if r.status_code == 404:
+                return None
+            r.raise_for_status()
+            time.sleep(pause)
+            return r.json()
+        except Exception:  # noqa: BLE001
+            time.sleep(0.5 + attempt)
+    return None
+
+
 def sparql(query, retries=3):
     """Consulta al Wikidata Query Service, devuelve la lista de bindings."""
     url = "https://query.wikidata.org/sparql"

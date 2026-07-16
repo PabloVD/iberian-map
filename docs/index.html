@@ -14,12 +14,17 @@
   <div id="map"></div>
 
   <header id="topbar">
-    <h1>Yacimientos de la cultura ibérica</h1>
+    <h1 id="title">Yacimientos de la cultura ibérica</h1>
     <span id="count" class="count"></span>
   </header>
 
   <div id="controls">
-    <input id="search" type="search" placeholder="Buscar yacimiento…" autocomplete="off" />
+    <div class="row">
+      <input id="search" type="search" autocomplete="off" />
+      <div id="lang" class="lang-toggle">
+        <button data-lang="es">ES</button><button data-lang="ca">CA</button>
+      </div>
+    </div>
     <div id="filters"></div>
   </div>
 
@@ -28,10 +33,18 @@
     <div id="panel-content"></div>
   </aside>
 
+  <div id="lightbox" class="hidden">
+    <button class="lb-close" aria-label="Cerrar">×</button>
+    <figure>
+      <img id="lb-img" src="" alt="" />
+      <figcaption id="lb-cap"></figcaption>
+    </figure>
+  </div>
+
   <footer id="credits">
-    Datos: <a href="https://www.wikidata.org" target="_blank" rel="noopener">Wikidata</a> ·
-    Imágenes: <a href="https://commons.wikimedia.org" target="_blank" rel="noopener">Wikimedia Commons</a> ·
-    Base: <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>
+    <a href="https://www.wikidata.org" target="_blank" rel="noopener">Wikidata</a> ·
+    <a href="https://commons.wikimedia.org" target="_blank" rel="noopener">Wikimedia Commons</a> ·
+    <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>
   </footer>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>

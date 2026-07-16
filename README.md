@@ -3,7 +3,16 @@
 Web estática con un mapa de los yacimientos de la **cultura ibérica prerromana**
 (poblados, necrópolis, santuarios…) en la península ibérica. Al pasar el cursor
 sobre cada punto aparece una ficha con foto e información; al hacer clic se abre
-un panel con descripción, galería de imágenes y enlaces.
+un panel con descripción, galería de imágenes (con lightbox) y enlaces.
+
+Características:
+- **Bilingüe es/ca** con selector; idioma inicial según el navegador.
+- Tipos clasificados por **P31** de Wikidata (poblado, ciudad, necrópolis,
+  santuario, cueva, fortificación, yacimiento) y filtro de falsos positivos.
+- Galería que combina las imágenes del **artículo** de Wikipedia, la imagen
+  principal y la **categoría de Commons**; clic para ampliar (lightbox).
+- **Enlaces oficiales** extraídos de forma selectiva (inventarios de patrimonio,
+  museos, etc.).
 
 Los datos se **pre-generan** con un pipeline en Python a partir de Wikipedia,
 Wikidata y Wikimedia Commons (más un CSV curado) y se guardan en un GeoJSON. La

@@ -33,10 +33,17 @@ body {
   background: var(--panel-bg); border-radius: 10px;
   box-shadow: var(--shadow); padding: 10px;
 }
+#controls .row { display: flex; gap: 6px; margin-bottom: 8px; }
 #search {
-  width: 100%; padding: 8px 10px; font-size: .9rem;
-  border: 1px solid #d8cdbb; border-radius: 8px; margin-bottom: 8px;
+  flex: 1; min-width: 0; padding: 8px 10px; font-size: .9rem;
+  border: 1px solid #d8cdbb; border-radius: 8px;
 }
+.lang-toggle { display: flex; border: 1px solid #d8cdbb; border-radius: 8px; overflow: hidden; }
+.lang-toggle button {
+  border: none; background: #fff; color: #8a7c68; cursor: pointer;
+  font-size: .78rem; font-weight: 700; padding: 0 9px;
+}
+.lang-toggle button.active { background: var(--accent); color: #fff; }
 #filters { display: flex; flex-wrap: wrap; gap: 6px; }
 .chip {
   display: inline-flex; align-items: center; gap: 6px;
@@ -106,6 +113,26 @@ body {
   padding: 3px 8px; border-top-left-radius: 8px;
 }
 #credits a { color: var(--accent); }
+
+/* ---- Lightbox ---- */
+#lightbox {
+  position: fixed; inset: 0; z-index: 1000;
+  background: rgba(20,15,10,.9); display: flex; align-items: center;
+  justify-content: center; padding: 24px; cursor: zoom-out;
+}
+#lightbox figure { margin: 0; max-width: 92vw; max-height: 92vh; text-align: center; }
+#lightbox img {
+  max-width: 92vw; max-height: 82vh; object-fit: contain;
+  border-radius: 4px; box-shadow: 0 4px 30px rgba(0,0,0,.5); cursor: default;
+}
+#lightbox figcaption { color: #eee; font-size: .8rem; margin-top: 10px; }
+#lightbox figcaption a { color: #f0c674; }
+.lb-close {
+  position: fixed; top: 14px; right: 18px; z-index: 1001;
+  width: 40px; height: 40px; border: none; border-radius: 50%;
+  background: rgba(255,255,255,.15); color: #fff; font-size: 1.6rem;
+  cursor: pointer; line-height: 1;
+}
 
 .hidden { display: none !important; }
 

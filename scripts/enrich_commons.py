@@ -1,85 +1,158 @@
 """Construye galerías de imágenes desde Wikimedia Commons (licencia libre).
 
-Para cada yacimiento con categoría de Commons (P373), lista algunos archivos de
-imagen de esa categoría y guarda URL de miniatura, autor y licencia para poder
-atribuir correctamente en la web.
+Para cada yacimiento reúne imágenes de tres fuentes y las deduplica:
+  1. Las imágenes del propio artículo de Wikipedia (REST `media-list`, es y ca).
+     Así aparecen las fotos que ve el lector (p. ej. la Dama de Elche en La Alcúdia).
+  2. La imagen de cabecera (`imagen_principal`).
+  3. Los archivos de la categoría de Commons (P373).
+Luego pide a Commons los metadatos (miniatura, autor, licencia) para atribuir.
 
 Entrada:  data/sources/wikidata.json
 Salida:   data/sources/commons_images.json  ->  {qid: [ {..imagen..}, ... ]}
 """
 import json
 import os
+import re
+import urllib.parse
 
-from common import api_get
+from common import api_get, rest_json, chunked
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 IN = os.path.join(ROOT, "data", "sources", "wikidata.json")
 OUT = os.path.join(ROOT, "data", "sources", "commons_images.json")
 
 COMMONS_API = "https://commons.wikimedia.org/w/api.php"
-MAX_IMAGES = 6
+MAX_IMAGES = 10
 IMG_EXT = (".jpg", ".jpeg", ".png", ".tif", ".tiff", ".webp")
+
+# Nombres de archivo que casi nunca son fotos del yacimiento.
+JUNK = re.compile(
+    r"(flag|coat|escudo|bandera|location_map|locator|logo|wikidata|commons-logo|"
+    r"map_of|mapa_de|blank|icon|símbolo|simbolo|star_of|red_pog|blue_pog)",
+    re.IGNORECASE,
+)
+
+
+def canon_file(title):
+    """Normaliza 'Archivo:X' / 'File:X' -> 'File:X' (namespace canónico)."""
+    if ":" in title:
+        title = title.split(":", 1)[1]
+    return "File:" + title.replace("_", " ").strip()
+
+
+def filename_from_url(url):
+    """Extrae el nombre de archivo de una URL de upload.wikimedia."""
+    if not url or "upload.wikimedia.org" not in url:
+        return None
+    path = urllib.parse.urlparse(url).path
+    if "/thumb/" in path:
+        # .../thumb/a/ab/Nombre.jpg/700px-Nombre.jpg  -> Nombre.jpg
+        seg = path.split("/thumb/", 1)[1].split("/")
+        name = seg[2] if len(seg) >= 3 else seg[-1]
+    else:
+        name = path.rsplit("/", 1)[-1]
+    return urllib.parse.unquote(name)
+
+
+def article_images(wiki, title):
+    """Nombres de archivo de imagen usados en un artículo (en orden)."""
+    if not title:
+        return []
+    t = urllib.parse.quote(title.replace(" ", "_"), safe="")
+    data = rest_json(f"https://{wiki}.wikipedia.org/api/rest_v1/page/media-list/{t}")
+    if not data:
+        return []
+    files = []
+    for it in data.get("items", []):
+        if it.get("type") == "image" and it.get("title"):
+            files.append(canon_file(it["title"]))
+    return files
+
+
+def category_files(cat):
+    """Archivos de imagen de una categoría de Commons."""
+    data = api_get(COMMONS_API, {
+        "action": "query", "generator": "categorymembers",
+        "gcmtitle": f"Category:{cat}", "gcmtype": "file", "gcmlimit": "30",
+        "prop": "info",
+    })
+    return [pg["title"] for pg in data.get("query", {}).get("pages", {}).values()]
 
 
 def _meta(extmeta, key):
     v = (extmeta or {}).get(key, {}).get("value", "")
-    # extmetadata a veces trae HTML; nos quedamos con texto plano corto.
-    import re
-    v = re.sub("<[^>]+>", "", v)
-    return v.strip()
+    return re.sub("<[^>]+>", "", v).strip()
 
 
-def category_images(cat):
-    """Lista hasta MAX_IMAGES imágenes de una categoría de Commons."""
-    params = {
-        "action": "query",
-        "generator": "categorymembers",
-        "gcmtitle": f"Category:{cat}",
-        "gcmtype": "file",
-        "gcmlimit": str(MAX_IMAGES * 3),  # margen para filtrar no-imágenes
-        "prop": "imageinfo",
-        "iiprop": "url|extmetadata|mime",
-        "iiurlwidth": "500",
-    }
-    try:
-        data = api_get(COMMONS_API, params)
-    except Exception as exc:  # noqa: BLE001
-        print(f"  ! error en categoría {cat}: {exc}")
-        return []
-    pages = data.get("query", {}).get("pages", {})
-    imgs = []
-    for pg in pages.values():
-        title = pg.get("title", "")
-        if not title.lower().endswith(IMG_EXT):
-            continue
-        info = (pg.get("imageinfo") or [{}])[0]
-        if not info.get("mime", "").startswith("image/"):
-            continue
-        em = info.get("extmetadata", {})
-        imgs.append({
-            "titulo": title.replace("File:", ""),
-            "thumb": info.get("thumburl"),
-            "url": info.get("url"),
-            "autor": _meta(em, "Artist") or "Desconocido",
-            "licencia": _meta(em, "LicenseShortName") or "ver Commons",
-            "descripcion_pagina": info.get("descriptionurl"),
+def imageinfo(file_titles):
+    """Metadatos (thumb, url, autor, licencia) para una lista de 'File:...'."""
+    info = {}
+    for batch in chunked(file_titles, 40):
+        data = api_get(COMMONS_API, {
+            "action": "query", "titles": "|".join(batch),
+            "prop": "imageinfo", "iiprop": "url|extmetadata|mime",
+            "iiurlwidth": "500",
         })
-        if len(imgs) >= MAX_IMAGES:
-            break
-    return imgs
+        q = data.get("query", {})
+        alias = {n["to"]: n["from"] for n in q.get("normalized", [])}
+        for pg in q.get("pages", {}).values():
+            title = pg.get("title", "")
+            ii = pg.get("imageinfo")
+            if not ii or not ii[0].get("mime", "").startswith("image/"):
+                continue
+            i0, em = ii[0], ii[0].get("extmetadata", {})
+            rec = {
+                "titulo": title.replace("File:", ""),
+                "thumb": i0.get("thumburl"),
+                "url": i0.get("url"),
+                "autor": _meta(em, "Artist") or "Desconocido",
+                "licencia": _meta(em, "LicenseShortName") or "ver Commons",
+                "descripcion_pagina": i0.get("descriptionurl"),
+            }
+            info[title] = rec
+            if title in alias:
+                info[alias[title]] = rec
+    return info
 
 
 def main():
     sites = json.load(open(IN, encoding="utf-8"))
-    todo = [s for s in sites if s.get("commons_cat")]
-    print(f"Yacimientos con categoría de Commons: {len(todo)}")
     gallery = {}
-    for i, s in enumerate(todo, 1):
-        imgs = category_images(s["commons_cat"])
+    for i, s in enumerate(sites, 1):
+        # 1. imágenes del artículo (orden: es, luego ca).
+        candidates = []
+        candidates += article_images("es", s.get("es_title"))
+        candidates += article_images("ca", s.get("ca_title"))
+        # 2. imagen de cabecera.
+        fn = filename_from_url(s.get("imagen_principal"))
+        if fn:
+            candidates.append(canon_file(fn))
+        # 3. categoría de Commons.
+        if s.get("commons_cat"):
+            candidates += category_files(s["commons_cat"])
+
+        # Deduplicar conservando orden y filtrar basura / no-imágenes.
+        seen, ordered = set(), []
+        for f in candidates:
+            key = f.lower()
+            if key in seen:
+                continue
+            seen.add(key)
+            if not f.lower().endswith(IMG_EXT) or JUNK.search(f):
+                continue
+            ordered.append(f)
+            if len(ordered) >= MAX_IMAGES:
+                break
+
+        if not ordered:
+            continue
+        info = imageinfo(ordered)
+        imgs = [info[f] for f in ordered if f in info and info[f].get("thumb")]
         if imgs:
             gallery[s["qid"]] = imgs
-        if i % 20 == 0:
-            print(f"  {i}/{len(todo)} procesados...")
+        if i % 25 == 0:
+            print(f"  {i}/{len(sites)} procesados...")
+
     total = sum(len(v) for v in gallery.values())
     with open(OUT, "w", encoding="utf-8") as f:
         json.dump(gallery, f, ensure_ascii=False, indent=2)
