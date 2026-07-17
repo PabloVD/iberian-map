@@ -1,7 +1,7 @@
 {
  "type": "FeatureCollection",
  "metadata": {
-  "count": 474,
+  "count": 483,
   "descripcion": "Yacimientos de la cultura ibérica"
  },
  "features": [
@@ -110,6 +110,33 @@
     "url_wikipedia_ca": "https://ca.wikipedia.org/wiki/Aeso",
     "url_oficial": null,
     "fuente": "wikidata"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.438928,
+     38.363866
+    ]
+   },
+   "properties": {
+    "nombre_es": "Akra Leuké",
+    "nombre_ca": "Acra Leuce",
+    "civ": "fenicio-punico",
+    "tipo": "ciudad",
+    "epoca": "s. III a.C.",
+    "siglo_inicio": -3,
+    "siglo_fin": -3,
+    "descripcion_es": "Akra Leuké, Leuké Akra o Akra Leuka (en griego Ἂκρα Λευκῆ, «Akra Leukḗ» o Λευκῆ Ἂκρα, «Leukḗ Akra») es el nombre de una base militar fundada por Amílcar Barca el 231 a.",
+    "descripcion_ca": "Acra Leuce (grec antic: Ἂκρα Λευκῆ «Akra Leuké») és el nom d'una població que fou fundada per Hamílcar Barca el 231 aC i que s'ha identificat, encara que no irrefutablement, amb la ciutat ibero-romana de Lucèntum, al peu de la Serra Grossa, a l'altra banda de la qual hi ha la moderna ciutat d'Alacant.",
+    "imagen": null,
+    "imagenes": [],
+    "url_wikipedia_es": "https://es.wikipedia.org/wiki/Akra_Leuké",
+    "url_wikipedia_ca": "https://ca.wikipedia.org/wiki/Acra_Leuce",
+    "url_oficial": null,
+    "fuente": "wikidata+incluido"
    }
   },
   {
@@ -1899,6 +1926,50 @@
     "url_wikipedia_es": "https://es.wikipedia.org/wiki/Carriladas_Ibero_Romanas_de_Énova",
     "url_wikipedia_ca": "https://ca.wikipedia.org/wiki/Carrilades_Ibero_Romanes_de_L'Énova",
     "url_oficial": "https://www.osoigo.com/eu/tomas-giner-para-cuando-la-declaracion-de-bic-del-parque-arqueologico-romano-de-l-enova.html",
+    "fuente": "wikidata"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.308828,
+     36.50978
+    ]
+   },
+   "properties": {
+    "nombre_es": "Cartennae",
+    "nombre_ca": "Cartenna",
+    "civ": "fenicio-punico",
+    "tipo": "ciudad",
+    "epoca": "",
+    "siglo_inicio": null,
+    "siglo_fin": null,
+    "descripcion_es": "Cartennae o Cartenna​​ fue un antiguo puerto bereber, cartaginés y romano en la actual Ténès, en Argelia . Bajo los romanos, fue parte de la provincia de Mauritania Cesariense.",
+    "descripcion_ca": "Cartenna fou una ciutat de la costa de Numídia que després va quedar dins la província de Mauritània Cesariense sota el govern d'Octavi August. Estava situada a prop de la boca del riu Cartennus.\nFou colònia romana i estació militar. Per la situació als Itineraris es pensava que seria Mostaghanem però per una inscripció se sap sens dubte que és l'actual Tinis o Ténès, bastant més a l'est.",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Tenes_ruines%2C_Algeria.jpg/500px-Tenes_ruines%2C_Algeria.jpg",
+    "imagenes": [
+     {
+      "titulo": "Tenes ruines, Algeria.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Tenes_ruines%2C_Algeria.jpg/500px-Tenes_ruines%2C_Algeria.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Tenes_ruines%2C_Algeria.jpg",
+      "autor": "Theechoftenes at English Wikipedia",
+      "licencia": "Public domain",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Tenes_ruines,_Algeria.jpg"
+     },
+     {
+      "titulo": "Algeria relief location map.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Algeria_relief_location_map.jpg/500px-Algeria_relief_location_map.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Algeria_relief_location_map.jpg",
+      "autor": "Eric Gaba (Sting - fr:Sting)",
+      "licencia": "CC BY-SA 3.0",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Algeria_relief_location_map.jpg"
+     }
+    ],
+    "url_wikipedia_es": "https://es.wikipedia.org/wiki/Cartennae",
+    "url_wikipedia_ca": "https://ca.wikipedia.org/wiki/Cartenna",
+    "url_oficial": null,
     "fuente": "wikidata"
    }
   },
@@ -11091,6 +11162,114 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     2.19,
+     36.6075
+    ]
+   },
+   "properties": {
+    "nombre_es": "Cherchell",
+    "nombre_ca": "Sersell",
+    "civ": "fenicio-punico",
+    "tipo": "ciudad",
+    "epoca": "",
+    "siglo_inicio": null,
+    "siglo_fin": null,
+    "descripcion_es": "Cherchell o Cherchel (árabe: Sharshal o شرشال) es un puerto de mar de la provincia de Tipasa, Argelia. En la antigüedad, fue una ciudad romana llamada Caesarea,​ Caesarea Mauretaniae o Caesaria, capital de la provincia Mauritania Cesariense. Es la ciudad natal del emperador romano Macrino.",
+    "descripcion_ca": "Sersell (o a vegades alternativament Xerxell, àrab: شرشال, Xarxāl; francès: Cherchell, abans Cherchel) és un port de la província de Tipaza, a Algèria, uns 95 km a l'oest d'Alger. És capital del districte de Cherchell. Apareix al cens del 1998 amb una població de 24.400 habitants. Abans formà part del departament d'Orléansville (des de 1962 al-Asnam).",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/La_fontaine%2C_Cherchell.jpg/500px-La_fontaine%2C_Cherchell.jpg",
+    "imagenes": [
+     {
+      "titulo": "La fontaine, Cherchell.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/La_fontaine%2C_Cherchell.jpg/500px-La_fontaine%2C_Cherchell.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/La_fontaine%2C_Cherchell.jpg",
+      "autor": "Yves Jalabert from Région parisienne, France",
+      "licencia": "CC BY-SA 2.0",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:La_fontaine,_Cherchell.jpg"
+     },
+     {
+      "titulo": "Théâtre Cherchell.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Th%C3%A9%C3%A2tre_Cherchell.jpg/500px-Th%C3%A9%C3%A2tre_Cherchell.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Th%C3%A9%C3%A2tre_Cherchell.jpg",
+      "autor": "Yelles",
+      "licencia": "CC BY-SA 3.0",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Th%C3%A9%C3%A2tre_Cherchell.jpg"
+     },
+     {
+      "titulo": "Aqueduc romain de Cherchell.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Aqueduc_romain_de_Cherchell.jpg/500px-Aqueduc_romain_de_Cherchell.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Aqueduc_romain_de_Cherchell.jpg",
+      "autor": "A. Nasser Hakem",
+      "licencia": "CC BY-SA 4.0",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Aqueduc_romain_de_Cherchell.jpg"
+     },
+     {
+      "titulo": "Cherchell port.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Cherchell_port.jpg/500px-Cherchell_port.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/93/Cherchell_port.jpg",
+      "autor": "Dalbera / J.P. Dalbéra from Nice, France",
+      "licencia": "CC BY 2.0",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Cherchell_port.jpg"
+     },
+     {
+      "titulo": "Forum cherchell.JPG",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Forum_cherchell.JPG/500px-Forum_cherchell.JPG",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Forum_cherchell.JPG",
+      "autor": "Yelles",
+      "licencia": "CC BY-SA 3.0",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Forum_cherchell.JPG"
+     },
+     {
+      "titulo": "Route vers Tizirine cherchell2.JPG",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Route_vers_Tizirine_cherchell2.JPG/500px-Route_vers_Tizirine_cherchell2.JPG",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Route_vers_Tizirine_cherchell2.JPG",
+      "autor": "Me",
+      "licencia": "Public domain",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Route_vers_Tizirine_cherchell2.JPG"
+     },
+     {
+      "titulo": "Mosquee-Cherchell.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Mosquee-Cherchell.jpg/500px-Mosquee-Cherchell.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Mosquee-Cherchell.jpg",
+      "autor": "User:Cherchelli",
+      "licencia": "CC BY-SA 3.0",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Mosquee-Cherchell.jpg"
+     },
+     {
+      "titulo": "Le phare - panoramio.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Le_phare_-_panoramio.jpg/500px-Le_phare_-_panoramio.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Le_phare_-_panoramio.jpg",
+      "autor": "habib kaki",
+      "licencia": "CC BY 3.0",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Le_phare_-_panoramio.jpg"
+     },
+     {
+      "titulo": "Coa Cherchell (French Algeria).png",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Coa_Cherchell_%28French_Algeria%29.png/500px-Coa_Cherchell_%28French_Algeria%29.png",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Coa_Cherchell_%28French_Algeria%29.png",
+      "autor": "User:Escondites",
+      "licencia": "Public domain",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Coa_Cherchell_(French_Algeria).png"
+     },
+     {
+      "titulo": "2015-05-05 18.41.46الغروب الفضي بمنطقة القطار بشرشال.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/2015-05-05_18.41.46%D8%A7%D9%84%D8%BA%D8%B1%D9%88%D8%A8_%D8%A7%D9%84%D9%81%D8%B6%D9%8A_%D8%A8%D9%85%D9%86%D8%B7%D9%82%D8%A9_%D8%A7%D9%84%D9%82%D8%B7%D8%A7%D8%B1_%D8%A8%D8%B4%D8%B1%D8%B4%D8%A7%D9%84.jpg/500px-2015-05-05_18.41.46%D8%A7%D9%84%D8%BA%D8%B1%D9%88%D8%A8_%D8%A7%D9%84%D9%81%D8%B6%D9%8A_%D8%A8%D9%85%D9%86%D8%B7%D9%82%D8%A9_%D8%A7%D9%84%D9%82%D8%B7%D8%A7%D8%B1_%D8%A8%D8%B4%D8%B1%D8%B4%D8%A7%D9%84.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/87/2015-05-05_18.41.46%D8%A7%D9%84%D8%BA%D8%B1%D9%88%D8%A8_%D8%A7%D9%84%D9%81%D8%B6%D9%8A_%D8%A8%D9%85%D9%86%D8%B7%D9%82%D8%A9_%D8%A7%D9%84%D9%82%D8%B7%D8%A7%D8%B1_%D8%A8%D8%B4%D8%B1%D8%B4%D8%A7%D9%84.jpg",
+      "autor": "Firdaous0803",
+      "licencia": "CC BY-SA 4.0",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:2015-05-05_18.41.46%D8%A7%D9%84%D8%BA%D8%B1%D9%88%D8%A8_%D8%A7%D9%84%D9%81%D8%B6%D9%8A_%D8%A8%D9%85%D9%86%D8%B7%D9%82%D8%A9_%D8%A7%D9%84%D9%82%D8%B7%D8%A7%D8%B1_%D8%A8%D8%B4%D8%B1%D8%B4%D8%A7%D9%84.jpg"
+     }
+    ],
+    "url_wikipedia_es": "https://es.wikipedia.org/wiki/Cherchell",
+    "url_wikipedia_ca": "https://ca.wikipedia.org/wiki/Sersell",
+    "url_oficial": "https://vocabularis.crai.ub.edu/thub/concept/thub:981058505954606706",
+    "fuente": "wikidata"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -8.315833,
      41.5275
     ]
@@ -11622,114 +11801,6 @@
     "url_wikipedia_es": "https://es.wikipedia.org/wiki/Ciudad_íbera_de_Ullastret",
     "url_wikipedia_ca": "https://ca.wikipedia.org/wiki/Ciutat_ibèrica_d'Ullastret",
     "url_oficial": "http://visitmuseum.gencat.cat/es/museu-d-arqueologia-de-catalunya-ullastret/",
-    "fuente": "wikidata"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     3.17,
-     42.266944
-    ]
-   },
-   "properties": {
-    "nombre_es": "Ciudadela de Rosas",
-    "nombre_ca": "Ciutadella de Roses",
-    "civ": "griego",
-    "tipo": "fortificación",
-    "epoca": "",
-    "siglo_inicio": null,
-    "siglo_fin": null,
-    "descripcion_es": "La Ciudadela de Rosas es el recinto amurallado que antiguamente protegía la ciudad de Rosas (provincia de Gerona, Cataluña, España), fundada como una colonia griega con el nombre de Rode en el golfo de Rosas (el extremo nororiental de la costa española). A pesar de la similitud fonética, no está demostrada la identificación de ese nombre con el de la isla griega de Rodas, ni la condición de rodios de los griegos que fundaron esta colonia. Tampoco la época de su fundación, que las fuentes literarias sitúan en el siglo VIII a. C., mientras que las fuentes arqueológicas vinculan con la cercana Emporion (Ampurias) no antes del siglo V a.",
-    "descripcion_ca": "La Ciutadella de Roses és una fortificació renaixentista (amb modificacions posteriors) situada al nord-oest de l'actual vila de Roses (Alt Empordà) i que domina la badia del mateix nom.\nEl nom popular de ciutadella, però, és tècnicament incorrecte, perquè no es tracta d'una fortalesa annexa a una ciutat emmurallada, sinó de les autèntiques muralles de la vila vella de Roses, les restes de la qual es conserven al seu interior. Només a finals del segle xviii i principis del xix l'antiga fortificació passà a exercir, de fet, el paper de ciutadella en relació amb la nova població, que s'havia traslladat fora dels murs però que mai no disposà d'una muralla de defensa. És molt més escaient, per tant, la també popular denominació de les Muralles.",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Roses_Zitadelle_3.jpg/500px-Roses_Zitadelle_3.jpg",
-    "imagenes": [
-     {
-      "titulo": "Roses Zitadelle 3.jpg",
-      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Roses_Zitadelle_3.jpg/500px-Roses_Zitadelle_3.jpg",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Roses_Zitadelle_3.jpg",
-      "autor": "Gordito1869",
-      "licencia": "CC BY 3.0",
-      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Roses_Zitadelle_3.jpg"
-     },
-     {
-      "titulo": "Vista interior de la Ciutadella.JPG",
-      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Vista_interior_de_la_Ciutadella.JPG/500px-Vista_interior_de_la_Ciutadella.JPG",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Vista_interior_de_la_Ciutadella.JPG",
-      "autor": "CBOSCH11",
-      "licencia": "CC BY-SA 3.0",
-      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Vista_interior_de_la_Ciutadella.JPG"
-     },
-     {
-      "titulo": "Torres muralla de Roses01.jpg",
-      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Torres_muralla_de_Roses01.jpg/500px-Torres_muralla_de_Roses01.jpg",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Torres_muralla_de_Roses01.jpg",
-      "autor": "Ainhoa",
-      "licencia": "CC BY 2.0",
-      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Torres_muralla_de_Roses01.jpg"
-     },
-     {
-      "titulo": "Ciutadella Roses Muralla.jpg",
-      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Ciutadella_Roses_Muralla.jpg/500px-Ciutadella_Roses_Muralla.jpg",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Ciutadella_Roses_Muralla.jpg",
-      "autor": "Ainhoa",
-      "licencia": "CC BY 2.0",
-      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Ciutadella_Roses_Muralla.jpg"
-     },
-     {
-      "titulo": "Entrada a la Ciutadella de Roses.JPG",
-      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Entrada_a_la_Ciutadella_de_Roses.JPG/500px-Entrada_a_la_Ciutadella_de_Roses.JPG",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Entrada_a_la_Ciutadella_de_Roses.JPG",
-      "autor": "CBOSCH11",
-      "licencia": "CC BY-SA 3.0",
-      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Entrada_a_la_Ciutadella_de_Roses.JPG"
-     },
-     {
-      "titulo": "Acte de campanya de Vox a Roses 01.jpg",
-      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Acte_de_campanya_de_Vox_a_Roses_01.jpg/500px-Acte_de_campanya_de_Vox_a_Roses_01.jpg",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Acte_de_campanya_de_Vox_a_Roses_01.jpg",
-      "autor": "VOX España",
-      "licencia": "Public domain",
-      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Acte_de_campanya_de_Vox_a_Roses_01.jpg"
-     },
-     {
-      "titulo": "Acte de campanya de Vox a Roses 02.jpg",
-      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Acte_de_campanya_de_Vox_a_Roses_02.jpg/500px-Acte_de_campanya_de_Vox_a_Roses_02.jpg",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Acte_de_campanya_de_Vox_a_Roses_02.jpg",
-      "autor": "VOX España",
-      "licencia": "Public domain",
-      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Acte_de_campanya_de_Vox_a_Roses_02.jpg"
-     },
-     {
-      "titulo": "Ciutadella de Roses - Roses - Spain.jpg",
-      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Ciutadella_de_Roses_-_Roses_-_Spain.jpg/500px-Ciutadella_de_Roses_-_Roses_-_Spain.jpg",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Ciutadella_de_Roses_-_Roses_-_Spain.jpg",
-      "autor": "Xús Mínguez Castanheira",
-      "licencia": "CC BY-SA 3.0 es",
-      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Ciutadella_de_Roses_-_Roses_-_Spain.jpg"
-     },
-     {
-      "titulo": "Ciutadella de Roses - Sascha Grosser.jpg",
-      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Ciutadella_de_Roses_-_Sascha_Grosser.jpg/500px-Ciutadella_de_Roses_-_Sascha_Grosser.jpg",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Ciutadella_de_Roses_-_Sascha_Grosser.jpg",
-      "autor": "Sascha Grosser",
-      "licencia": "CC BY-SA 4.0",
-      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Ciutadella_de_Roses_-_Sascha_Grosser.jpg"
-     },
-     {
-      "titulo": "Ciutadella de Roses 094.jpg",
-      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Ciutadella_de_Roses_094.jpg/500px-Ciutadella_de_Roses_094.jpg",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Ciutadella_de_Roses_094.jpg",
-      "autor": "Reimeu1",
-      "licencia": "CC BY-SA 4.0",
-      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Ciutadella_de_Roses_094.jpg"
-     }
-    ],
-    "url_wikipedia_es": "https://es.wikipedia.org/wiki/Ciudadela_de_Rosas",
-    "url_wikipedia_ca": "https://ca.wikipedia.org/wiki/Ciutadella_de_Roses",
-    "url_oficial": "http://www.mecd.gob.es/bienes/buscarDetalleBienesInmuebles.do?brscgi_DOCN=000013126",
     "fuente": "wikidata"
    }
   },
@@ -13963,6 +14034,33 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -6.2985,
+     36.5305
+    ]
+   },
+   "properties": {
+    "nombre_es": "Gadir (Gades)",
+    "nombre_ca": "Gadir (Gades)",
+    "civ": "fenicio-punico",
+    "tipo": "ciudad",
+    "epoca": "ss. IX a.C. - época romana",
+    "siglo_inicio": -9,
+    "siglo_fin": 1,
+    "descripcion_es": "Colonia fenicia (luego Gades romana), una de las ciudades más antiguas de Occidente, en Cádiz.",
+    "descripcion_ca": "",
+    "imagen": null,
+    "imagenes": [],
+    "url_wikipedia_es": "https://es.wikipedia.org/wiki/Gadir",
+    "url_wikipedia_ca": null,
+    "url_oficial": null,
+    "fuente": "curado"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      0.4665,
      41.4835
     ]
@@ -16117,7 +16215,7 @@
     "url_wikipedia_es": "https://es.wikipedia.org/wiki/Asta_Regia",
     "url_wikipedia_ca": null,
     "url_oficial": "http://www.lavozdigital.es/cadiz/20091206/mas-actualidad/cultura/pies-atlantida-200912061137.html",
-    "fuente": "wikidata"
+    "fuente": "wikidata+incluido"
    }
   },
   {
@@ -17012,6 +17110,114 @@
     "url_wikipedia_ca": null,
     "url_oficial": "https://www.juntadeandalucia.es/cultura/enclaves/enclave-arqueologico-tutugi",
     "fuente": "wikidata"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.42951,
+     38.9072
+    ]
+   },
+   "properties": {
+    "nombre_es": "Necrópolis cartaginesas en Ibiza",
+    "nombre_ca": "Necròpolis cartagineses a Eivissa",
+    "civ": "fenicio-punico",
+    "tipo": "necrópolis",
+    "epoca": "",
+    "siglo_inicio": null,
+    "siglo_fin": null,
+    "descripcion_es": "La isla de Ibiza, en el Mediterráneo, fue colonizada por los cartagineses desde 654 a. C., y la llamaron Ybošim (\"Islas del dios Bes\", refiriéndose también a la isla de Formentera), nombre por el cual se conoció también a lo que es en la actualidad la ciudad de Ibiza. Funcionando como factoría naval y fortaleza estratégica.\nLos arqueólogos han ido descubriendo en la isla diversas necrópolis de la época de los cartagineses.",
+    "descripcion_ca": "L'illa d'Eivissa (Ebysus), a la mar Mediterrània, fou colonitzada pels cartaginesos des del 654 aC, any en què fundaren Ibosim ('ciutat del déu Bes', actual ciutat d'Eivissa) com a factoria naval i fortalesa estratègica.\nEls arqueòlegs han anat descobrint a l'illa diverses necròpolis de l'època dels cartaginesos, on s'han trobat grans quantitats d'objectes funeraris, si bé es tracta, en general, d'objectes pertanyents a paraments lleugerament pobres, amb pocs objectes preciosos i poques joies d'or, just al contrari del que succeeix amb els enterraments cartaginesos de Cadis. A Eivissa, abunden les figures de fang cuit amb collars de grans de vidre, os i marfil i rarament alguna arracada d'or. Els historiadors i arqueòlegs suposen que els cartaginesos que hi estan enterrats eren només capatassos i servidors de les factories que tenien establertes en aquestes terres, mentre que els empresaris i grans comerciants eren enterrats a Cartago (a la costa septentrional d'Àfrica).",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Placa_con_esfinge_%28M.A.N._Madrid%29_01.jpg/500px-Placa_con_esfinge_%28M.A.N._Madrid%29_01.jpg",
+    "imagenes": [
+     {
+      "titulo": "Placa con esfinge (M.A.N. Madrid) 01.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Placa_con_esfinge_%28M.A.N._Madrid%29_01.jpg/500px-Placa_con_esfinge_%28M.A.N._Madrid%29_01.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Placa_con_esfinge_%28M.A.N._Madrid%29_01.jpg",
+      "autor": "Desconocido",
+      "licencia": "CC BY-SA 3.0",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Placa_con_esfinge_(M.A.N._Madrid)_01.jpg"
+     },
+     {
+      "titulo": "Terracota orante púnica Ibiza (M.A.N.) 01.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Terracota_orante_p%C3%BAnica_Ibiza_%28M.A.N.%29_01.jpg/500px-Terracota_orante_p%C3%BAnica_Ibiza_%28M.A.N.%29_01.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Terracota_orante_p%C3%BAnica_Ibiza_%28M.A.N.%29_01.jpg",
+      "autor": "Desconocido",
+      "licencia": "Public domain",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Terracota_orante_p%C3%BAnica_Ibiza_(M.A.N.)_01.jpg"
+     },
+     {
+      "titulo": "Terracota púnica de Ibiza (M.A.N. 1923-60-513) 01.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Terracota_p%C3%BAnica_de_Ibiza_%28M.A.N._1923-60-513%29_01.jpg/500px-Terracota_p%C3%BAnica_de_Ibiza_%28M.A.N._1923-60-513%29_01.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Terracota_p%C3%BAnica_de_Ibiza_%28M.A.N._1923-60-513%29_01.jpg",
+      "autor": "Desconocido",
+      "licencia": "CC BY-SA 3.0",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Terracota_p%C3%BAnica_de_Ibiza_(M.A.N._1923-60-513)_01.jpg"
+     },
+     {
+      "titulo": "Terracota púnica de Ibiza (M.A.N. 1923-60-510) 01.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Terracota_p%C3%BAnica_de_Ibiza_%28M.A.N._1923-60-510%29_01.jpg/500px-Terracota_p%C3%BAnica_de_Ibiza_%28M.A.N._1923-60-510%29_01.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/66/Terracota_p%C3%BAnica_de_Ibiza_%28M.A.N._1923-60-510%29_01.jpg",
+      "autor": "Desconocido",
+      "licencia": "CC BY-SA 3.0",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Terracota_p%C3%BAnica_de_Ibiza_(M.A.N._1923-60-510)_01.jpg"
+     },
+     {
+      "titulo": "Eivissa. Puig dels Molins. Làpida de Luci Fabi Cordi Propincu.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Eivissa._Puig_dels_Molins._L%C3%A0pida_de_Luci_Fabi_Cordi_Propincu.jpg/500px-Eivissa._Puig_dels_Molins._L%C3%A0pida_de_Luci_Fabi_Cordi_Propincu.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Eivissa._Puig_dels_Molins._L%C3%A0pida_de_Luci_Fabi_Cordi_Propincu.jpg",
+      "autor": "Joan Gené",
+      "licencia": "CC0",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Eivissa._Puig_dels_Molins._L%C3%A0pida_de_Luci_Fabi_Cordi_Propincu.jpg"
+     },
+     {
+      "titulo": "Eivissa. Puig dels Molins. Làpida de Luci Oculaci Recte.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Eivissa._Puig_dels_Molins._L%C3%A0pida_de_Luci_Oculaci_Recte.jpg/500px-Eivissa._Puig_dels_Molins._L%C3%A0pida_de_Luci_Oculaci_Recte.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Eivissa._Puig_dels_Molins._L%C3%A0pida_de_Luci_Oculaci_Recte.jpg",
+      "autor": "Joan Gené",
+      "licencia": "CC0",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Eivissa._Puig_dels_Molins._L%C3%A0pida_de_Luci_Oculaci_Recte.jpg"
+     },
+     {
+      "titulo": "Eivissa. Puig dels Molins. Tomba.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Eivissa._Puig_dels_Molins._Tomba.jpg/500px-Eivissa._Puig_dels_Molins._Tomba.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Eivissa._Puig_dels_Molins._Tomba.jpg",
+      "autor": "Joan Gené",
+      "licencia": "CC0",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Eivissa._Puig_dels_Molins._Tomba.jpg"
+     },
+     {
+      "titulo": "Eivissa. Puig dels Molins. Vista de Dalt Vila.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Eivissa._Puig_dels_Molins._Vista_de_Dalt_Vila.jpg/500px-Eivissa._Puig_dels_Molins._Vista_de_Dalt_Vila.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/82/Eivissa._Puig_dels_Molins._Vista_de_Dalt_Vila.jpg",
+      "autor": "Joan Gené",
+      "licencia": "CC0",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Eivissa._Puig_dels_Molins._Vista_de_Dalt_Vila.jpg"
+     },
+     {
+      "titulo": "Hipogeo Puig des Molins.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Hipogeo_Puig_des_Molins.jpg/500px-Hipogeo_Puig_des_Molins.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Hipogeo_Puig_des_Molins.jpg",
+      "autor": "Nanosanchez",
+      "licencia": "Public domain",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Hipogeo_Puig_des_Molins.jpg"
+     },
+     {
+      "titulo": "Hipogeo Puig des Molins1.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Hipogeo_Puig_des_Molins1.jpg/500px-Hipogeo_Puig_des_Molins1.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Hipogeo_Puig_des_Molins1.jpg",
+      "autor": "Nanosanchez",
+      "licencia": "Public domain",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Hipogeo_Puig_des_Molins1.jpg"
+     }
+    ],
+    "url_wikipedia_es": "https://es.wikipedia.org/wiki/Necrópolis_cartaginesas_en_Ibiza",
+    "url_wikipedia_ca": "https://ca.wikipedia.org/wiki/Necròpolis_cartagineses_a_Eivissa",
+    "url_oficial": null,
+    "fuente": "wikidata+incluido"
    }
   },
   {
@@ -22039,6 +22245,33 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     3.169169,
+     42.267489
+    ]
+   },
+   "properties": {
+    "nombre_es": "Rhode",
+    "nombre_ca": "Rhode",
+    "civ": "griego",
+    "tipo": "ciudad",
+    "epoca": "",
+    "siglo_inicio": null,
+    "siglo_fin": null,
+    "descripcion_es": "",
+    "descripcion_ca": "Rode o Rodes (Ῥόδη o Ῥόδος, o Ῥοδίπολις, segurament Ῥόδη πόλις), en llatí Rhodus, fou una colònia grega a la costa del país dels ibers indigets (avui l'Empordà), que perdurà després com a ciutat romana i fins a l'època visigòtica. Les seves restes són al nord-oest de l'actual vila de Roses, dintre de l'antic clos murallat conegut com la Ciutadella de Roses i que fins a finals del segle xviii havia contingut la vila vella. El jaciment de Rode està inclòs en les disposicions legals de protecció del patrimoni històric que afecten el conjunt del recinte de la Ciutadella de Roses, amb la declaració de bé cultural d'interès nacional. Donà nom a la població altempordanesa de Roses, desenvolupada més tard sobre les seves restes.",
+    "imagen": null,
+    "imagenes": [],
+    "url_wikipedia_es": null,
+    "url_wikipedia_ca": "https://ca.wikipedia.org/wiki/Rode_(ciutat)",
+    "url_oficial": "https://www.diaridegirona.cat/cultura/2010/10/09/altres-diocesis-gironines/437676.html",
+    "fuente": "wikidata+incluido"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -2.58702,
      36.79201
     ]
@@ -23639,6 +23872,222 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     4.1225,
+     36.893056
+    ]
+   },
+   "properties": {
+    "nombre_es": "Tigzirt",
+    "nombre_ca": "Tigzirt",
+    "civ": "fenicio-punico",
+    "tipo": "yacimiento",
+    "epoca": "",
+    "siglo_inicio": null,
+    "siglo_fin": null,
+    "descripcion_es": "Tigzirt es un municipio (baladiyah) de la provincia o valiato de Tizi Ouzou en Argelia. En abril de 2008 tenía una población censada de 11 962 habitantes.​\nSe encuentra ubicado al norte del país, en la región de Cabilia, a poca distancia de la costa del mar Mediterráneo y al este de Argel.",
+    "descripcion_ca": "municipi d'Algèria",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Tigzirt_-_Tizi_Ouzou_Province_%28Algeria%29.jpg/500px-Tigzirt_-_Tizi_Ouzou_Province_%28Algeria%29.jpg",
+    "imagenes": [
+     {
+      "titulo": "Tigzirt - Tizi Ouzou Province (Algeria).jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Tigzirt_-_Tizi_Ouzou_Province_%28Algeria%29.jpg/500px-Tigzirt_-_Tizi_Ouzou_Province_%28Algeria%29.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Tigzirt_-_Tizi_Ouzou_Province_%28Algeria%29.jpg",
+      "autor": "Fayeqalnatour",
+      "licencia": "CC BY-SA 4.0",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Tigzirt_-_Tizi_Ouzou_Province_(Algeria).jpg"
+     },
+     {
+      "titulo": "Port de Tigzirt 3.JPG",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Port_de_Tigzirt_3.JPG/500px-Port_de_Tigzirt_3.JPG",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Port_de_Tigzirt_3.JPG",
+      "autor": "HRené",
+      "licencia": "CC BY-SA 3.0",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Port_de_Tigzirt_3.JPG"
+     },
+     {
+      "titulo": "20180418 172946 HDRTigzirt.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/20180418_172946_HDRTigzirt.jpg/500px-20180418_172946_HDRTigzirt.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/20180418_172946_HDRTigzirt.jpg",
+      "autor": "Fayeqalnatour",
+      "licencia": "CC BY-SA 4.0",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:20180418_172946_HDRTigzirt.jpg"
+     },
+     {
+      "titulo": "Algerie.Tigzirt.Eglise.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Algerie.Tigzirt.Eglise.jpg/500px-Algerie.Tigzirt.Eglise.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Algerie.Tigzirt.Eglise.jpg",
+      "autor": "Unknown authorUnknown author",
+      "licencia": "Public domain",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Algerie.Tigzirt.Eglise.jpg"
+     },
+     {
+      "titulo": "Cimetière oriental - Plan de l'église - Tigzirt - Médiathèque de l'architecture et du patrimoine - APMH00012212.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/7/70/Cimeti%C3%A8re_oriental_-_Plan_de_l%27%C3%A9glise_-_Tigzirt_-_M%C3%A9diath%C3%A8que_de_l%27architecture_et_du_patrimoine_-_APMH00012212.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Cimeti%C3%A8re_oriental_-_Plan_de_l%27%C3%A9glise_-_Tigzirt_-_M%C3%A9diath%C3%A8que_de_l%27architecture_et_du_patrimoine_-_APMH00012212.jpg",
+      "autor": "Desconocido",
+      "licencia": "CC BY-SA 4.0",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Cimeti%C3%A8re_oriental_-_Plan_de_l%27%C3%A9glise_-_Tigzirt_-_M%C3%A9diath%C3%A8que_de_l%27architecture_et_du_patrimoine_-_APMH00012212.jpg"
+     },
+     {
+      "titulo": "Grande Basilique - Tigzirt - Médiathèque de l'architecture et du patrimoine - APMH00012182.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Grande_Basilique_-_Tigzirt_-_M%C3%A9diath%C3%A8que_de_l%27architecture_et_du_patrimoine_-_APMH00012182.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Grande_Basilique_-_Tigzirt_-_M%C3%A9diath%C3%A8que_de_l%27architecture_et_du_patrimoine_-_APMH00012182.jpg",
+      "autor": "Desconocido",
+      "licencia": "CC BY-SA 4.0",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Grande_Basilique_-_Tigzirt_-_M%C3%A9diath%C3%A8que_de_l%27architecture_et_du_patrimoine_-_APMH00012182.jpg"
+     },
+     {
+      "titulo": "Ilot de Tigzirt.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Ilot_de_Tigzirt.jpg/500px-Ilot_de_Tigzirt.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Ilot_de_Tigzirt.jpg",
+      "autor": "HRené",
+      "licencia": "CC BY-SA 3.0",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Ilot_de_Tigzirt.jpg"
+     },
+     {
+      "titulo": "La Grande plage Tigzirt algeria.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/La_Grande_plage_Tigzirt_algeria.jpg/500px-La_Grande_plage_Tigzirt_algeria.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/La_Grande_plage_Tigzirt_algeria.jpg",
+      "autor": "Einnx",
+      "licencia": "CC BY-SA 4.0",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:La_Grande_plage_Tigzirt_algeria.jpg"
+     },
+     {
+      "titulo": "Les ruines de tigzirt.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Les_ruines_de_tigzirt.jpg/500px-Les_ruines_de_tigzirt.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Les_ruines_de_tigzirt.jpg",
+      "autor": "Halim1979",
+      "licencia": "CC BY-SA 4.0",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Les_ruines_de_tigzirt.jpg"
+     },
+     {
+      "titulo": "Photo de classe kabyle -Année 1945-Tigzirt 2014-06-15 00-37.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Photo_de_classe_kabyle_-Ann%C3%A9e_1945-Tigzirt_2014-06-15_00-37.jpg/500px-Photo_de_classe_kabyle_-Ann%C3%A9e_1945-Tigzirt_2014-06-15_00-37.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Photo_de_classe_kabyle_-Ann%C3%A9e_1945-Tigzirt_2014-06-15_00-37.jpg",
+      "autor": "User:Yanisarchi",
+      "licencia": "CC BY-SA 3.0",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Photo_de_classe_kabyle_-Ann%C3%A9e_1945-Tigzirt_2014-06-15_00-37.jpg"
+     }
+    ],
+    "url_wikipedia_es": "https://es.wikipedia.org/wiki/Tigzirt",
+    "url_wikipedia_ca": null,
+    "url_oficial": null,
+    "fuente": "wikidata"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.44077,
+     36.5951
+    ]
+   },
+   "properties": {
+    "nombre_es": "Tipasa de Mauretania",
+    "nombre_ca": "Tipasa",
+    "civ": "fenicio-punico",
+    "tipo": "ciudad",
+    "epoca": "s. VI a.C.",
+    "siglo_inicio": -6,
+    "siglo_fin": -6,
+    "descripcion_es": "En Tipasa de Mauretania o Tipasa de Mauritania, a 70 km al oeste de Argel y al centro de la ciudad costera de Tipasa, se encuentran las ruinas de una ciudad romana. Este sitio arqueológico ha sido clasificado como patrimonio mundial por la UNESCO en el año 2002,​​ señalando este lugar como \"uno de los más extraordinarios complejos arqueológicos del Maghreb\".​ Y entre muchas otras cosas, también destacando de manera significativa, los contactos entre los bereberes y las sucesivas oleadas de colonización púnica y romana acaecidas entre el siglo VI a.",
+    "descripcion_ca": "Tipasa o Tibaza, antiga Tefessedt (àrab: تيبازة, Tībāza; amazic chenoua: Basar) és una ciutat a la costa d'Algèria, capital de la província o wilaya homònima, a 68 km d'Alger.\nVa ser declarada Patrimoni de la Humanitat de la UNESCO l'any 1982.\nA l'època romana era una ciutat de la Mauritània Cesariense a la que l'emperador Claudi va atorgar la ciutadania llatina, segons Plini el Vell, i després va ser una colònia romana, tal com consta a l'Itinerari d'Antoní. No era massa lluny de la ciutat de Cesarea.",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Tipasa4.jpg/500px-Tipasa4.jpg",
+    "imagenes": [
+     {
+      "titulo": "Tipasa4.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Tipasa4.jpg/500px-Tipasa4.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Tipasa4.jpg",
+      "autor": "Desconocido",
+      "licencia": "CC BY-SA 2.0",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Tipasa4.jpg"
+     },
+     {
+      "titulo": "Phare Tipaza.JPG",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Phare_Tipaza.JPG/500px-Phare_Tipaza.JPG",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Phare_Tipaza.JPG",
+      "autor": "Yelles",
+      "licencia": "CC BY-SA 3.0",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Phare_Tipaza.JPG"
+     },
+     {
+      "titulo": "Punic.JPG",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Punic.JPG/500px-Punic.JPG",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Punic.JPG",
+      "autor": "Yelles",
+      "licencia": "CC BY-SA 3.0",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Punic.JPG"
+     },
+     {
+      "titulo": "Tipasa 100.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Tipasa_100.jpg/500px-Tipasa_100.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Tipasa_100.jpg",
+      "autor": "Yelles",
+      "licencia": "CC BY-SA 3.0",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Tipasa_100.jpg"
+     },
+     {
+      "titulo": "Phare de Tipaza.JPG",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Phare_de_Tipaza.JPG/500px-Phare_de_Tipaza.JPG",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Phare_de_Tipaza.JPG",
+      "autor": "Yelles",
+      "licencia": "CC BY-SA 3.0",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Phare_de_Tipaza.JPG"
+     },
+     {
+      "titulo": "Tipazaar.JPG",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Tipazaar.JPG/500px-Tipazaar.JPG",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Tipazaar.JPG",
+      "autor": "Yelles",
+      "licencia": "CC BY-SA 3.0",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Tipazaar.JPG"
+     },
+     {
+      "titulo": "Tipazaport.JPG",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Tipazaport.JPG/500px-Tipazaport.JPG",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Tipazaport.JPG",
+      "autor": "Yelles",
+      "licencia": "CC BY-SA 3.0",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Tipazaport.JPG"
+     },
+     {
+      "titulo": "Tipaza 04.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Tipaza_04.jpg/500px-Tipaza_04.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Tipaza_04.jpg",
+      "autor": "Yelles",
+      "licencia": "CC BY-SA 3.0",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Tipaza_04.jpg"
+     },
+     {
+      "titulo": "Tombeau de la Chrétienne.JPG",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Tombeau_de_la_Chr%C3%A9tienne.JPG/500px-Tombeau_de_la_Chr%C3%A9tienne.JPG",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Tombeau_de_la_Chr%C3%A9tienne.JPG",
+      "autor": "Yelles",
+      "licencia": "CC BY-SA 3.0",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Tombeau_de_la_Chr%C3%A9tienne.JPG"
+     },
+     {
+      "titulo": "La villa des fresques (Tipaza) (2536112471).jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/La_villa_des_fresques_%28Tipaza%29_%282536112471%29.jpg/500px-La_villa_des_fresques_%28Tipaza%29_%282536112471%29.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/La_villa_des_fresques_%28Tipaza%29_%282536112471%29.jpg",
+      "autor": "Jean-Pierre Dalbéra from Paris, France",
+      "licencia": "CC BY 2.0",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:La_villa_des_fresques_(Tipaza)_(2536112471).jpg"
+     }
+    ],
+    "url_wikipedia_es": "https://es.wikipedia.org/wiki/Tipasa_de_Mauretania",
+    "url_wikipedia_ca": "https://ca.wikipedia.org/wiki/Tipasa",
+    "url_oficial": "https://es.unesco.org/themes/patrimonio-mundial",
+    "fuente": "wikidata"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.60753,
      38.47664
     ]
@@ -24648,6 +25097,114 @@
     "url_wikipedia_ca": "https://ca.wikipedia.org/wiki/Toscanos",
     "url_oficial": "https://www.iaph.es/patrimonio-inmueble-andalucia/resumen.do?id=i23641",
     "fuente": "wikidata"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.438791,
+     38.364754
+    ]
+   },
+   "properties": {
+    "nombre_es": "Tossal de Manises en la Albufereta",
+    "nombre_ca": "Tossal de Manises a l'Albufereta",
+    "civ": "iberos",
+    "tipo": "yacimiento",
+    "epoca": "",
+    "siglo_inicio": null,
+    "siglo_fin": null,
+    "descripcion_es": "yacimiento arqueológico en Alicante",
+    "descripcion_ca": "jaciment arqueològic al terme d'Alacant",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Tossal-plantagral.jpg/500px-Tossal-plantagral.jpg",
+    "imagenes": [
+     {
+      "titulo": "Tossal-plantagral.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Tossal-plantagral.jpg/500px-Tossal-plantagral.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Tossal-plantagral.jpg",
+      "autor": "Desconocido",
+      "licencia": "CC BY-SA 3.0",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Tossal-plantagral.jpg"
+     },
+     {
+      "titulo": "Albufereta-amuleto egipcio.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/2/24/Albufereta-amuleto_egipcio.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Albufereta-amuleto_egipcio.jpg",
+      "autor": "Desconocido",
+      "licencia": "CC BY-SA 3.0",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Albufereta-amuleto_egipcio.jpg"
+     },
+     {
+      "titulo": "Albufereta-ceramica-jinete.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/0/00/Albufereta-ceramica-jinete.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Albufereta-ceramica-jinete.jpg",
+      "autor": "Desconocido",
+      "licencia": "CC BY-SA 3.0",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Albufereta-ceramica-jinete.jpg"
+     },
+     {
+      "titulo": "Albufereta-ceramica-kalatos.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Albufereta-ceramica-kalatos.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Albufereta-ceramica-kalatos.jpg",
+      "autor": "Desconocido",
+      "licencia": "CC BY-SA 3.0",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Albufereta-ceramica-kalatos.jpg"
+     },
+     {
+      "titulo": "Albufereta-collar pastavitr.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Albufereta-collar_pastavitr.jpg/500px-Albufereta-collar_pastavitr.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Albufereta-collar_pastavitr.jpg",
+      "autor": "Desconocido",
+      "licencia": "CC BY-SA 3.0",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Albufereta-collar_pastavitr.jpg"
+     },
+     {
+      "titulo": "Albufereta-joyas IV-III.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/6/65/Albufereta-joyas_IV-III.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Albufereta-joyas_IV-III.jpg",
+      "autor": "Desconocido",
+      "licencia": "CC BY-SA 3.0",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Albufereta-joyas_IV-III.jpg"
+     },
+     {
+      "titulo": "Albufereta-pebetero-pie.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Albufereta-pebetero-pie.jpg/500px-Albufereta-pebetero-pie.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Albufereta-pebetero-pie.jpg",
+      "autor": "Desconocido",
+      "licencia": "CC BY-SA 3.0",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Albufereta-pebetero-pie.jpg"
+     },
+     {
+      "titulo": "Albufereta-terracota.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Albufereta-terracota.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Albufereta-terracota.jpg",
+      "autor": "Desconocido",
+      "licencia": "CC BY-SA 3.0",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Albufereta-terracota.jpg"
+     },
+     {
+      "titulo": "Albufeta-kore.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Albufeta-kore.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Albufeta-kore.jpg",
+      "autor": "Hispa",
+      "licencia": "CC BY-SA 3.0",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Albufeta-kore.jpg"
+     },
+     {
+      "titulo": "AlbufF142.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/5/5b/AlbufF142.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/AlbufF142.jpg",
+      "autor": "Desconocido",
+      "licencia": "CC BY-SA 3.0",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:AlbufF142.jpg"
+     }
+    ],
+    "url_wikipedia_es": null,
+    "url_wikipedia_ca": null,
+    "url_oficial": null,
+    "fuente": "wikidata+incluido"
    }
   },
   {
@@ -28348,6 +28905,98 @@
     "url_wikipedia_es": null,
     "url_wikipedia_ca": "https://ca.wikipedia.org/wiki/Poblat_ibèric_del_Turó_d'en_Boscà",
     "url_oficial": "https://www.museudebadalona.cat/esdeveniment/conferencia-salve-viator-noves-dades-sobre-les-vies-i-les-restes-documentades-al-suburbi-occidental-de-baetulo-durant-la-intervencio-del-carrer-de-coll-i-pujol",
+    "fuente": "wikidata"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.329722,
+     38.867778
+    ]
+   },
+   "properties": {
+    "nombre_es": "Yacimiento fenicio de Sa Caleta",
+    "nombre_ca": "Poblament fenici de sa Caleta",
+    "civ": "fenicio-punico",
+    "tipo": "poblado",
+    "epoca": "s. VII a.C.",
+    "siglo_inicio": -7,
+    "siglo_fin": -7,
+    "descripcion_es": "El yacimiento fenicio de Sa Caleta ha sido el descubrimiento más importante de los últimos veinticinco años de arqueología en las Pitiusas.​ Su importancia científica recae en que es el único exponente de análisis para la fase más antigua de la colonización fenícia de Ibiza.",
+    "descripcion_ca": "El jaciment fenici de Sa Caleta ha estat la descoberta més important dels darrers vint-i-cinc anys d'arqueologia a les Pitiüses. La seva importància científica recau en el fet que és l'únic exponent d'anàlisi per a la fase més antiga de la colonització fenícia d'Eivissa.\nEs troba en una petita península que queda entre la platja des Codolar i el puig des Jondal, a la costa sud de l'illa. Les dades geogràfiques més indicatives són els 9,5 km que la separen per terra i en línia recta del puig de Vila, i les 9,4 milles marines que separen Sa Caleta de la boca de la badia d'Eivissa.",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Feniciers_Sa_Caleta_9-05-2007_11-07-25.jpg/500px-Feniciers_Sa_Caleta_9-05-2007_11-07-25.jpg",
+    "imagenes": [
+     {
+      "titulo": "Feniciers Sa Caleta 9-05-2007 11-07-25.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Feniciers_Sa_Caleta_9-05-2007_11-07-25.jpg/500px-Feniciers_Sa_Caleta_9-05-2007_11-07-25.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Feniciers_Sa_Caleta_9-05-2007_11-07-25.jpg",
+      "autor": "Paul Hermans",
+      "licencia": "CC BY-SA 3.0",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Feniciers_Sa_Caleta_9-05-2007_11-07-25.jpg"
+     },
+     {
+      "titulo": "Burgos 708.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/6/65/Burgos_708.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Burgos_708.jpg",
+      "autor": "CNG",
+      "licencia": "CC BY-SA 3.0",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Burgos_708.jpg"
+     },
+     {
+      "titulo": "2004-09-18-Phoenizische-Siedlung-von-Sa-Caleta-Ibiza-Schild.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/2004-09-18-Phoenizische-Siedlung-von-Sa-Caleta-Ibiza-Schild.jpg/500px-2004-09-18-Phoenizische-Siedlung-von-Sa-Caleta-Ibiza-Schild.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/2004-09-18-Phoenizische-Siedlung-von-Sa-Caleta-Ibiza-Schild.jpg",
+      "autor": "Gunnar Klack",
+      "licencia": "CC BY-SA 4.0",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:2004-09-18-Phoenizische-Siedlung-von-Sa-Caleta-Ibiza-Schild.jpg"
+     },
+     {
+      "titulo": "2004-09-18-Phoenizische-Siedlung-von-Sa-Caleta-Ibiza.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/2004-09-18-Phoenizische-Siedlung-von-Sa-Caleta-Ibiza.jpg/500px-2004-09-18-Phoenizische-Siedlung-von-Sa-Caleta-Ibiza.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e4/2004-09-18-Phoenizische-Siedlung-von-Sa-Caleta-Ibiza.jpg",
+      "autor": "Gunnar Klack",
+      "licencia": "CC BY-SA 4.0",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:2004-09-18-Phoenizische-Siedlung-von-Sa-Caleta-Ibiza.jpg"
+     },
+     {
+      "titulo": "Phoenician Settlement remains, Sa Caleta, Ibiza 28 May 2012 (1).JPG",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Phoenician_Settlement_remains%2C_Sa_Caleta%2C_Ibiza_28_May_2012_%281%29.JPG/500px-Phoenician_Settlement_remains%2C_Sa_Caleta%2C_Ibiza_28_May_2012_%281%29.JPG",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Phoenician_Settlement_remains%2C_Sa_Caleta%2C_Ibiza_28_May_2012_%281%29.JPG",
+      "autor": "stavros1",
+      "licencia": "CC BY 3.0",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Phoenician_Settlement_remains,_Sa_Caleta,_Ibiza_28_May_2012_(1).JPG"
+     },
+     {
+      "titulo": "Phoenician Settlement remains, Sa Caleta, Ibiza 28 May 2012 (2).JPG",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Phoenician_Settlement_remains%2C_Sa_Caleta%2C_Ibiza_28_May_2012_%282%29.JPG/500px-Phoenician_Settlement_remains%2C_Sa_Caleta%2C_Ibiza_28_May_2012_%282%29.JPG",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Phoenician_Settlement_remains%2C_Sa_Caleta%2C_Ibiza_28_May_2012_%282%29.JPG",
+      "autor": "stavros1",
+      "licencia": "CC BY 3.0",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Phoenician_Settlement_remains,_Sa_Caleta,_Ibiza_28_May_2012_(2).JPG"
+     },
+     {
+      "titulo": "Phoenician Settlement remains, Sa Caleta, Ibiza 28 May 2012 (3).JPG",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Phoenician_Settlement_remains%2C_Sa_Caleta%2C_Ibiza_28_May_2012_%283%29.JPG/500px-Phoenician_Settlement_remains%2C_Sa_Caleta%2C_Ibiza_28_May_2012_%283%29.JPG",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/84/Phoenician_Settlement_remains%2C_Sa_Caleta%2C_Ibiza_28_May_2012_%283%29.JPG",
+      "autor": "stavros1",
+      "licencia": "CC BY 3.0",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Phoenician_Settlement_remains,_Sa_Caleta,_Ibiza_28_May_2012_(3).JPG"
+     },
+     {
+      "titulo": "Phoenician Settlement remains, Sa Caleta, Ibiza 28 May 2012.JPG",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Phoenician_Settlement_remains%2C_Sa_Caleta%2C_Ibiza_28_May_2012.JPG/500px-Phoenician_Settlement_remains%2C_Sa_Caleta%2C_Ibiza_28_May_2012.JPG",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Phoenician_Settlement_remains%2C_Sa_Caleta%2C_Ibiza_28_May_2012.JPG",
+      "autor": "stavros1",
+      "licencia": "CC BY 3.0",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Phoenician_Settlement_remains,_Sa_Caleta,_Ibiza_28_May_2012.JPG"
+     }
+    ],
+    "url_wikipedia_es": "https://es.wikipedia.org/wiki/Yacimiento_fenicio_de_Sa_Caleta",
+    "url_wikipedia_ca": "https://ca.wikipedia.org/wiki/Poblament_fenici_de_sa_Caleta",
+    "url_oficial": null,
     "fuente": "wikidata"
    }
   },

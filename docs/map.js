@@ -13,8 +13,8 @@ const CIVS = [
   { civ: "fenicio-punico", es: "Fenicio-púnico",      ca: "Fenici-púnic",       color: "#CC79A7" },
   { civ: "griego",         es: "Griego",              ca: "Grec",               color: "#009E73" },
   { civ: "tartesico",      es: "Tartésico",           ca: "Tartèssic",          color: "#E69F00" },
-  { civ: "vascones",       es: "Vascones",            ca: "Vascons",            color: "#56B4E9" },
-  { civ: "celtas",         es: "Celtas / atlánticos", ca: "Celtes / atlàntics", color: "#444444" },
+  { civ: "vascones",       es: "Vascones",            ca: "Vascons",            color: "#111111" },
+  { civ: "celtas",         es: "Celtas / atlánticos", ca: "Celtes / atlàntics", color: "#56B4E9" },
 ];
 const CIV_BY_ID = Object.fromEntries(CIVS.map((c) => [c.civ, c]));
 const civLabel = (id) => (CIV_BY_ID[id] ? CIV_BY_ID[id][lang] : id);
@@ -296,6 +296,10 @@ function setLang(l) {
 document.querySelectorAll("#lang button").forEach((b) => (b.onclick = () => setLang(b.dataset.lang)));
 
 /* ---------- Carga ---------- */
+// En móvil, empezar con los filtros plegados para no tapar el mapa.
+if (window.matchMedia("(max-width: 620px)").matches) {
+  document.getElementById("controls-body").classList.add("hidden");
+}
 applyStaticText();
 updateEpoch();
 fetch("data/yacimientos.geojson")

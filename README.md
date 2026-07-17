@@ -1,7 +1,8 @@
 # Mapa interactivo de la Iberia prerromana
 
 Web estática con un mapa de los yacimientos de la **Iberia prerromana (Edad del
-Hierro)** en la península ibérica (más los íberos del sur de Francia). Al pasar
+Hierro)** en la península ibérica (más los íberos del sur de Francia y los
+enclaves fenicio-púnicos de las Baleares, p. ej. Ibiza). Al pasar
 el cursor sobre cada punto aparece una ficha con foto e información; al hacer clic
 se abre un panel con descripción, galería de imágenes (con lightbox) y enlaces.
 
@@ -47,7 +48,8 @@ scripts/
   fetch_wikidata.py   categorías de Wikipedia (es/ca) + P2596 -> data/sources/wikidata.json
   enrich_commons.py   galerías de imágenes con licencia -> data/sources/commons_images.json
   cultures.py         registro de civilizaciones (categorías, QIDs, prioridad)
-  curated_sites.csv   yacimientos añadidos a mano (parte "híbrida")
+  curated_sites.csv   yacimientos a mano (los que NO están en Wikidata)
+  include_qids.txt    QIDs de Wikidata a incluir a la fuerza (no salen por categoría)
   exclude_qids.txt    QIDs a descartar a mano
   anchor_sites.txt    yacimientos que DEBEN estar (red de seguridad)
   build_geojson.py    fusiona todo -> docs/data/yacimientos.geojson
@@ -65,9 +67,40 @@ python3 enrich_commons.py     # ~2-3 min
 python3 build_geojson.py
 ```
 
-Para **añadir yacimientos** que falten o mejorar los existentes, edita
-`scripts/curated_sites.csv` y vuelve a ejecutar `build_geojson.py`. Los duplicados
-con Wikidata se fusionan por cercanía de coordenadas + nombre.
+### Parches manuales (se re-aplican en cada fetch)
+
+Tres ficheros de configuración corrigen lo que el descubrimiento automático no
+acierta; al ser declarativos, **los parches no se pierden al regenerar**:
+- `include_qids.txt` — yacimientos que existen en Wikidata (con coordenadas) pero
+  no salen por categoría (p. ej. **Rode**, **Akra Leuke**, **Asta Regia**). Se
+  indican por QID + civilización y se enriquecen igual que el resto. Se marcan con
+  `fuente = "wikidata+incluido"`.
+- `exclude_qids.txt` — quita falsos positivos o entradas equivocadas (p. ej. la
+  Ciutadella renacentista de Roses).
+- `curated_sites.csv` — yacimientos que **no** están en Wikidata o sin coordenadas
+  (p. ej. **Gadir/Gades**); datos escritos a mano.
+
+`anchor_sites.txt` vigila que los yacimientos importantes no desaparezcan tras un
+cambio (ver "Red de seguridad").
+
+#### Yacimientos con datos introducidos a mano (y su fuente)
+
+Estos se añadieron manualmente en `curated_sites.csv` (coordenadas, época y
+descripción escritas a mano); la fuente de la información es:
+
+| Yacimiento | Civilización | Fuente |
+|---|---|---|
+| La Alcúdia d'Elx | íberos | [Wikipedia: La Alcudia](https://es.wikipedia.org/wiki/La_Alcudia) |
+| Contrebia Leukade | celtíbero | [Wikipedia: Contrebia Leukade](https://es.wikipedia.org/wiki/Contrebia_Leukade) |
+| Gebut | íberos | [Llista de poblacions ibèriques de Catalunya (ca.wikipedia)](https://ca.wikipedia.org/wiki/Llista_de_poblacions_ib%C3%A8riques_de_Catalunya) |
+| Turó de Montgat | íberos | [Llista de poblacions ibèriques de Catalunya (ca.wikipedia)](https://ca.wikipedia.org/wiki/Llista_de_poblacions_ib%C3%A8riques_de_Catalunya) |
+| Cástulo | íberos | [Wikipedia: Cástulo](https://es.wikipedia.org/wiki/Cástulo) |
+| Cancho Roano | tartésico | [Wikipedia: Cancho Roano](https://es.wikipedia.org/wiki/Cancho_Roano) |
+| Iruña-Veleia | vascones | [Wikipedia: Iruña-Veleia](https://es.wikipedia.org/wiki/Iruña-Veleia) |
+| Gadir (Gades) | fenicio-púnico | [Wikipedia: Gadir](https://es.wikipedia.org/wiki/Gadir) — coordenadas aproximadas (casco antiguo de Cádiz) |
+
+Los sitios de `include_qids.txt` (Rode, Akra Leuke, Asta Regia, Lucentum) **no**
+se listan aquí porque sus datos vienen íntegros de Wikidata/Wikipedia, no a mano.
 
 Para **ampliar la cobertura** desde Wikipedia, añade categorías semilla en
 `SEED_CATEGORIES` dentro de `fetch_wikidata.py`.

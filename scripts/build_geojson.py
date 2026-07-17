@@ -34,12 +34,9 @@ SAME_POINT_METERS = 50
 
 
 def in_scope(lat, lon):
-    """Península ibérica (+ íberos del sur de Francia), excluyendo Baleares/Canarias."""
-    if not (35.8 <= lat <= 44.0 and -9.8 <= lon <= 3.6):
-        return False
-    if lon > 1.0 and lat < 40.2:   # zona de las Baleares (mar): descartar
-        return False
-    return True
+    """Península ibérica + íberos del sur de Francia + islas Baleares.
+    (Se excluyen Canarias y el norte de África por latitud/longitud.)"""
+    return 35.5 <= lat <= 44.0 and -9.8 <= lon <= 4.5
 
 # --- Filtro de falsos positivos por P31 (Wikidata "instance of") ---
 # Se descarta un yacimiento solo si TODOS sus P31 están en esta lista negra

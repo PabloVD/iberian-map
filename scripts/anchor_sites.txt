@@ -6,6 +6,7 @@
 
 # --- Íberos ---
 Q475423    # Ullastret
+Q43175315  # Tossal de Manises / Lucentum (l'Albufereta)
 Q5763390   # Oppidum de Puente Tablas
 Q4745109   # Torreparedones
 Cástulo
@@ -19,10 +20,16 @@ Contrebia Leukade
 
 # --- Griego ---
 Q1229367   # Ampurias / Empúries
+Q4395887   # Rode (colonia griega de Roses)
 
 # --- Fenicio-púnico / Tartésico ---
 Cancho Roano   # tartésico (curado; sin QID en el registro)
 Q1605142       # El Carambolo (tartésico)
+Q16144734      # Akra Leuke
+Q5709588       # Asta Regia (Mesas de Asta)
+Gadir          # Gades fenicia (curado)
+Q3346918       # Puig des Molins / Ebusus púnica (Ibiza)
+Sa Caleta      # asentamiento fenicio de Ibiza
 
 # --- Celtas / atlánticos (castros) ---
 Q1049903   # Castro de Baroña

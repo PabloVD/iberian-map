@@ -1,25 +1,3 @@
-Los slides del tiempo son redundantes, no? con uno debería ser suficiente, con dos knobs.
+Buena elección de colores! pero pongamos de azul claro los celtas/atlánticos, y de negro los vascones.
 
-Me gustaría ver cómo se ve el mapa si desactivamos la feature de agrupar sitios cuando hay zoom out. dejémoslo desactivado con una flag por si acaso (no accesible por la página, solo por código)
-
-creo que quedaría mejor si usamos colores para civilizaciones y formas para tipo de yacimiento. en un futuro podemos usar markers específicos con formas para poblados, necrópolis etc, explora si se puede hacer fácil eso con font-awesome o fuentes similares.
-
-Has incluido info de estas páginas para el mapa? si no, inclúyelas:
-- https://ca.wikipedia.org/wiki/Categoria:Jaciments_arqueol%C3%B2gics_ibers_del_Pa%C3%ADs_Valenci%C3%A0
-- https://ca.wikipedia.org/wiki/Categoria:Poblacions_ib%C3%A8riques_del_Pa%C3%ADs_Valenci%C3%A0
-- https://ca.wikipedia.org/wiki/Categoria:Poblacions_ib%C3%A8riques
-- https://ca.wikipedia.org/wiki/Categoria:Poblacions_ib%C3%A8riques_de_Catalunya
-- https://es.wikipedia.org/wiki/Categor%C3%ADa:Yacimientos_%C3%ADberos
-- https://es.wikipedia.org/wiki/Categor%C3%ADa:Yacimientos_celt%C3%ADberos_de_Arag%C3%B3n
-- https://es.wikipedia.org/wiki/Categor%C3%ADa:Yacimientos_%C3%ADberos_de_Andaluc%C3%ADa
--https://es.wikipedia.org/wiki/Categor%C3%ADa:Yacimientos_%C3%ADberos_de_la_provincia_de_Granada
-- https://es.wikipedia.org/wiki/Categor%C3%ADa:Yacimientos_%C3%ADberos_de_la_provincia_de_Ja%C3%A9n
-- https://es.wikipedia.org/wiki/Categor%C3%ADa:Yacimientos_%C3%ADberos_de_la_Comunidad_Valenciana
-- https://es.wikipedia.org/wiki/Categor%C3%ADa:Yacimientos_%C3%ADberos_de_Catalu%C3%B1a
-- https://es.wikipedia.org/wiki/Categor%C3%ADa:Poblaciones_iberas
-
-Explora también sus subcategorías. Algunas posiblemente sean redundantes, pero conviene chequearlas.
-
-Tenemos que citar las fuentes usadas en el readme, incluyendo los links de arriba y otras páginas de wikipedia generales (no hace falta las individuales de cada yacimiento en el readme)
-
-Cuando esté todo esto, publicamos la página en github pages!
+Hay algunos sitios que echo en falta: la Gades fenicia, Asta Regia, algunos tartésicos más quizá. Por qué no están? quizá porque no salen como yacimientos en wikipedia? Akra Leuke o l'Albufereta de Alacant tampoco sale, quizá por lo mismo. Rosas sale como el castillo de Rosas renacentista, en vez de Rode. Pero sí existe Rode en la viquipedia, aunque no como yacimiento. Igual pasa con Gades. En casos como estos, quizá debería añadir patches a mano despuès de cada fetch, con algunos casos modificados. Pero habría que ver cómo los marcamos.

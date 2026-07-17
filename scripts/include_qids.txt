@@ -1,0 +1,13 @@
+# Items de Wikidata a INCLUIR a la fuerza en el mapa.
+# Para yacimientos que existen en Wikidata (con coordenadas) pero no aparecen en
+# las categorías de yacimientos, así que el descubrimiento por categorías no los
+# coge. Se enriquecen igual que el resto (imagen, descripción, enlaces).
+# Formato por línea: QID  civilización   # comentario
+#   civilización: iberos | celtibero | fenicio-punico | griego | tartesico | vascones | celtas
+# (si un item existe en Wikidata pero SIN coordenadas, va a curated_sites.csv)
+
+Q4395887   griego           # Rode (colonia griega; lo que salía era la Ciutadella renacentista)
+Q5709588   tartesico        # Asta Regia (Mesas de Asta, Jerez) — turdetano/tartésico
+Q16144734  fenicio-punico   # Akra Leuke (fundación cartaginesa, Alicante)
+Q43175315  iberos           # Tossal de Manises / Lucentum (l'Albufereta, Alacant)
+Q3346918   fenicio-punico   # Puig des Molins: necrópolis púnica de Ebusus (Ibiza)

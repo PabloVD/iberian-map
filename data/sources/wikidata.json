@@ -77,6 +77,32 @@
     "fuente": "wikidata"
   },
   {
+    "qid": "Q16144734",
+    "nombre": "Akra Leuké",
+    "nombre_es": "Akra Leuké",
+    "nombre_ca": "Acra Leuce",
+    "descripcion_es": "Akra Leuké, Leuké Akra o Akra Leuka (en griego Ἂκρα Λευκῆ, «Akra Leukḗ» o Λευκῆ Ἂκρα, «Leukḗ Akra») es el nombre de una base militar fundada por Amílcar Barca el 231 a.",
+    "descripcion_ca": "Acra Leuce (grec antic: Ἂκρα Λευκῆ «Akra Leuké») és el nom d'una població que fou fundada per Hamílcar Barca el 231 aC i que s'ha identificat, encara que no irrefutablement, amb la ciutat ibero-romana de Lucèntum, al peu de la Serra Grossa, a l'altra banda de la qual hi ha la moderna ciutat d'Alacant.",
+    "lat": 38.363866,
+    "lon": -0.438928,
+    "civ": "fenicio-punico",
+    "siglo_inicio": -3,
+    "siglo_fin": -3,
+    "epoca": "s. III a.C.",
+    "imagen_principal": null,
+    "commons_cat": null,
+    "p31": [
+      "Q15661340",
+      "Q245016"
+    ],
+    "es_title": "Akra Leuké",
+    "ca_title": "Acra Leuce",
+    "url_wikipedia_es": "https://es.wikipedia.org/wiki/Akra_Leuké",
+    "url_wikipedia_ca": "https://ca.wikipedia.org/wiki/Acra_Leuce",
+    "url_oficial": null,
+    "fuente": "wikidata+incluido"
+  },
+  {
     "qid": "Q2830654",
     "nombre": "Alarcos",
     "nombre_es": "Alarcos",
@@ -6689,7 +6715,7 @@
     "url_wikipedia_es": "https://es.wikipedia.org/wiki/Asta_Regia",
     "url_wikipedia_ca": null,
     "url_oficial": "http://www.lavozdigital.es/cadiz/20091206/mas-actualidad/cultura/pies-atlantida-200912061137.html",
-    "fuente": "wikidata"
+    "fuente": "wikidata+incluido"
   },
   {
     "qid": "Q3869131",
@@ -7075,6 +7101,32 @@
     "url_wikipedia_ca": null,
     "url_oficial": "https://www.juntadeandalucia.es/cultura/enclaves/enclave-arqueologico-tutugi",
     "fuente": "wikidata"
+  },
+  {
+    "qid": "Q3346918",
+    "nombre": "Necrópolis cartaginesas en Ibiza",
+    "nombre_es": "Necrópolis cartaginesas en Ibiza",
+    "nombre_ca": "Necròpolis cartagineses a Eivissa",
+    "descripcion_es": "La isla de Ibiza, en el Mediterráneo, fue colonizada por los cartagineses desde 654 a. C., y la llamaron Ybošim (\"Islas del dios Bes\", refiriéndose también a la isla de Formentera), nombre por el cual se conoció también a lo que es en la actualidad la ciudad de Ibiza. Funcionando como factoría naval y fortaleza estratégica.\nLos arqueólogos han ido descubriendo en la isla diversas necrópolis de la época de los cartagineses.",
+    "descripcion_ca": "L'illa d'Eivissa (Ebysus), a la mar Mediterrània, fou colonitzada pels cartaginesos des del 654 aC, any en què fundaren Ibosim ('ciutat del déu Bes', actual ciutat d'Eivissa) com a factoria naval i fortalesa estratègica.\nEls arqueòlegs han anat descobrint a l'illa diverses necròpolis de l'època dels cartaginesos, on s'han trobat grans quantitats d'objectes funeraris, si bé es tracta, en general, d'objectes pertanyents a paraments lleugerament pobres, amb pocs objectes preciosos i poques joies d'or, just al contrari del que succeeix amb els enterraments cartaginesos de Cadis. A Eivissa, abunden les figures de fang cuit amb collars de grans de vidre, os i marfil i rarament alguna arracada d'or. Els historiadors i arqueòlegs suposen que els cartaginesos que hi estan enterrats eren només capatassos i servidors de les factories que tenien establertes en aquestes terres, mentre que els empresaris i grans comerciants eren enterrats a Cartago (a la costa septentrional d'Àfrica).",
+    "lat": 38.9072,
+    "lon": 1.42951,
+    "civ": "fenicio-punico",
+    "siglo_inicio": null,
+    "siglo_fin": null,
+    "epoca": "",
+    "imagen_principal": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Placa_con_esfinge_%28M.A.N._Madrid%29_01.jpg",
+    "commons_cat": "Puig des Molins, Ibiza",
+    "p31": [
+      "Q125857579",
+      "Q54050"
+    ],
+    "es_title": "Necrópolis cartaginesas en Ibiza",
+    "ca_title": "Necròpolis cartagineses a Eivissa",
+    "url_wikipedia_es": "https://es.wikipedia.org/wiki/Necrópolis_cartaginesas_en_Ibiza",
+    "url_wikipedia_ca": "https://ca.wikipedia.org/wiki/Necròpolis_cartagineses_a_Eivissa",
+    "url_oficial": null,
+    "fuente": "wikidata+incluido"
   },
   {
     "qid": "Q125955692",
@@ -9725,6 +9777,32 @@
     "fuente": "wikidata"
   },
   {
+    "qid": "Q4395887",
+    "nombre": "Rhode",
+    "nombre_es": null,
+    "nombre_ca": "Rhode",
+    "descripcion_es": "",
+    "descripcion_ca": "Rode o Rodes (Ῥόδη o Ῥόδος, o Ῥοδίπολις, segurament Ῥόδη πόλις), en llatí Rhodus, fou una colònia grega a la costa del país dels ibers indigets (avui l'Empordà), que perdurà després com a ciutat romana i fins a l'època visigòtica. Les seves restes són al nord-oest de l'actual vila de Roses, dintre de l'antic clos murallat conegut com la Ciutadella de Roses i que fins a finals del segle xviii havia contingut la vila vella. El jaciment de Rode està inclòs en les disposicions legals de protecció del patrimoni històric que afecten el conjunt del recinte de la Ciutadella de Roses, amb la declaració de bé cultural d'interès nacional. Donà nom a la població altempordanesa de Roses, desenvolupada més tard sobre les seves restes.",
+    "lat": 42.26748889,
+    "lon": 3.16916944,
+    "civ": "griego",
+    "siglo_inicio": null,
+    "siglo_fin": null,
+    "epoca": "",
+    "imagen_principal": null,
+    "commons_cat": null,
+    "p31": [
+      "Q148837",
+      "Q15661340"
+    ],
+    "es_title": null,
+    "ca_title": "Rode (ciutat)",
+    "url_wikipedia_es": null,
+    "url_wikipedia_ca": "https://ca.wikipedia.org/wiki/Rode_(ciutat)",
+    "url_oficial": "https://www.diaridegirona.cat/cultura/2010/10/09/altres-diocesis-gironines/437676.html",
+    "fuente": "wikidata+incluido"
+  },
+  {
     "qid": "Q6169549",
     "nombre": "Ribera de la Algaida",
     "nombre_es": "Ribera de la Algaida",
@@ -11033,6 +11111,31 @@
     "url_wikipedia_ca": "https://ca.wikipedia.org/wiki/Toscanos",
     "url_oficial": "https://www.iaph.es/patrimonio-inmueble-andalucia/resumen.do?id=i23641",
     "fuente": "wikidata"
+  },
+  {
+    "qid": "Q43175315",
+    "nombre": "Tossal de Manises en la Albufereta",
+    "nombre_es": "Tossal de Manises en la Albufereta",
+    "nombre_ca": "Tossal de Manises a l'Albufereta",
+    "descripcion_es": "yacimiento arqueológico en Alicante",
+    "descripcion_ca": "jaciment arqueològic al terme d'Alacant",
+    "lat": 38.364754,
+    "lon": -0.438791,
+    "civ": "iberos",
+    "siglo_inicio": null,
+    "siglo_fin": null,
+    "epoca": "",
+    "imagen_principal": "https://upload.wikimedia.org/wikipedia/commons/1/17/Tossal-plantagral.jpg",
+    "commons_cat": "Lucentum",
+    "p31": [
+      "Q839954"
+    ],
+    "es_title": null,
+    "ca_title": null,
+    "url_wikipedia_es": null,
+    "url_wikipedia_ca": null,
+    "url_oficial": null,
+    "fuente": "wikidata+incluido"
   },
   {
     "qid": "Q6151066",

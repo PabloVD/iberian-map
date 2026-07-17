@@ -24,8 +24,10 @@ from concurrent.futures import ThreadPoolExecutor
 from common import api_get, sparql, chunked
 from cultures import CIVILIZATIONS, QID_TO_CIV, CIV_OVERRIDES, pick_primary
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(HERE)
 OUT = os.path.join(ROOT, "data", "sources", "wikidata.json")
+INCLUDE_FILE = os.path.join(HERE, "include_qids.txt")
 MAX_DEPTH = 3
 
 # Solo se recursa en subcategorías cuyo nombre parece de yacimientos/cultura
@@ -57,6 +59,18 @@ LINK_ALLOWLIST = (
 )
 
 ROMAN = {"i": 1, "v": 5, "x": 10, "l": 50, "c": 100, "d": 500, "m": 1000}
+
+
+def load_include():
+    """Items de Wikidata a incluir a la fuerza (no salen por categoría).
+    Formato por línea: 'QID civ' (civ opcional). Devuelve {qid: civ|None}."""
+    out = {}
+    if os.path.exists(INCLUDE_FILE):
+        for line in open(INCLUDE_FILE, encoding="utf-8"):
+            line = line.split("#", 1)[0].split()
+            if line:
+                out[line[0]] = line[1] if len(line) > 1 else None
+    return out
 
 
 def api_url(wiki):
@@ -326,7 +340,16 @@ def main():
     culture_map = sparql_culture_qids()
     for qid, civs in culture_map.items():
         qid_civs.setdefault(qid, set()).update(civs)
-    print(f"P2596 aporta {len(culture_map)} QIDs. Total QIDs: {len(qid_civs)}")
+
+    # Inclusiones manuales (items que no salen por categoría).
+    include = load_include()
+    include_civ = {q: c for q, c in include.items() if c}
+    for qid, civ in include.items():
+        s = qid_civs.setdefault(qid, set())
+        if civ:
+            s.add(civ)
+    print(f"P2596 aporta {len(culture_map)} QIDs. Incluidos a mano: {len(include)}. "
+          f"Total QIDs: {len(qid_civs)}")
 
     # 3. Entidades de Wikidata.
     entities = wikidata_entities(qid_civs.keys())
@@ -375,6 +398,8 @@ def main():
         civ_from_culture = {QID_TO_CIV[q] for q in p2596 if q in QID_TO_CIV}
         if qid in CIV_OVERRIDES:
             civ = CIV_OVERRIDES[qid]
+        elif qid in include_civ:
+            civ = include_civ[qid]
         else:
             civ = pick_primary(civ_from_culture or qid_civs.get(qid, set()))
 
@@ -410,7 +435,7 @@ def main():
             "url_wikipedia_ca": (f"https://ca.wikipedia.org/wiki/{ca_titles[qid].replace(' ', '_')}"
                                  if qid in ca_titles else None),
             "url_oficial": url_oficial,
-            "fuente": "wikidata",
+            "fuente": "wikidata+incluido" if qid in include else "wikidata",
         })
 
     sites.sort(key=lambda s: s["nombre"])
