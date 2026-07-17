@@ -1,0 +1,17 @@
+Has incluido info de estas páginas para el mapa? si no, inclúyelas:
+- https://ca.wikipedia.org/wiki/Categoria:Jaciments_arqueol%C3%B2gics_ibers_del_Pa%C3%ADs_Valenci%C3%A0
+- https://ca.wikipedia.org/wiki/Categoria:Poblacions_ib%C3%A8riques_del_Pa%C3%ADs_Valenci%C3%A0
+- https://ca.wikipedia.org/wiki/Categoria:Poblacions_ib%C3%A8riques
+- https://ca.wikipedia.org/wiki/Categoria:Poblacions_ib%C3%A8riques_de_Catalunya
+- https://es.wikipedia.org/wiki/Categor%C3%ADa:Yacimientos_%C3%ADberos
+- https://es.wikipedia.org/wiki/Categor%C3%ADa:Yacimientos_celt%C3%ADberos_de_Arag%C3%B3n
+- https://es.wikipedia.org/wiki/Categor%C3%ADa:Yacimientos_%C3%ADberos_de_Andaluc%C3%ADa
+-https://es.wikipedia.org/wiki/Categor%C3%ADa:Yacimientos_%C3%ADberos_de_la_provincia_de_Granada
+- https://es.wikipedia.org/wiki/Categor%C3%ADa:Yacimientos_%C3%ADberos_de_la_provincia_de_Ja%C3%A9n
+- https://es.wikipedia.org/wiki/Categor%C3%ADa:Yacimientos_%C3%ADberos_de_la_Comunidad_Valenciana
+- https://es.wikipedia.org/wiki/Categor%C3%ADa:Yacimientos_%C3%ADberos_de_Catalu%C3%B1a
+- https://es.wikipedia.org/wiki/Categor%C3%ADa:Poblaciones_iberas
+
+Explora también sus subcategorías. Algunas posiblemente sean redundantes, pero conviene chequearlas.
+
+Tenemos que citar las fuentes usadas en el readme, incluyendo los links de arriba y otras páginas de wikipedia generales (no hace falta las individuales de cada yacimiento en el readme)

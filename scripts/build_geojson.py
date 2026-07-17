@@ -31,6 +31,15 @@ OUT = os.path.join(ROOT, "docs", "data", "yacimientos.geojson")
 DEDUP_METERS = 600
 SAME_POINT_METERS = 50
 
+
+def in_scope(lat, lon):
+    """Península ibérica (+ íberos del sur de Francia), excluyendo Baleares/Canarias."""
+    if not (35.8 <= lat <= 44.0 and -9.8 <= lon <= 3.6):
+        return False
+    if lon > 1.0 and lat < 40.2:   # zona de las Baleares (mar): descartar
+        return False
+    return True
+
 # --- Filtro de falsos positivos por P31 (Wikidata "instance of") ---
 # Se descarta un yacimiento solo si TODOS sus P31 están en esta lista negra
 # (así se conservan sitios reales tipados como "castillo", p. ej. Giribaile).
@@ -118,6 +127,17 @@ def classify(site):
     return "yacimiento"
 
 
+def plausible_epoch(ini, fin):
+    """Descarta siglos fuera de rango (errores de datos o siglos de excavación,
+    p. ej. 's. XVIII' de cuando se descubrió). Edad del Hierro ibérica ≈ s. IX a.C.
+    hasta la romanización; se admite continuidad hasta ~s. VII d.C."""
+    if ini is None or fin is None:
+        return None, None
+    if ini < -9 or fin > 7 or fin < ini:
+        return None, None
+    return ini, fin
+
+
 def is_false_positive(site, exclude):
     if site.get("qid") in exclude:
         return True
@@ -135,6 +155,10 @@ def load_curated():
             if not r.get("nombre") or not r.get("lat"):
                 continue
             nombre = r["nombre"].strip()
+
+            def _int(x):
+                x = (x or "").strip()
+                return int(x) if x.lstrip("-").isdigit() else None
             rows.append({
                 "qid": None,
                 "nombre": nombre,
@@ -144,8 +168,11 @@ def load_curated():
                 "descripcion_ca": "",
                 "lat": float(r["lat"]),
                 "lon": float(r["lon"]),
+                "civ": (r.get("civ") or "iberos").strip() or "iberos",
                 "tipo": (r.get("tipo") or "").strip() or None,
                 "epoca": (r.get("epoca") or "").strip(),
+                "siglo_inicio": _int(r.get("siglo_inicio")),
+                "siglo_fin": _int(r.get("siglo_fin")),
                 "url_wikipedia_es": (r.get("url_info") or "").strip() or None,
                 "url_wikipedia_ca": None,
                 "url_oficial": None,
@@ -195,9 +222,15 @@ def main():
     curated = load_curated()
     exclude = load_exclude_qids()
 
-    # Filtrar falsos positivos (iglesias, montañas, museos, municipios…).
-    kept = [s for s in wikidata if not is_false_positive(s, exclude)]
-    dropped_fp = len(wikidata) - len(kept)
+    # Filtrar falsos positivos y lo que quede fuera de la península ibérica.
+    kept, dropped_fp, dropped_scope = [], 0, 0
+    for s in wikidata:
+        if is_false_positive(s, exclude):
+            dropped_fp += 1
+        elif not in_scope(s["lat"], s["lon"]):
+            dropped_scope += 1
+        else:
+            kept.append(s)
     for w in kept:
         w.setdefault("epoca", "")
 
@@ -223,6 +256,8 @@ def main():
         # La imagen de hover = primera de la galería (coherente con el clic).
         imagen = (imgs[0]["thumb"] if imgs else None) or s.get("imagen_principal")
         tipo = s.get("tipo") or classify(s)
+        ini, fin = plausible_epoch(s.get("siglo_inicio"), s.get("siglo_fin"))
+        epoca = s.get("epoca", "") if ini is not None else ""
         features.append({
             "type": "Feature",
             "geometry": {"type": "Point",
@@ -230,8 +265,11 @@ def main():
             "properties": {
                 "nombre_es": s.get("nombre_es") or s.get("nombre"),
                 "nombre_ca": s.get("nombre_ca") or s.get("nombre_es") or s.get("nombre"),
+                "civ": s.get("civ", "iberos"),
                 "tipo": tipo,
-                "epoca": s.get("epoca", ""),
+                "epoca": epoca,
+                "siglo_inicio": ini,
+                "siglo_fin": fin,
                 "descripcion_es": s.get("descripcion_es", ""),
                 "descripcion_ca": s.get("descripcion_ca", ""),
                 "imagen": imagen,
@@ -254,13 +292,16 @@ def main():
 
     con_img = sum(1 for f in features if f["properties"]["imagen"])
     con_link = sum(1 for f in features if f["properties"]["url_oficial"])
-    tipos = {}
-    for f in features:
-        tipos[f["properties"]["tipo"]] = tipos.get(f["properties"]["tipo"], 0) + 1
+    con_ep = sum(1 for f in features if f["properties"]["siglo_inicio"] is not None)
+    from collections import Counter
+    tipos = Counter(f["properties"]["tipo"] for f in features)
+    civs = Counter(f["properties"]["civ"] for f in features)
     print(f"GeoJSON con {len(features)} yacimientos "
-          f"({dropped_fp} falsos positivos filtrados, {fused} duplicados fusionados, "
-          f"{added} del CSV, {con_img} con imagen, {con_link} con enlace oficial)")
-    print("Tipos:", dict(sorted(tipos.items(), key=lambda x: -x[1])))
+          f"({dropped_fp} falsos positivos, {dropped_scope} fuera de la península, "
+          f"{fused} duplicados fusionados, {added} del CSV, {con_img} con imagen, "
+          f"{con_link} con enlace oficial, {con_ep} con época)")
+    print("Civilizaciones:", dict(civs.most_common()))
+    print("Tipos:", dict(tipos.most_common()))
     print("->", OUT)
 
 

@@ -30,7 +30,21 @@ o instalar `xlrd`; ojo con la codificación cp1252/UTF-8), resolver el centroide
 de cada municipio vía SPARQL de Wikidata, y añadir un flag `precision:
 "aproximada"` a esas features + un filtro en el frontend.
 
+## Edad del Bronce (aplazada)
+
+El scope actual es **Edad del Hierro**. Añadir culturas del Bronce (El Argar,
+Cogotas, Bronce Atlántico…) como un grupo/forma nuevo en `scripts/cultures.py`
+(categorías: p. ej. "Cultura de El Argar", "Yacimientos de la Edad del Bronce").
+
 ## Otras ideas
+
+- **Reducir el tipo genérico "yacimiento"** (~218): muchos castros solo tienen
+  P31 = "yacimiento arqueológico". Afinar el mapeo o inferir por nombre.
+- **Ampliar cobertura de época**: solo ~82/463 tienen siglos (de fechas de
+  Wikidata; el texto se descartó por ruido de fechas de excavación). Se podría
+  curar a mano o mapear períodos (P2348).
+- Revisar solapamiento **tartésico/fenicio** (Wikipedia los mezcla); usar
+  `CIV_OVERRIDES` en `cultures.py` para casos concretos.
 
 - **Inventari del Patrimoni Arqueològic de Catalunya** (Generalitat,
   `invarque.cultura.gencat.cat`): fuente georreferenciada con miles de

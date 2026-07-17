@@ -25,7 +25,25 @@
         <button data-lang="es">ES</button><button data-lang="ca">CA</button>
       </div>
     </div>
-    <div id="filters"></div>
+    <button id="controls-toggle" type="button" aria-expanded="true"></button>
+    <div id="controls-body">
+      <div class="filter-group">
+        <div class="filter-label" id="lbl-civ"></div>
+        <div id="filters-civ" class="chips"></div>
+      </div>
+      <div class="filter-group">
+        <div class="filter-label" id="lbl-tipo"></div>
+        <div id="filters-tipo" class="chips"></div>
+      </div>
+      <div class="filter-group">
+        <div class="filter-label"><span id="lbl-epoca"></span> <span id="epoca-range"></span></div>
+        <div class="slider">
+          <input id="epoca-min" type="range" min="-9" max="1" step="1" value="-9" />
+          <input id="epoca-max" type="range" min="-9" max="1" step="1" value="1" />
+        </div>
+        <label class="undated"><input id="epoca-undated" type="checkbox" checked /> <span id="lbl-undated"></span></label>
+      </div>
+    </div>
   </div>
 
   <aside id="panel" class="hidden" aria-live="polite">

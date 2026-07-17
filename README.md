@@ -1,11 +1,15 @@
-# Mapa interactivo de yacimientos de la cultura ibérica
+# Mapa interactivo de la Iberia prerromana
 
-Web estática con un mapa de los yacimientos de la **cultura ibérica prerromana**
-(poblados, necrópolis, santuarios…) en la península ibérica. Al pasar el cursor
-sobre cada punto aparece una ficha con foto e información; al hacer clic se abre
-un panel con descripción, galería de imágenes (con lightbox) y enlaces.
+Web estática con un mapa de los yacimientos de la **Iberia prerromana (Edad del
+Hierro)** en la península ibérica (más los íberos del sur de Francia). Al pasar
+el cursor sobre cada punto aparece una ficha con foto e información; al hacer clic
+se abre un panel con descripción, galería de imágenes (con lightbox) y enlaces.
 
 Características:
+- **Civilizaciones por forma de marcador**: íberos, celtíberos, fenicio-púnico,
+  griego, tartésico, vascones y celtas/atlánticos (castros). El **color** indica
+  el tipo de yacimiento.
+- **Filtro por siglos** (deslizador) además de por civilización y tipo.
 - **Bilingüe es/ca** con selector; idioma inicial según el navegador.
 - Tipos clasificados por **P31** de Wikidata (poblado, ciudad, necrópolis,
   santuario, cueva, fortificación, yacimiento) y filtro de falsos positivos.
@@ -13,6 +17,10 @@ Características:
   principal y la **categoría de Commons**; clic para ampliar (lightbox).
 - **Enlaces oficiales** extraídos de forma selectiva (inventarios de patrimonio,
   museos, etc.).
+
+Cada civilización se descubre por sus categorías de Wikipedia (varios idiomas) y
+por la cultura declarada en Wikidata (P2596); el registro está en
+`scripts/cultures.py`.
 
 Los datos se **pre-generan** con un pipeline en Python a partir de Wikipedia,
 Wikidata y Wikimedia Commons (más un CSV curado) y se guardan en un GeoJSON. La

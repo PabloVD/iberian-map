@@ -14,6 +14,7 @@ import json
 import os
 import re
 import urllib.parse
+from concurrent.futures import ThreadPoolExecutor
 
 from common import api_get, rest_json, chunked
 
@@ -115,43 +116,46 @@ def imageinfo(file_titles):
     return info
 
 
+def gallery_for(s):
+    """(qid, [imágenes]) para un yacimiento, o None."""
+    candidates = []
+    candidates += article_images("es", s.get("es_title"))
+    candidates += article_images("ca", s.get("ca_title"))
+    fn = filename_from_url(s.get("imagen_principal"))
+    if fn:
+        candidates.append(canon_file(fn))
+    if s.get("commons_cat"):
+        candidates += category_files(s["commons_cat"])
+
+    seen, ordered = set(), []
+    for f in candidates:
+        key = f.lower()
+        if key in seen:
+            continue
+        seen.add(key)
+        if not f.lower().endswith(IMG_EXT) or JUNK.search(f):
+            continue
+        ordered.append(f)
+        if len(ordered) >= MAX_IMAGES:
+            break
+    if not ordered:
+        return None
+    info = imageinfo(ordered)
+    imgs = [info[f] for f in ordered if f in info and info[f].get("thumb")]
+    return (s["qid"], imgs) if imgs else None
+
+
 def main():
     sites = json.load(open(IN, encoding="utf-8"))
     gallery = {}
-    for i, s in enumerate(sites, 1):
-        # 1. imágenes del artículo (orden: es, luego ca).
-        candidates = []
-        candidates += article_images("es", s.get("es_title"))
-        candidates += article_images("ca", s.get("ca_title"))
-        # 2. imagen de cabecera.
-        fn = filename_from_url(s.get("imagen_principal"))
-        if fn:
-            candidates.append(canon_file(fn))
-        # 3. categoría de Commons.
-        if s.get("commons_cat"):
-            candidates += category_files(s["commons_cat"])
-
-        # Deduplicar conservando orden y filtrar basura / no-imágenes.
-        seen, ordered = set(), []
-        for f in candidates:
-            key = f.lower()
-            if key in seen:
-                continue
-            seen.add(key)
-            if not f.lower().endswith(IMG_EXT) or JUNK.search(f):
-                continue
-            ordered.append(f)
-            if len(ordered) >= MAX_IMAGES:
-                break
-
-        if not ordered:
-            continue
-        info = imageinfo(ordered)
-        imgs = [info[f] for f in ordered if f in info and info[f].get("thumb")]
-        if imgs:
-            gallery[s["qid"]] = imgs
-        if i % 25 == 0:
-            print(f"  {i}/{len(sites)} procesados...")
+    done = 0
+    with ThreadPoolExecutor(max_workers=4) as ex:
+        for res in ex.map(gallery_for, sites):
+            done += 1
+            if res:
+                gallery[res[0]] = res[1]
+            if done % 50 == 0:
+                print(f"  {done}/{len(sites)} procesados...", flush=True)
 
     total = sum(len(v) for v in gallery.values())
     with open(OUT, "w", encoding="utf-8") as f:

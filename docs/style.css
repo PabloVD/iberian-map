@@ -44,6 +44,33 @@ body {
   font-size: .78rem; font-weight: 700; padding: 0 9px;
 }
 .lang-toggle button.active { background: var(--accent); color: #fff; }
+
+/* ---- Controles: colapsable y grupos de filtros ---- */
+#controls { max-height: calc(100vh - 80px); overflow-y: auto; }
+#controls-toggle {
+  width: 100%; border: none; background: none; cursor: pointer;
+  font-size: .72rem; color: var(--accent); font-weight: 600;
+  text-align: left; padding: 2px 0 6px;
+}
+.filter-group { margin-bottom: 10px; }
+.filter-label {
+  font-size: .68rem; text-transform: uppercase; letter-spacing: .04em;
+  color: #8a7c68; font-weight: 700; margin-bottom: 5px;
+}
+.chips { display: flex; flex-wrap: wrap; gap: 5px; }
+.chip svg { vertical-align: -2px; margin-right: 1px; }
+.slider { display: flex; flex-direction: column; gap: 3px; }
+.slider input[type=range] { width: 100%; accent-color: var(--accent); }
+#epoca-range { font-weight: 600; color: var(--ink); }
+.undated { font-size: .76rem; color: #6b5d4a; display: flex; align-items: center; gap: 5px; margin-top: 5px; }
+
+/* ---- Marcador SVG (forma = civilización, color = tipo) ---- */
+.civ-marker { background: none; border: none; }
+.civ-marker svg { display: block; filter: drop-shadow(0 1px 2px rgba(0,0,0,.45)); }
+
+.civ-badge { display: inline-flex; align-items: center; gap: 4px; font-weight: 600; font-size: .82rem; color: #5a4a36; }
+.civ-badge svg { vertical-align: middle; }
+.p-meta { display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: center; margin: 4px 0 2px; }
 #filters { display: flex; flex-wrap: wrap; gap: 6px; }
 .chip {
   display: inline-flex; align-items: center; gap: 6px;
