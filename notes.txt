@@ -1,3 +1,9 @@
+Necesitamos algún mecanismo para evitar esto, que al cambiar esto se caiga info importante.
+
+Los slides del tiempo son redundantes, no? con uno debería ser suficiente, con dos knobs.
+
+Me gustaría ver cómo se ve el mapa si desactivamos la feature de agrupar sitios cuando hay zoom out. dejémoslo desactivado con una flag por si acaso (no accesible por la página, solo por código)
+
 Has incluido info de estas páginas para el mapa? si no, inclúyelas:
 - https://ca.wikipedia.org/wiki/Categoria:Jaciments_arqueol%C3%B2gics_ibers_del_Pa%C3%ADs_Valenci%C3%A0
 - https://ca.wikipedia.org/wiki/Categoria:Poblacions_ib%C3%A8riques_del_Pa%C3%ADs_Valenci%C3%A0

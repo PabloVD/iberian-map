@@ -1,0 +1,32 @@
+# Yacimientos "ancla": DEBEN aparecer en el mapa. Red de seguridad para que un
+# cambio en el descubrimiento/filtros no tire sitios importantes sin avisar.
+# Una entrada por línea: un QID de Wikidata (Q123..., robusto) o un nombre
+# (coincidencia por subcadena, sensible a cómo esté escrito en el GeoJSON).
+# build_geojson.py avisa si falta alguno.
+
+# --- Íberos ---
+Q475423    # Ullastret
+Q5763390   # Oppidum de Puente Tablas
+Q4745109   # Torreparedones
+Cástulo
+La Alcudia
+Q2660473   # Las Cogotas (vetón/íbero, Ávila)
+
+# --- Celtíberos ---
+Q623407    # Numancia
+Q2429023   # Tiermes
+Contrebia Leukade
+
+# --- Griego ---
+Q1229367   # Ampurias / Empúries
+
+# --- Fenicio-púnico / Tartésico ---
+Cancho Roano   # tartésico (curado; sin QID en el registro)
+Q1605142       # El Carambolo (tartésico)
+
+# --- Celtas / atlánticos (castros) ---
+Q1049903   # Castro de Baroña
+Q2941519   # Ulaca
+
+# --- Vascones ---
+Iruña      # Iruña-Veleia (curado; sin QID en el registro)

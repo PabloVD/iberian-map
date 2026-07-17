@@ -86,6 +86,13 @@ CIVILIZATIONS = [
     },
 ]
 
+# Prioridad al asignar civilización cuando un sitio aparece en categorías de
+# varias culturas. Las culturas específicas y bien acotadas van primero; las
+# categorías AMPLIAS que sobre-capturan (colonización fenicia mundial, "Castros
+# de España") van al final, para que un yacimiento íbero que además caiga en
+# ellas se quede como íbero. P2596 y CIV_OVERRIDES siguen mandando por encima.
+CIV_PRIORITY = ["tartesico", "griego", "vascones", "celtibero", "iberos",
+                "fenicio-punico", "celtas"]
 CIV_ORDER = [c["civ"] for c in CIVILIZATIONS]
 
 # P2596 (cultura de Wikidata) -> civilización.
@@ -100,7 +107,7 @@ CIV_OVERRIDES = {
 
 
 def civ_priority(civ):
-    return CIV_ORDER.index(civ) if civ in CIV_ORDER else len(CIV_ORDER)
+    return CIV_PRIORITY.index(civ) if civ in CIV_PRIORITY else len(CIV_PRIORITY)
 
 
 def pick_primary(civs):

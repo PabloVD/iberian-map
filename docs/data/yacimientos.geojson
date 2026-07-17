@@ -1,7 +1,7 @@
 {
  "type": "FeatureCollection",
  "metadata": {
-  "count": 463,
+  "count": 466,
   "descripcion": "Yacimientos de la cultura ibérica"
  },
  "features": [
@@ -1673,6 +1673,33 @@
     "url_wikipedia_ca": "https://ca.wikipedia.org/wiki/Can_Caseta",
     "url_oficial": "http://www.manlleu.cat/manlleuarqueologia/detall_jaciment.php?jaciment=jaciment-de-can-caseta-fugurull",
     "fuente": "wikidata"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -5.6636,
+     38.6897
+    ]
+   },
+   "properties": {
+    "nombre_es": "Cancho Roano",
+    "nombre_ca": "Cancho Roano",
+    "civ": "tartesico",
+    "tipo": "santuario",
+    "epoca": "ss. VI-V a.C.",
+    "siglo_inicio": -6,
+    "siglo_fin": -5,
+    "descripcion_es": "Edificio-santuario tartésico de época post-orientalizante, en Zalamea de la Serena (Badajoz).",
+    "descripcion_ca": "",
+    "imagen": null,
+    "imagenes": [],
+    "url_wikipedia_es": "https://es.wikipedia.org/wiki/Cancho_Roano",
+    "url_wikipedia_ca": null,
+    "url_oficial": null,
+    "fuente": "curado"
    }
   },
   {
@@ -10381,7 +10408,7 @@
    "properties": {
     "nombre_es": "Cerro de la Plaza de Armas de Puente Tablas",
     "nombre_ca": "Cerro de la Plaza de Armas de Puente Tablas",
-    "civ": "celtas",
+    "civ": "iberos",
     "tipo": "necrópolis",
     "epoca": "",
     "siglo_inicio": null,
@@ -12457,6 +12484,33 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -3.6266,
+     38.0347
+    ]
+   },
+   "properties": {
+    "nombre_es": "Cástulo",
+    "nombre_ca": "Cástulo",
+    "civ": "iberos",
+    "tipo": "ciudad",
+    "epoca": "ss. VII a.C. - IV d.C.",
+    "siglo_inicio": -7,
+    "siglo_fin": 4,
+    "descripcion_es": "Gran ciudad íbero-romana de la Oretania, junto a Linares (Jaén).",
+    "descripcion_ca": "",
+    "imagen": null,
+    "imagenes": [],
+    "url_wikipedia_es": "https://es.wikipedia.org/wiki/Cástulo",
+    "url_wikipedia_ca": null,
+    "url_oficial": null,
+    "fuente": "curado"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      1.715244,
      41.212386
     ]
@@ -14419,6 +14473,33 @@
     "url_wikipedia_ca": null,
     "url_oficial": "https://www.baena.es/ayuntamiento/informacion_municipal/cultura/que_ver_en_baena/museo_historico_de_la_tercia",
     "fuente": "wikidata"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.8267,
+     42.8556
+    ]
+   },
+   "properties": {
+    "nombre_es": "Iruña-Veleia",
+    "nombre_ca": "Iruña-Veleia",
+    "civ": "vascones",
+    "tipo": "ciudad",
+    "epoca": "",
+    "siglo_inicio": null,
+    "siglo_fin": null,
+    "descripcion_es": "Oppidum de la Edad del Hierro y ciudad romana (Veleia) en Iruña de Oca (Álava).",
+    "descripcion_ca": "",
+    "imagen": null,
+    "imagenes": [],
+    "url_wikipedia_es": "https://es.wikipedia.org/wiki/Iruña-Veleia",
+    "url_wikipedia_ca": null,
+    "url_oficial": null,
+    "fuente": "curado"
    }
   },
   {
@@ -23827,7 +23908,7 @@
    "properties": {
     "nombre_es": "Torreparedones",
     "nombre_ca": "Torreparedones",
-    "civ": "fenicio-punico",
+    "civ": "iberos",
     "tipo": "santuario",
     "epoca": "",
     "siglo_inicio": null,

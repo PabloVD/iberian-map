@@ -22,6 +22,19 @@ Cada civilización se descubre por sus categorías de Wikipedia (varios idiomas)
 por la cultura declarada en Wikidata (P2596); el registro está en
 `scripts/cultures.py`.
 
+### Red de seguridad ante cambios
+
+Cambiar el descubrimiento o los filtros puede tirar sin querer sitios
+importantes. Para evitarlo, `build_geojson.py` hace dos comprobaciones en cada
+ejecución:
+- **Anclas** (`scripts/anchor_sites.txt`): lista de yacimientos que DEBEN estar
+  (por QID o nombre). Si falta alguno, avisa (`⚠️ faltan N yacimientos ANCLA`).
+- **Diff con el build anterior** (el commiteado en git): muestra qué yacimientos
+  aparecen y cuáles **desaparecen** respecto a la última versión.
+
+Si algo importante desaparece, se recupera añadiéndolo a `curated_sites.csv` o
+ajustando el registro/filtros.
+
 Los datos se **pre-generan** con un pipeline en Python a partir de Wikipedia,
 Wikidata y Wikimedia Commons (más un CSV curado) y se guardan en un GeoJSON. La
 web solo lee ese fichero, así que se puede publicar en **GitHub Pages** sin backend.
@@ -33,7 +46,10 @@ scripts/
   common.py           utilidades de acceso a APIs
   fetch_wikidata.py   categorías de Wikipedia (es/ca) + P2596 -> data/sources/wikidata.json
   enrich_commons.py   galerías de imágenes con licencia -> data/sources/commons_images.json
+  cultures.py         registro de civilizaciones (categorías, QIDs, prioridad)
   curated_sites.csv   yacimientos añadidos a mano (parte "híbrida")
+  exclude_qids.txt    QIDs a descartar a mano
+  anchor_sites.txt    yacimientos que DEBEN estar (red de seguridad)
   build_geojson.py    fusiona todo -> docs/data/yacimientos.geojson
 docs/                 sitio estático que publica GitHub Pages
   index.html  style.css  map.js  data/yacimientos.geojson

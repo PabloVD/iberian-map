@@ -26,6 +26,7 @@ WD = os.path.join(ROOT, "data", "sources", "wikidata.json")
 IMGS = os.path.join(ROOT, "data", "sources", "commons_images.json")
 CSV_FILE = os.path.join(HERE, "curated_sites.csv")
 EXCLUDE_FILE = os.path.join(HERE, "exclude_qids.txt")
+ANCHOR_FILE = os.path.join(HERE, "anchor_sites.txt")
 OUT = os.path.join(ROOT, "docs", "data", "yacimientos.geojson")
 
 DEDUP_METERS = 600
@@ -78,6 +79,60 @@ TYPE_KEYWORDS = [
     ("poblado",      ["poblado", "poblat", "oppidum", "castro", "asentamiento",
                       "asentament", "poblament"]),
 ]
+
+
+def load_anchors():
+    """Sitios que DEBEN estar en el mapa (QID o nombre), uno por línea."""
+    items = []
+    if os.path.exists(ANCHOR_FILE):
+        for line in open(ANCHOR_FILE, encoding="utf-8"):
+            line = line.split("#", 1)[0].strip()
+            if line:
+                items.append(line)
+    return items
+
+
+def check_anchors(features, merged):
+    """Red de seguridad: avisa si un yacimiento importante ha desaparecido."""
+    anchors = load_anchors()
+    if not anchors:
+        return []
+    present_qids = {m["qid"] for m in merged if m.get("qid")}
+    names_low = [((f["properties"]["nombre_es"] or "") + " " +
+                  (f["properties"]["nombre_ca"] or "")).lower() for f in features]
+    missing = []
+    for a in anchors:
+        if a[0] == "Q" and a[1:].isdigit():
+            if a not in present_qids:
+                missing.append(a)
+        elif not any(a.lower() in n for n in names_low):
+            missing.append(a)
+    if missing:
+        print(f"\n⚠️  ATENCIÓN: faltan {len(missing)} yacimientos ANCLA "
+              f"(un cambio los ha tirado; revísalo):")
+        for m in missing:
+            print("   -", m)
+    else:
+        print(f"Anclas: {len(anchors)}/{len(anchors)} presentes ✓")
+    return missing
+
+
+def regression_diff(features):
+    """Diff con el último GeoJSON en git: qué desaparece y qué se añade."""
+    import subprocess
+    try:
+        raw = subprocess.run(["git", "show", "HEAD:docs/data/yacimientos.geojson"],
+                             capture_output=True, text=True, cwd=ROOT).stdout
+        prev = json.loads(raw)["features"]
+    except Exception:  # noqa: BLE001
+        return
+    key = lambda f: f["properties"].get("nombre_es") or f["properties"].get("nombre_ca")
+    prevn, newn = {key(f) for f in prev}, {key(f) for f in features}
+    removed, added = sorted(prevn - newn), sorted(newn - prevn)
+    print(f"\nRespecto al build anterior (git): +{len(added)} nuevos / "
+          f"-{len(removed)} desaparecidos")
+    for n in removed[:50]:
+        print("   - (fuera)", n)
 
 
 def load_exclude_qids():
@@ -303,6 +358,9 @@ def main():
     print("Civilizaciones:", dict(civs.most_common()))
     print("Tipos:", dict(tipos.most_common()))
     print("->", OUT)
+
+    regression_diff(features)
+    check_anchors(features, merged)
 
 
 if __name__ == "__main__":
