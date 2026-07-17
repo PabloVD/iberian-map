@@ -56,7 +56,8 @@ CIVILIZATIONS = [
         "shape": "square",
         "culture_qids": ["Q5011445"],
         "categories": {
-            "es": ["Categoría:Celtíberos", "Categoría:Poblaciones de Celtiberia"],
+            "es": ["Categoría:Celtíberos", "Categoría:Poblaciones de Celtiberia",
+                   "Categoría:Yacimientos celtíberos de Aragón"],
         },
     },
     {
@@ -79,9 +80,10 @@ CIVILIZATIONS = [
         "shape": "circle",
         "culture_qids": ["Q190992", "Q13048864"],
         "categories": {
-            "es": ["Categoría:Yacimientos íberos"],
+            "es": ["Categoría:Yacimientos íberos", "Categoría:Poblaciones iberas"],
             "ca": ["Categoria:Jaciments arqueològics ibers",
-                   "Categoria:Poblacions ibèriques de Catalunya"],
+                   "Categoria:Poblacions ibèriques",
+                   "Categoria:Jaciments arqueològics ibers del País Valencià"],
         },
     },
 ]

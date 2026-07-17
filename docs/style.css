@@ -59,17 +59,42 @@ body {
 }
 .chips { display: flex; flex-wrap: wrap; gap: 5px; }
 .chip svg { vertical-align: -2px; margin-right: 1px; }
-.slider { display: flex; flex-direction: column; gap: 3px; }
-.slider input[type=range] { width: 100%; accent-color: var(--accent); }
 #epoca-range { font-weight: 600; color: var(--ink); }
 .undated { font-size: .76rem; color: #6b5d4a; display: flex; align-items: center; gap: 5px; margin-top: 5px; }
 
-/* ---- Marcador SVG (forma = civilización, color = tipo) ---- */
-.civ-marker { background: none; border: none; }
-.civ-marker svg { display: block; filter: drop-shadow(0 1px 2px rgba(0,0,0,.45)); }
+/* ---- Rango doble de siglos (un slider, dos knobs) ---- */
+.range-dual { position: relative; height: 26px; }
+.range-track, .range-fill {
+  position: absolute; top: 11px; height: 4px; border-radius: 2px;
+}
+.range-track { left: 0; right: 0; background: #d8cdbb; }
+.range-fill { background: var(--accent); }
+.range-dual input[type=range] {
+  position: absolute; left: 0; top: 0; width: 100%; margin: 0;
+  height: 26px; background: none; pointer-events: none;
+  -webkit-appearance: none; appearance: none;
+}
+.range-dual input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none; pointer-events: auto;
+  width: 16px; height: 16px; border-radius: 50%; cursor: pointer;
+  background: #fff; border: 3px solid var(--accent); box-shadow: 0 1px 3px rgba(0,0,0,.3);
+}
+.range-dual input[type=range]::-moz-range-thumb {
+  pointer-events: auto; width: 16px; height: 16px; border-radius: 50%; cursor: pointer;
+  background: #fff; border: 3px solid var(--accent); box-shadow: 0 1px 3px rgba(0,0,0,.3);
+}
+.range-dual input[type=range]::-moz-range-track { background: none; }
 
-.civ-badge { display: inline-flex; align-items: center; gap: 4px; font-weight: 600; font-size: .82rem; color: #5a4a36; }
-.civ-badge svg { vertical-align: middle; }
+/* ---- Marcador: color = civilización, icono = tipo ---- */
+.civ-marker { background: none; border: none; }
+.pin {
+  width: 26px; height: 26px; border-radius: 50%;
+  border: 2px solid #fff; box-shadow: 0 1px 4px rgba(0,0,0,.45);
+  display: flex; align-items: center; justify-content: center;
+  color: #fff; font-size: 12px;
+}
+
+.civ-badge { display: inline-flex; align-items: center; gap: 5px; font-weight: 600; font-size: .82rem; color: #5a4a36; }
 .p-meta { display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: center; margin: 4px 0 2px; }
 #filters { display: flex; flex-wrap: wrap; gap: 6px; }
 .chip {
@@ -80,13 +105,6 @@ body {
 }
 .chip.off { opacity: .4; }
 .chip .dot { width: 10px; height: 10px; border-radius: 50%; }
-
-/* ---- Marcadores ---- */
-.pin {
-  width: 16px; height: 16px; border-radius: 50% 50% 50% 0;
-  transform: rotate(-45deg); border: 2px solid #fff;
-  box-shadow: 0 1px 4px rgba(0,0,0,.4);
-}
 
 /* ---- Tooltip (hover) ---- */
 .leaflet-tooltip.hover-card {
@@ -117,7 +135,8 @@ body {
 }
 #panel-content { padding: 8px 18px 28px; }
 #panel-content h2 { margin: 6px 0 2px; font-size: 1.25rem; }
-.p-type { color: var(--accent); text-transform: capitalize; font-weight: 600; font-size: .9rem; }
+.p-type { color: #5a4a36; text-transform: capitalize; font-weight: 600; font-size: .9rem; display: inline-flex; align-items: center; gap: 5px; }
+.p-type i { color: #8a7c68; }
 .p-epoca { color: #6b5d4a; font-size: .85rem; margin-bottom: 10px; }
 .p-desc { font-size: .92rem; line-height: 1.5; }
 .p-links { margin: 14px 0; display: flex; flex-wrap: wrap; gap: 8px; }

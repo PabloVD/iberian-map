@@ -1,41 +1,33 @@
 /* Mapa interactivo de la Iberia prerromana (Edad del Hierro).
-   Marcador = forma por civilización; color = tipo de yacimiento.
-   Bilingüe es/ca, filtro por siglos, lightbox con navegación. */
+   Marcador: COLOR = civilización; ICONO (FontAwesome) = tipo de yacimiento.
+   Bilingüe es/ca, filtro por siglos (rango doble), lightbox con navegación. */
 
-/* ---------- Civilizaciones (forma del marcador) ---------- */
+/* Poner a true para reagrupar marcadores al alejar el zoom (clustering).
+   No expuesto en la UI: es una preferencia solo de código. */
+const ENABLE_CLUSTER = false;
+
+/* ---------- Civilizaciones (COLOR del marcador) ---------- */
 const CIVS = [
-  { civ: "iberos",         es: "Íberos",              ca: "Ibers",              shape: "circle" },
-  { civ: "celtibero",      es: "Celtíbero",           ca: "Celtiber",           shape: "square" },
-  { civ: "fenicio-punico", es: "Fenicio-púnico",      ca: "Fenici-púnic",       shape: "diamond" },
-  { civ: "griego",         es: "Griego",              ca: "Grec",               shape: "triangle" },
-  { civ: "tartesico",      es: "Tartésico",           ca: "Tartèssic",          shape: "star" },
-  { civ: "vascones",       es: "Vascones",            ca: "Vascons",            shape: "pentagon" },
-  { civ: "celtas",         es: "Celtas / atlánticos", ca: "Celtes / atlàntics", shape: "hexagon" },
+  { civ: "iberos",         es: "Íberos",              ca: "Ibers",              color: "#D55E00" },
+  { civ: "celtibero",      es: "Celtíbero",           ca: "Celtiber",           color: "#0072B2" },
+  { civ: "fenicio-punico", es: "Fenicio-púnico",      ca: "Fenici-púnic",       color: "#CC79A7" },
+  { civ: "griego",         es: "Griego",              ca: "Grec",               color: "#009E73" },
+  { civ: "tartesico",      es: "Tartésico",           ca: "Tartèssic",          color: "#E69F00" },
+  { civ: "vascones",       es: "Vascones",            ca: "Vascons",            color: "#56B4E9" },
+  { civ: "celtas",         es: "Celtas / atlánticos", ca: "Celtes / atlàntics", color: "#444444" },
 ];
 const CIV_BY_ID = Object.fromEntries(CIVS.map((c) => [c.civ, c]));
 const civLabel = (id) => (CIV_BY_ID[id] ? CIV_BY_ID[id][lang] : id);
+const civColor = (id) => (CIV_BY_ID[id] ? CIV_BY_ID[id].color : "#444444");
 
-const SHAPES = {
-  circle:   '<circle cx="12" cy="12" r="9"/>',
-  square:   '<rect x="4" y="4" width="16" height="16" rx="2"/>',
-  triangle: '<polygon points="12,3 21,20 3,20"/>',
-  diamond:  '<polygon points="12,2 22,12 12,22 2,12"/>',
-  star:     '<polygon points="12,2 14.6,9.2 22,9.2 16,13.8 18.2,21 12,16.6 5.8,21 8,13.8 2,9.2 9.4,9.2"/>',
-  pentagon: '<polygon points="12,2.5 21,9.5 17.6,20.5 6.4,20.5 3,9.5"/>',
-  hexagon:  '<polygon points="12,2.5 20.5,7.25 20.5,16.75 12,21.5 3.5,16.75 3.5,7.25"/>',
+/* ---------- Tipos (ICONO FontAwesome) ---------- */
+const TYPE_ICONS = {
+  "poblado": "fa-house", "ciudad": "fa-city", "necrópolis": "fa-monument",
+  "santuario": "fa-place-of-worship", "cueva": "fa-mountain",
+  "fortificación": "fa-chess-rook", "yacimiento": "fa-landmark",
 };
-function shapeSvg(shape, fill, size) {
-  return `<svg width="${size}" height="${size}" viewBox="0 0 24 24">
-    <g fill="${fill}" stroke="#fff" stroke-width="1.6" stroke-linejoin="round">${SHAPES[shape]}</g></svg>`;
-}
-
-/* ---------- Tipos (color) ---------- */
-const TYPE_COLORS = {
-  "poblado": "#a0522d", "ciudad": "#b5651d", "necrópolis": "#6a4c93",
-  "santuario": "#1b7a5a", "cueva": "#c9820a", "fortificación": "#8a1c2b",
-  "yacimiento": "#4a6fa5",
-};
-const typeColor = (t) => TYPE_COLORS[t] || TYPE_COLORS.yacimiento;
+const typeIcon = (t) => TYPE_ICONS[t] || "fa-location-dot";
+const TYPE_ORDER = Object.keys(TYPE_ICONS);
 const TYPE_LABELS = {
   es: { "poblado": "poblado", "ciudad": "ciudad", "necrópolis": "necrópolis",
         "santuario": "santuario", "cueva": "cueva", "fortificación": "fortificación",
@@ -86,22 +78,24 @@ L.control.scale({ imperial: false }).addTo(map);
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   maxZoom: 19, attribution: "&copy; OpenStreetMap",
 }).addTo(map);
-const cluster = L.markerClusterGroup({ maxClusterRadius: 45, spiderfyOnMaxZoom: true });
-map.addLayer(cluster);
+const layer = ENABLE_CLUSTER
+  ? L.markerClusterGroup({ maxClusterRadius: 45, spiderfyOnMaxZoom: true })
+  : L.layerGroup();
+map.addLayer(layer);
 
 const activeCivs = new Set(CIVS.map((c) => c.civ));
-const activeTypes = new Set(Object.keys(TYPE_COLORS));
+const activeTypes = new Set(TYPE_ORDER);
 let epMin = -9, epMax = 1, includeUndated = true;
 let allFeatures = [];
 let markers = [];
 let currentFeature = null;
 
 function makeIcon(p) {
-  const civ = CIV_BY_ID[p.civ] || CIV_BY_ID.iberos;
   return L.divIcon({
     className: "civ-marker",
-    html: shapeSvg(civ.shape, typeColor(p.tipo), 22),
-    iconSize: [22, 22], iconAnchor: [11, 11],
+    html: `<div class="pin" style="background:${civColor(p.civ)}">
+             <i class="fa-solid ${typeIcon(p.tipo)}"></i></div>`,
+    iconSize: [26, 26], iconAnchor: [13, 13],
   });
 }
 
@@ -171,12 +165,11 @@ function panelHtml(p) {
         <figcaption>${escapeHtml(im.autor)} · ${escapeHtml(im.licencia)}</figcaption>
       </figure>`).join("")}</div>`;
   }
-  const civ = CIV_BY_ID[p.civ] || CIV_BY_ID.iberos;
-  const badge = `<span class="civ-badge">${shapeSvg(civ.shape, "#5a4a36", 16)} ${escapeHtml(civLabel(p.civ))}</span>`;
+  const badge = `<span class="civ-badge"><span class="dot" style="background:${civColor(p.civ)}"></span>${escapeHtml(civLabel(p.civ))}</span>`;
+  const tipo = `<span class="p-type"><i class="fa-solid ${typeIcon(p.tipo)}"></i> ${escapeHtml(typeLabel(p.tipo))}</span>`;
   return `
     <h2>${escapeHtml(name(p))}</h2>
-    <div class="p-meta">${badge}
-      <span class="p-type" style="color:${typeColor(p.tipo)}">${escapeHtml(typeLabel(p.tipo))}</span></div>
+    <div class="p-meta">${badge}${tipo}</div>
     ${p.epoca ? `<div class="p-epoca">${escapeHtml(p.epoca)}</div>` : ""}
     <p class="p-desc">${escapeHtml(desc(p)) || t().noDesc}</p>
     ${links.length ? `<div class="p-links">${links.join("")}</div>` : ""}
@@ -209,43 +202,40 @@ function inEpoch(p) {
 }
 function applyFilters() {
   const q = document.getElementById("search").value.trim().toLowerCase();
-  cluster.clearLayers();
+  layer.clearLayers();
   let shown = 0;
   for (const { marker, feature } of markers) {
     const p = feature.properties;
     const ok = activeCivs.has(p.civ) && activeTypes.has(p.tipo) && inEpoch(p) &&
       (!q || name(p).toLowerCase().includes(q) ||
        (p.nombre_es || "").toLowerCase().includes(q) || (p.nombre_ca || "").toLowerCase().includes(q));
-    if (ok) { cluster.addLayer(marker); shown++; }
+    if (ok) { layer.addLayer(marker); shown++; }
   }
   document.getElementById("count").textContent = t().count(shown);
 }
 
 function buildFilters() {
-  const counts = (key) => {
+  const count = (key) => {
     const c = {}; allFeatures.forEach((f) => (c[f.properties[key]] = (c[f.properties[key]] || 0) + 1)); return c;
   };
-  // Civilizaciones (forma).
-  const cc = counts("civ"), civBox = document.getElementById("filters-civ");
+  const cc = count("civ"), civBox = document.getElementById("filters-civ");
   civBox.innerHTML = "";
   CIVS.forEach((c) => {
     if (!cc[c.civ]) return;
     const chip = document.createElement("span");
     chip.className = "chip" + (activeCivs.has(c.civ) ? "" : " off");
-    chip.innerHTML = `${shapeSvg(c.shape, "#5a4a36", 15)} ${civLabel(c.civ)} (${cc[c.civ]})`;
-    chip.onclick = () => { toggle(activeCivs, c.civ, chip); };
+    chip.innerHTML = `<span class="dot" style="background:${c.color}"></span>${civLabel(c.civ)} (${cc[c.civ]})`;
+    chip.onclick = () => toggle(activeCivs, c.civ, chip);
     civBox.appendChild(chip);
   });
-  // Tipos (color).
-  const tc = counts("tipo"), tipoBox = document.getElementById("filters-tipo");
+  const tc = count("tipo"), tipoBox = document.getElementById("filters-tipo");
   tipoBox.innerHTML = "";
-  Object.keys(TYPE_COLORS).forEach((tp) => {
+  TYPE_ORDER.forEach((tp) => {
     if (!tc[tp]) return;
     const chip = document.createElement("span");
     chip.className = "chip" + (activeTypes.has(tp) ? "" : " off");
-    chip.style.borderColor = typeColor(tp);
-    chip.innerHTML = `<span class="dot" style="background:${typeColor(tp)}"></span>${typeLabel(tp)} (${tc[tp]})`;
-    chip.onclick = () => { toggle(activeTypes, tp, chip); };
+    chip.innerHTML = `<i class="fa-solid ${typeIcon(tp)}"></i> ${typeLabel(tp)} (${tc[tp]})`;
+    chip.onclick = () => toggle(activeTypes, tp, chip);
     tipoBox.appendChild(chip);
   });
 }
@@ -255,12 +245,18 @@ function toggle(set, key, chip) {
   applyFilters();
 }
 
-/* ---------- Deslizador de siglos ---------- */
+/* ---------- Rango doble de siglos ---------- */
 const epMinI = document.getElementById("epoca-min");
 const epMaxI = document.getElementById("epoca-max");
+const rangeFill = document.getElementById("range-fill");
+const EP_LO = -9, EP_HI = 1;
 function updateEpoch() {
   epMin = +epMinI.value; epMax = +epMaxI.value;
   if (epMin > epMax) { [epMin, epMax] = [epMax, epMin]; }
+  const span = EP_HI - EP_LO;
+  const l = ((epMin - EP_LO) / span) * 100, r = ((epMax - EP_LO) / span) * 100;
+  rangeFill.style.left = l + "%";
+  rangeFill.style.width = (r - l) + "%";
   document.getElementById("epoca-range").textContent = `${centuryLabel(epMin)} — ${centuryLabel(epMax)}`;
   applyFilters();
 }
@@ -283,7 +279,7 @@ function applyStaticText() {
   updateToggleLabel();
 }
 function updateToggleLabel() {
-  const open = document.getElementById("controls-body").classList.contains("hidden") === false;
+  const open = !document.getElementById("controls-body").classList.contains("hidden");
   document.getElementById("controls-toggle").textContent = open ? t().collapse : t().expand;
 }
 document.getElementById("controls-toggle").onclick = () => {

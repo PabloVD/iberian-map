@@ -621,6 +621,31 @@
     "fuente": "wikidata"
   },
   {
+    "qid": "Q2932315",
+    "nombre": "Cabezo de Alcalá",
+    "nombre_es": "Cabezo de Alcalá",
+    "nombre_ca": "Cabezo de Alcalá",
+    "descripcion_es": "Cabezo de Alcalá es un conjunto arqueológico localizado en las cercanías de Azaila, en la comunidad de Aragón (España).",
+    "descripcion_ca": "Cabezo de Alcalá (en aragonès: Cabezo d'Alcalá) és un conjunt arqueològic localitzat a la rodalia d'Azaila, a la comunitat d'Aragó (Espanya). El conjunt comprèn una acròpoli, diverses edificacions confrontants i una necròpoli cèltica.\nActualment, és considerat com a BIC (Bé d'Interès Cultural) (va ser declarat Monument historicoartístic pertanyent al Tresor Artístic Nacional mitjançant decret de 3 de juny de 1931).",
+    "lat": 41.285688888889,
+    "lon": -0.50792222222222,
+    "civ": "celtibero",
+    "siglo_inicio": null,
+    "siglo_fin": null,
+    "epoca": "",
+    "imagen_principal": "https://upload.wikimedia.org/wikipedia/commons/1/14/Azaila_-_Vista_de_la_acr%C3%B3polis.JPG",
+    "commons_cat": "Cabezo de Alcalá",
+    "p31": [
+      "Q839954"
+    ],
+    "es_title": "Cabezo de Alcalá",
+    "ca_title": "Cabezo de Alcalá",
+    "url_wikipedia_es": "https://es.wikipedia.org/wiki/Cabezo_de_Alcalá",
+    "url_wikipedia_ca": "https://ca.wikipedia.org/wiki/Cabezo_de_Alcalá",
+    "url_oficial": "http://www.mcu.es/museos/reddigital/busquedas/motorbusquedas/buscar.jsp?Museo=MAN",
+    "fuente": "wikidata"
+  },
+  {
     "qid": "Q17589909",
     "nombre": "Can Caseta",
     "nombre_es": null,
@@ -4013,6 +4038,32 @@
     "fuente": "wikidata"
   },
   {
+    "qid": "Q104811691",
+    "nombre": "Cerro de San Esteban (yacimiento arqueológico)",
+    "nombre_es": "Cerro de San Esteban (yacimiento arqueológico)",
+    "nombre_ca": "Cerro de San Esteban (jaciment arqueològic)",
+    "descripcion_es": "El Cerro de San Esteban es un yacimiento arqueológico de carácter urbano de época republicana e imperial romana, existente aproximadamente entre los siglos I a. C. y I d.",
+    "descripcion_ca": "Jaciment arqueològic d'època republicana i imperial romana a Hispania",
+    "lat": 40.88075,
+    "lon": -1.3409166666666668,
+    "civ": "celtibero",
+    "siglo_inicio": null,
+    "siglo_fin": null,
+    "epoca": "",
+    "imagen_principal": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Espa%C3%B1aLoc.svg",
+    "commons_cat": null,
+    "p31": [
+      "Q839954",
+      "Q15661340"
+    ],
+    "es_title": "Cerro de San Esteban (yacimiento arqueológico)",
+    "ca_title": null,
+    "url_wikipedia_es": "https://es.wikipedia.org/wiki/Cerro_de_San_Esteban_(yacimiento_arqueológico)",
+    "url_wikipedia_ca": null,
+    "url_oficial": "http://elpoyodelcid.net/poyodelcidcultura.html",
+    "fuente": "wikidata"
+  },
+  {
     "qid": "Q5689658",
     "nombre": "Cerro de la Cruz",
     "nombre_es": "Cerro de la Cruz",
@@ -5455,7 +5506,7 @@
     "descripcion_ca": "",
     "lat": 41.139824,
     "lon": -1.667376,
-    "civ": "celtas",
+    "civ": "celtibero",
     "siglo_inicio": null,
     "siglo_fin": null,
     "epoca": "",
@@ -6092,6 +6143,32 @@
     "url_wikipedia_es": "https://es.wikipedia.org/wiki/La_Hoya_(Laguardia)",
     "url_wikipedia_ca": null,
     "url_oficial": "https://turismovasco.com/araba/que-ver-araba/poblado-de-la-hoya/",
+    "fuente": "wikidata"
+  },
+  {
+    "qid": "Q104713805",
+    "nombre": "La Loma del Prado",
+    "nombre_es": "La Loma del Prado",
+    "nombre_ca": "La Loma del Prado",
+    "descripcion_es": "La Loma del Prado es un yacimiento arqueológico de carácter urbano de época imperial romana, existente aproximadamente entre los siglos I y IV d.",
+    "descripcion_ca": "Jaciment arqueològic d'època imperial romana a Hispania",
+    "lat": 40.87097222222222,
+    "lon": -1.3280277777777778,
+    "civ": "celtibero",
+    "siglo_inicio": null,
+    "siglo_fin": null,
+    "epoca": "",
+    "imagen_principal": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Espa%C3%B1aLoc.svg",
+    "commons_cat": null,
+    "p31": [
+      "Q839954",
+      "Q15661340"
+    ],
+    "es_title": "La Loma del Prado",
+    "ca_title": null,
+    "url_wikipedia_es": "https://es.wikipedia.org/wiki/La_Loma_del_Prado",
+    "url_wikipedia_ca": null,
+    "url_oficial": null,
     "fuente": "wikidata"
   },
   {
@@ -7360,7 +7437,7 @@
     "descripcion_ca": "",
     "lat": 40.97527777777778,
     "lon": -0.4436111111111111,
-    "civ": "iberos",
+    "civ": "celtibero",
     "siglo_inicio": null,
     "siglo_fin": null,
     "epoca": "",
@@ -7424,6 +7501,31 @@
     "url_wikipedia_es": "https://es.wikipedia.org/wiki/Peña_del_Moro_(Cataluña)",
     "url_wikipedia_ca": "https://ca.wikipedia.org/wiki/Penya_del_Moro_(Collserola)",
     "url_oficial": "https://invarque.cultura.gencat.cat/card/5287",
+    "fuente": "wikidata"
+  },
+  {
+    "qid": "Q13049828",
+    "nombre": "Peñalba de Villastar",
+    "nombre_es": "Peñalba de Villastar",
+    "nombre_ca": "Peñalba de Villastar",
+    "descripcion_es": "Peñalba de Villastar fue un santuario celtibérico en el actual término municipal de Villastar (Teruel, Aragón).\nDe carácter politeísta y con peregrinación desde diferentes poblaciones del territorio circundante, fue lugar de cultos solares y lunares, siendo una montaña sagrada para íberos, celtíberos y romanos. Fue una convergencia de la tradición de arte esquemático autóctona con la tradición celtíbera. \nPresenta representaciones solares, de buitres como animales psicopompos y de dioses, además de inscripciones en celtíbero y latín.",
+    "descripcion_ca": "Santuari a l'aire lliure i jaciment arqueològic",
+    "lat": 40.273831718167,
+    "lon": -1.1776241047405,
+    "civ": "celtibero",
+    "siglo_inicio": null,
+    "siglo_fin": null,
+    "epoca": "",
+    "imagen_principal": null,
+    "commons_cat": "Peñalba de Villastar",
+    "p31": [
+      "Q839954"
+    ],
+    "es_title": "Peñalba de Villastar",
+    "ca_title": null,
+    "url_wikipedia_es": "https://es.wikipedia.org/wiki/Peñalba_de_Villastar",
+    "url_wikipedia_ca": null,
+    "url_oficial": null,
     "fuente": "wikidata"
   },
   {
@@ -7564,7 +7666,7 @@
     "descripcion_ca": "poblat ibèric a Oliete",
     "lat": 41.02283127861882,
     "lon": -0.6292292014812553,
-    "civ": "iberos",
+    "civ": "celtibero",
     "siglo_inicio": null,
     "siglo_fin": null,
     "epoca": "",
@@ -10830,6 +10932,32 @@
     "fuente": "wikidata"
   },
   {
+    "qid": "Q34342470",
+    "nombre": "Torreón de San Cristóbal",
+    "nombre_es": "Torreón de San Cristóbal",
+    "nombre_ca": null,
+    "descripcion_es": "El torreón de San Cristóbal es una torre de origen celtíbero ubicada en el municipio español de Anento, en la provincia de Zaragoza. En la actualidad está protegida como zona arqueológica.",
+    "descripcion_ca": "",
+    "lat": 41.070338,
+    "lon": -1.32642,
+    "civ": "celtibero",
+    "siglo_inicio": null,
+    "siglo_fin": null,
+    "epoca": "",
+    "imagen_principal": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Torre%C3%B3n_de_San_Crist%C3%B3bal_%28Anento%29_1.jpg",
+    "commons_cat": "Iberian tower, Anento",
+    "p31": [
+      "Q839954",
+      "Q12518"
+    ],
+    "es_title": "Torreón de San Cristóbal (Anento)",
+    "ca_title": null,
+    "url_wikipedia_es": "https://es.wikipedia.org/wiki/Torreón_de_San_Cristóbal_(Anento)",
+    "url_wikipedia_ca": null,
+    "url_oficial": "http://www.anento.es/turismo/monumentos/torreon-celtibero/",
+    "fuente": "wikidata"
+  },
+  {
     "qid": "Q133303957",
     "nombre": "Torreón de Ulaca",
     "nombre_es": "Torreón de Ulaca",
@@ -12044,7 +12172,7 @@
     "descripcion_ca": "",
     "lat": 41.004603,
     "lon": -0.6714411,
-    "civ": "iberos",
+    "civ": "celtibero",
     "siglo_inicio": null,
     "siglo_fin": null,
     "epoca": "",
@@ -12220,6 +12348,31 @@
     "fuente": "wikidata"
   },
   {
+    "qid": "Q28502217",
+    "nombre": "Yacimiento arqueológico de La Mora Encantada",
+    "nombre_es": "Yacimiento arqueológico de La Mora Encantada",
+    "nombre_ca": null,
+    "descripcion_es": "La Mora Encantada es un yacimiento arqueológico situado en el municipio aragonés de Ateca, Zaragoza, España.​\nEn este yacimiento se han encontrado los restos de lo que podría ser según algunos autores el Alcocer​ nombrado en el Cantar de Mio Cid.​ Tesis reforzada con los últimos descubrimientos en 2020 en la vega del río Jalón.​\nTambién se han encontrado restos de una ciudad romana de nombre desconocido​ junto a numerosos restos de cerámicas de tipo celtíbero.​ Según algunos autores como Miguel Martínez del Villar y Hernando (siglo XVI), Juan Francisco Andrés de Uztarroz (siglo XVII), el padre Traggia (siglo XIX) y Francisco Ortega San Íñigo (siglo XX) en este lugar podrían encontrarse los restos de la ciudad celtíbera de Alce, nombrada por Tito Livio,.​ Alce fue una población de Celtiberia de cuya existencia se tiene constancia gracias la información transmitida por Tito Livio al narrar la campaña militar de Graco durante el 179 a. C. en el interior peninsular. \nLa gran extensión del paraje y la ausencia de excavaciones arqueológicas encaminadas a la búsqueda de Alce, no han permitido encontrar hasta la fecha elementos definitivos, tales como miliarios, epígrafes o monedas que nos permitan establecer sin ningún género de dudas la ubicación actual de esta ciudad por lo que es necesario recurrir a la interpretación de ambas fuentes clásicas para determinar su localización. Debido a que el referido relato de Tito Livio ha sido objeto de diferentes valoraciones a lo largo del tiempo y las propuestas para situar geográficamente esta población han sido diversas con el tiempo, Ateca sigue siendo una de las candidatas.",
+    "descripcion_ca": "",
+    "lat": 41.324111111111,
+    "lon": -1.7610138888889,
+    "civ": "celtibero",
+    "siglo_inicio": null,
+    "siglo_fin": null,
+    "epoca": "",
+    "imagen_principal": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Excavaciones_arquel%C3%B3gicas_del_Castillo_de_Alcocer_junto_a_la_Mora_Encantada.jpg",
+    "commons_cat": null,
+    "p31": [
+      "Q839954"
+    ],
+    "es_title": "Yacimiento arqueológico de La Mora Encantada",
+    "ca_title": null,
+    "url_wikipedia_es": "https://es.wikipedia.org/wiki/Yacimiento_arqueológico_de_La_Mora_Encantada",
+    "url_wikipedia_ca": null,
+    "url_oficial": "http://www.patrimonioculturaldearagon.es/bienes-culturales/castillo-de-la-morica-encantada-ateca",
+    "fuente": "wikidata"
+  },
+  {
     "qid": "Q6169550",
     "nombre": "Yacimiento arqueológico de La Serreta",
     "nombre_es": "Yacimiento arqueológico de La Serreta",
@@ -12242,6 +12395,31 @@
     "url_wikipedia_es": "https://es.wikipedia.org/wiki/Yacimiento_arqueológico_de_La_Serreta",
     "url_wikipedia_ca": "https://ca.wikipedia.org/wiki/La_Serreta_(Alcoi)",
     "url_oficial": "https://www.alcoi.org/es/areas/cultura/museo/publicaciones/monografias/monografia_0007.html",
+    "fuente": "wikidata"
+  },
+  {
+    "qid": "Q115299250",
+    "nombre": "Yacimiento arqueológico de Nuestra Señora del Pueyo",
+    "nombre_es": "Yacimiento arqueológico de Nuestra Señora del Pueyo",
+    "nombre_ca": null,
+    "descripcion_es": "El yacimiento de Nuestra Señora del Pueyo es un yacimiento arqueológico situado en Belchite (Aragón, España) de época celtibérica y romana. Se encuentra protegido como Bien de Interés Cultural (BIC) por su valor para el estudio de la historia regional.",
+    "descripcion_ca": "",
+    "lat": 41.313213,
+    "lon": -0.794678,
+    "civ": "celtibero",
+    "siglo_inicio": null,
+    "siglo_fin": null,
+    "epoca": "",
+    "imagen_principal": "https://upload.wikimedia.org/wikipedia/commons/7/78/Yacimiento_de_Nuestra_Se%C3%B1ora_del_Pueyo%2C_Belchite%2C_Espa%C3%B1a%2C_2015-01-08%2C_DD_04.JPG",
+    "commons_cat": null,
+    "p31": [
+      "Q839954"
+    ],
+    "es_title": "Yacimiento arqueológico de Nuestra Señora del Pueyo",
+    "ca_title": null,
+    "url_wikipedia_es": "https://es.wikipedia.org/wiki/Yacimiento_arqueológico_de_Nuestra_Señora_del_Pueyo",
+    "url_wikipedia_ca": null,
+    "url_oficial": null,
     "fuente": "wikidata"
   },
   {
@@ -12292,6 +12470,31 @@
     "url_wikipedia_es": "https://es.wikipedia.org/wiki/L'Alt_de_Benimaquia",
     "url_wikipedia_ca": "https://ca.wikipedia.org/wiki/Jaciment_arqueològic_de_l'Alt_de_Benimaquia",
     "url_oficial": null,
+    "fuente": "wikidata"
+  },
+  {
+    "qid": "Q43179070",
+    "nombre": "Yacimiento de La Caridad",
+    "nombre_es": "Yacimiento de La Caridad",
+    "nombre_ca": null,
+    "descripcion_es": "La Caridad es un yacimiento arqueológico de carácter urbano de época republicana romana, existente aproximadamente entre los siglos II y I a.C. Está situado en el término municipal de Caminreal (Teruel, Aragón, España).​",
+    "descripcion_ca": "",
+    "lat": 40.8435,
+    "lon": -1.3384722222222223,
+    "civ": "celtibero",
+    "siglo_inicio": null,
+    "siglo_fin": null,
+    "epoca": "",
+    "imagen_principal": "https://upload.wikimedia.org/wikipedia/commons/4/42/Comarca_del_Jiloca_6bis.jpg",
+    "commons_cat": "Yacimiento de La Caridad (Caminreal)",
+    "p31": [
+      "Q839954"
+    ],
+    "es_title": "La Caridad (yacimiento arqueológico)",
+    "ca_title": null,
+    "url_wikipedia_es": "https://es.wikipedia.org/wiki/La_Caridad_(yacimiento_arqueológico)",
+    "url_wikipedia_ca": null,
+    "url_oficial": "http://www.descubrejiloca.es/patrimonio-historico/la-caridad-y-yacimientos-arqueologicos/",
     "fuente": "wikidata"
   },
   {

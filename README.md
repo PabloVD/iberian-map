@@ -82,7 +82,56 @@ python3 -m http.server 8777
 
 ## Publicar en GitHub Pages
 
-Sube el repo a GitHub y en *Settings → Pages* elige la rama y la carpeta `/docs`.
+Publicado desde la rama `main`, carpeta `/docs`:
+<https://pablovd.github.io/iberian-map/>. Para regenerarlo, ejecuta el pipeline
+y haz push; Pages se actualiza solo.
+
+## Fuentes
+
+Los datos se obtienen por API de:
+- [Wikidata](https://www.wikidata.org) (coordenadas, cultura, fechas, imagen, web oficial).
+- [Wikimedia Commons](https://commons.wikimedia.org) (imágenes de licencia libre).
+- [OpenStreetMap](https://www.openstreetmap.org) (mapa base).
+
+**Categorías de Wikipedia** recorridas para descubrir yacimientos (registro en
+`scripts/cultures.py`):
+- Íberos: [Yacimientos íberos](https://es.wikipedia.org/wiki/Categoría:Yacimientos_íberos),
+  [Poblaciones iberas](https://es.wikipedia.org/wiki/Categoría:Poblaciones_iberas),
+  [Jaciments arqueològics ibers](https://ca.wikipedia.org/wiki/Categoria:Jaciments_arqueològics_ibers),
+  [Poblacions ibèriques](https://ca.wikipedia.org/wiki/Categoria:Poblacions_ibèriques)
+  (incluye [de Catalunya](https://ca.wikipedia.org/wiki/Categoria:Poblacions_ibèriques_de_Catalunya)
+  y [del País Valencià](https://ca.wikipedia.org/wiki/Categoria:Poblacions_ibèriques_del_País_Valencià)),
+  [Jaciments arqueològics ibers del País Valencià](https://ca.wikipedia.org/wiki/Categoria:Jaciments_arqueològics_ibers_del_País_Valencià).
+- Celtíberos: [Celtíberos](https://es.wikipedia.org/wiki/Categoría:Celtíberos),
+  [Poblaciones de Celtiberia](https://es.wikipedia.org/wiki/Categoría:Poblaciones_de_Celtiberia),
+  [Yacimientos celtíberos de Aragón](https://es.wikipedia.org/wiki/Categoría:Yacimientos_celtíberos_de_Aragón).
+- Fenicio-púnico: [Colonización fenicia en España Antigua](https://es.wikipedia.org/wiki/Categoría:Colonización_fenicia_en_España_Antigua),
+  [Colonias fenicias](https://es.wikipedia.org/wiki/Categoría:Colonias_fenicias).
+- Griego: [Antiguas colonias griegas en España](https://es.wikipedia.org/wiki/Categoría:Antiguas_colonias_griegas_en_España).
+- Vascones: [Vascones](https://es.wikipedia.org/wiki/Categoría:Vascones).
+- Celtas / atlánticos: [Castros de España](https://es.wikipedia.org/wiki/Categoría:Castros_de_España),
+  [Cultura castrexa](https://gl.wikipedia.org/wiki/Categoría:Cultura_castrexa),
+  [Castros de Galicia](https://gl.wikipedia.org/wiki/Categoría:Castros_de_Galicia),
+  [Castros de Portugal](https://pt.wikipedia.org/wiki/Categoria:Castros_de_Portugal),
+  [Castros da Galécia](https://pt.wikipedia.org/wiki/Categoria:Castros_da_Galécia).
+
+También se recorren las **subcategorías** de las anteriores (por provincias, etc.).
+
+**Páginas generales de Wikipedia** de referencia:
+[Cultura ibérica](https://es.wikipedia.org/wiki/Cultura_ibérica),
+[Íberos](https://es.wikipedia.org/wiki/Íberos),
+[Celtíberos](https://es.wikipedia.org/wiki/Celtíberos),
+[Tartessos](https://es.wikipedia.org/wiki/Tartessos),
+[Fenicios](https://es.wikipedia.org/wiki/Fenicia),
+[Colonización griega](https://es.wikipedia.org/wiki/Colonización_griega),
+[Vascones](https://es.wikipedia.org/wiki/Vascones),
+[Lusitanos](https://es.wikipedia.org/wiki/Lusitanos),
+[Cultura castreña](https://es.wikipedia.org/wiki/Cultura_castreña).
+
+Listas curadas usadas como complemento:
+[Llista de poblacions ibèriques de Catalunya](https://ca.wikipedia.org/wiki/Llista_de_poblacions_ibèriques_de_Catalunya)
+y la [llista de 360 poblats ibers](https://ibers.cat/ibers_cat_llista_360_poblats_ibers_nov14.xls)
+de David Folch (ver `TODO.md`).
 
 ## Licencias y atribución
 

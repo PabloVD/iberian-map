@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -37,7 +38,9 @@
       </div>
       <div class="filter-group">
         <div class="filter-label"><span id="lbl-epoca"></span> <span id="epoca-range"></span></div>
-        <div class="slider">
+        <div class="range-dual">
+          <div class="range-track"></div>
+          <div class="range-fill" id="range-fill"></div>
           <input id="epoca-min" type="range" min="-9" max="1" step="1" value="-9" />
           <input id="epoca-max" type="range" min="-9" max="1" step="1" value="1" />
         </div>
