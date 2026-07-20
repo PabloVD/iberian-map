@@ -1,7 +1,7 @@
 {
  "type": "FeatureCollection",
  "metadata": {
-  "count": 481,
+  "count": 482,
   "descripcion": "Yacimientos de la cultura ibérica"
  },
  "features": [
@@ -23412,6 +23412,52 @@
     "imagenes": [],
     "url_wikipedia_es": null,
     "url_wikipedia_ca": null,
+    "url_oficial": null,
+    "fuente": "wikidata"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.394258,
+     39.792951
+    ]
+   },
+   "properties": {
+    "nombre_es": "Q140632739",
+    "nombre_ca": "Q140632739",
+    "civ": "iberos",
+    "tipo": "poblado",
+    "epoca": "",
+    "siglo_inicio": null,
+    "siglo_fin": null,
+    "descripcion_es": "El Poblado ibero de la Rotxina fue una aldea ibera situada en el municipio valenciano de Sot de Ferrer. ​ ​  Estuvo poblada entre los siglos III y I aC. ​ Fue uno de los primeros yacimientos donde se aplicó la metodología científica en la excavación en el territorio valenciano.",
+    "descripcion_ca": "El Poblat ibèric de la Rotxina fou una aldea ibera situada al municipi de Sot de Ferrer, que va estar poblada entre els segles III i I a.C. Va ser un dels primers jaciments on es va aplicar la metodologia científica en la excavació al territori valencià.",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bastida_de_les_Alcusses._Centre_del_poblat._Forn_metal%C2%B7l%C3%BArgic.JPG/500px-Bastida_de_les_Alcusses._Centre_del_poblat._Forn_metal%C2%B7l%C3%BArgic.JPG",
+    "imagenes": [
+     {
+      "titulo": "Bastida de les Alcusses. Centre del poblat. Forn metal·lúrgic.JPG",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bastida_de_les_Alcusses._Centre_del_poblat._Forn_metal%C2%B7l%C3%BArgic.JPG/500px-Bastida_de_les_Alcusses._Centre_del_poblat._Forn_metal%C2%B7l%C3%BArgic.JPG",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Bastida_de_les_Alcusses._Centre_del_poblat._Forn_metal%C2%B7l%C3%BArgic.JPG",
+      "autor": "Enrique Íñiguez Rodríguez ( Qoan )",
+      "licencia": "CC BY-SA 3.0",
+      "caption": "Forn metal·lúrgic situat al centre del poblat.",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Bastida_de_les_Alcusses._Centre_del_poblat._Forn_metal%C2%B7l%C3%BArgic.JPG"
+     },
+     {
+      "titulo": "Ullastret sitges.JPG",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Ullastret_sitges.JPG/500px-Ullastret_sitges.JPG",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Ullastret_sitges.JPG",
+      "autor": "Bestiasonica",
+      "licencia": "Public domain",
+      "caption": "Iberian silos in Ullastret iberian archaelogical site (Baix Empordà, Catalonia)",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Ullastret_sitges.JPG"
+     }
+    ],
+    "url_wikipedia_es": "https://es.wikipedia.org/wiki/Poblad_ibero_de_la_Rochina",
+    "url_wikipedia_ca": "https://ca.wikipedia.org/wiki/Poblat_ibèric_de_la_Rotxina",
     "url_oficial": null,
     "fuente": "wikidata"
    }
