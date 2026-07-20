@@ -7819,9 +7819,9 @@
     "lat": 39.7929514109534,
     "lon": -0.39425759501749064,
     "civ": "iberos",
-    "siglo_inicio": null,
-    "siglo_fin": null,
-    "epoca": "",
+    "siglo_inicio": -3,
+    "siglo_fin": -1,
+    "epoca": "s. III a.C. – s. I a.C.",
     "imagen_principal": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Relief_map_of_Spain_Valencia.png",
     "commons_cat": null,
     "p31": [
