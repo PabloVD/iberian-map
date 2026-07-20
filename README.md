@@ -72,11 +72,15 @@ python3 build_geojson.py
 Tres ficheros de configuración corrigen lo que el descubrimiento automático no
 acierta; al ser declarativos, **los parches no se pierden al regenerar**:
 - `include_qids.txt` — yacimientos que existen en Wikidata (con coordenadas) pero
-  no salen por categoría (p. ej. **Rode**, **Akra Leuke**, **Asta Regia**). Se
-  indican por QID + civilización y se enriquecen igual que el resto. Se marcan con
-  `fuente = "wikidata+incluido"`.
-- `exclude_qids.txt` — quita falsos positivos o entradas equivocadas (p. ej. la
-  Ciutadella renacentista de Roses).
+  no salen por categoría: **Rode**, **Akra Leuke**, **Asta Regia**, **Lucentum**
+  (l'Albufereta), **Puig des Molins** (Ebusus púnica) y las ciudades vasconas
+  **Andelos, Oiasso, Graccurris, Cascantum, Curnonium, Vareia, Balsio, Alantone**.
+  Se indican por QID + civilización y se enriquecen igual que el resto; se marcan
+  con `fuente = "wikidata+incluido"`.
+- `exclude_qids.txt` — quita falsos positivos o entradas equivocadas: la Ciutadella
+  renacentista de Roses, la sierra del Ventós y la inscripción de Lanz, entre otras.
+  (El filtro por `P31` ya descarta iglesias, museos, montañas, municipios, **cecas**
+  y **batallas**.)
 - `curated_sites.csv` — yacimientos que **no** están en Wikidata o sin coordenadas
   (p. ej. **Gadir/Gades**); datos escritos a mano.
 
@@ -162,8 +166,9 @@ También se recorren las **subcategorías** de las anteriores (por provincias, e
 [Lusitanos](https://es.wikipedia.org/wiki/Lusitanos),
 [Cultura castreña](https://es.wikipedia.org/wiki/Cultura_castreña).
 
-Listas curadas usadas como complemento:
-[Llista de poblacions ibèriques de Catalunya](https://ca.wikipedia.org/wiki/Llista_de_poblacions_ibèriques_de_Catalunya)
+Listas usadas como complemento (para localizar sitios que no salen por categoría):
+[Llista de poblacions ibèriques de Catalunya](https://ca.wikipedia.org/wiki/Llista_de_poblacions_ibèriques_de_Catalunya),
+[Anexo:Ciudades vasconas](https://es.wikipedia.org/wiki/Anexo:Ciudades_vasconas)
 y la [llista de 360 poblats ibers](https://ibers.cat/ibers_cat_llista_360_poblats_ibers_nov14.xls)
 de David Folch (ver `TODO.md`).
 
