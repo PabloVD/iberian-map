@@ -126,8 +126,11 @@ function renderLb() {
   lbImg.src = im.url || im.thumb;
   lbImg.alt = im.titulo || "";
   const counter = lbImages.length > 1 ? `${lbIdx + 1}/${lbImages.length} · ` : "";
-  lbCap.innerHTML = counter + `${escapeHtml(im.autor)} · ${escapeHtml(im.licencia)}` +
-    (im.descripcion_pagina ? ` · <a href="${im.descripcion_pagina}" target="_blank" rel="noopener">Commons</a>` : "");
+  const caption = im.caption ? `<div class="lb-desc">${escapeHtml(im.caption)}</div>` : "";
+  lbCap.innerHTML = caption +
+    `<div class="lb-credit">${counter}${escapeHtml(im.autor)} · ${escapeHtml(im.licencia)}` +
+    (im.descripcion_pagina ? ` · <a href="${im.descripcion_pagina}" target="_blank" rel="noopener">Commons</a>` : "") +
+    `</div>`;
   lbPrev.classList.toggle("hidden", lbImages.length < 2);
   lbNext.classList.toggle("hidden", lbImages.length < 2);
 }

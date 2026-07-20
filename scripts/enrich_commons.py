@@ -82,7 +82,14 @@ def category_files(cat):
 
 def _meta(extmeta, key):
     v = (extmeta or {}).get(key, {}).get("value", "")
-    return re.sub("<[^>]+>", "", v).strip()
+    v = re.sub("<[^>]+>", " ", v)          # quita HTML
+    return " ".join(v.split()).strip()      # normaliza espacios
+
+
+def _caption(em):
+    """Descripción original del archivo en Commons (ImageDescription), recortada."""
+    c = _meta(em, "ImageDescription")
+    return (c[:297] + "…") if len(c) > 300 else c
 
 
 def imageinfo(file_titles):
@@ -108,6 +115,7 @@ def imageinfo(file_titles):
                 "url": i0.get("url"),
                 "autor": _meta(em, "Artist") or "Desconocido",
                 "licencia": _meta(em, "LicenseShortName") or "ver Commons",
+                "caption": _caption(em),
                 "descripcion_pagina": i0.get("descriptionurl"),
             }
             info[title] = rec
