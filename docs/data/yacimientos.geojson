@@ -1,7 +1,7 @@
 {
  "type": "FeatureCollection",
  "metadata": {
-  "count": 479,
+  "count": 481,
   "descripcion": "Yacimientos de la cultura ibérica"
  },
  "features": [
@@ -138,6 +138,33 @@
     "imagenes": [],
     "url_wikipedia_es": "https://es.wikipedia.org/wiki/Akra_Leuké",
     "url_wikipedia_ca": "https://ca.wikipedia.org/wiki/Acra_Leuce",
+    "url_oficial": null,
+    "fuente": "wikidata+incluido"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.8,
+     42.9
+    ]
+   },
+   "properties": {
+    "nombre_es": "Alantone",
+    "nombre_ca": "Alantone",
+    "civ": "vascones",
+    "tipo": "ciudad",
+    "epoca": "",
+    "siglo_inicio": null,
+    "siglo_fin": null,
+    "descripcion_es": "",
+    "descripcion_ca": "",
+    "imagen": null,
+    "imagenes": [],
+    "url_wikipedia_es": null,
+    "url_wikipedia_ca": null,
     "url_oficial": null,
     "fuente": "wikidata+incluido"
    }
@@ -554,7 +581,7 @@
    "properties": {
     "nombre_es": "Andelos",
     "nombre_ca": "Andelos",
-    "civ": "celtibero",
+    "civ": "vascones",
     "tipo": "poblado",
     "epoca": "",
     "siglo_inicio": null,
@@ -657,7 +684,7 @@
     "url_wikipedia_es": "https://es.wikipedia.org/wiki/Andelo",
     "url_wikipedia_ca": null,
     "url_oficial": "https://www.fundacioncajanavarra.es/es/educacioncultura/publicaciones",
-    "fuente": "wikidata"
+    "fuente": "wikidata+incluido"
    }
   },
   {
@@ -829,33 +856,6 @@
     ],
     "url_wikipedia_es": "https://es.wikipedia.org/wiki/Arcóbriga",
     "url_wikipedia_ca": null,
-    "url_oficial": null,
-    "fuente": "wikidata"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -1.1,
-     41.7
-    ]
-   },
-   "properties": {
-    "nombre_es": "Arketurki",
-    "nombre_ca": "Arketurki",
-    "civ": "iberos",
-    "tipo": "yacimiento",
-    "epoca": "s. II a.C.",
-    "siglo_inicio": -2,
-    "siglo_fin": -2,
-    "descripcion_es": "",
-    "descripcion_ca": "Arketurki fou una seca de moneda ibèrica localitzada en algun punt encara desconegut de la conca del riu Segre o de l'Ebre. Segons Pérez Almoguera, es trobaria a prop de la Seu d'Urgell, ja que Úrki seria l'origen etimològic del topònim.\nDurant el segle ii aC encunyà dos tipus de moneda de bronze amb inscripcions de l'alfabet ibèric, l'una a principis de segle i l'altra a finals.",
-    "imagen": null,
-    "imagenes": [],
-    "url_wikipedia_es": null,
-    "url_wikipedia_ca": "https://ca.wikipedia.org/wiki/Arketurki",
     "url_oficial": null,
     "fuente": "wikidata"
    }
@@ -1175,117 +1175,26 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -2.390293,
-     42.503508
+     -1.416667,
+     41.916667
     ]
    },
    "properties": {
-    "nombre_es": "Barscunes",
-    "nombre_ca": "Barscunes",
+    "nombre_es": "Balsio",
+    "nombre_ca": "Balsio",
     "civ": "vascones",
-    "tipo": "yacimiento",
-    "epoca": "s. II a.C. – s. I a.C.",
-    "siglo_inicio": -2,
-    "siglo_fin": -1,
-    "descripcion_es": "Bascunes o Barscunes o Brascunes es el nombre de una ceca autóctona del siglo I a. C. en el norte de España, que acuña a partir de fines del siglo II a. C. dentro del llamado \"grupo pirenaico\" o también \"grupo navarro\", que cuenta con numerosas cecas que usan el mismo signario ibérico levantino que el área celtibérica.",
+    "tipo": "ciudad",
+    "epoca": "",
+    "siglo_inicio": null,
+    "siglo_fin": null,
+    "descripcion_es": "ciudad romana en territorio vascón",
     "descripcion_ca": "",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Barscunes.jpg/500px-Barscunes.jpg",
-    "imagenes": [
-     {
-      "titulo": "Barscunes.jpg",
-      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Barscunes.jpg/500px-Barscunes.jpg",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Barscunes.jpg",
-      "autor": "No machine-readable author provided. Aepef assumed (based on copyright claims).",
-      "licencia": "CC BY-SA 3.0",
-      "caption": "Anverso y reverso del Denario (moneda íbera) con la inscripción Barscunes . Denario (moneda ibérica ) de la ceca de Barscunes ( Pamplona o Rocafort ) del siglo I o II antes de Cristo",
-      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Barscunes.jpg"
-     },
-     {
-      "titulo": "Barscunes (signario ibérico).png",
-      "thumb": "https://upload.wikimedia.org/wikipedia/commons/4/44/Barscunes_%28signario_ib%C3%A9rico%29.png",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/4/44/Barscunes_%28signario_ib%C3%A9rico%29.png",
-      "autor": "Jialxv",
-      "licencia": "CC BY-SA 4.0",
-      "caption": "Barscunes (signario ibérico)",
-      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Barscunes_(signario_ib%C3%A9rico).png"
-     },
-     {
-      "titulo": "00061A Baskunes denario plata.jpg",
-      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/00061A_Baskunes_denario_plata.jpg/500px-00061A_Baskunes_denario_plata.jpg",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/00061A_Baskunes_denario_plata.jpg",
-      "autor": "Museum of Navarre",
-      "licencia": "CC BY-SA 4.0",
-      "caption": "Zilarrezko Barskunes denario bat, Nafarroako Museoan",
-      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:00061A_Baskunes_denario_plata.jpg"
-     },
-     {
-      "titulo": "00062R Baskunes denario plata.jpg",
-      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/00062R_Baskunes_denario_plata.jpg/500px-00062R_Baskunes_denario_plata.jpg",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/00062R_Baskunes_denario_plata.jpg",
-      "autor": "Museum of Navarre",
-      "licencia": "CC BY-SA 4.0",
-      "caption": "Zilarrezko Barskunes denario bat, Nafarroako Museoan",
-      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:00062R_Baskunes_denario_plata.jpg"
-     },
-     {
-      "titulo": "00077R Baskunes as bronce.jpg",
-      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/00077R_Baskunes_as_bronce.jpg/500px-00077R_Baskunes_as_bronce.jpg",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/00077R_Baskunes_as_bronce.jpg",
-      "autor": "Museum of Navarre",
-      "licencia": "CC BY-SA 4.0",
-      "caption": "Brontzezko Barskunes denario bat, Nafarroako Museoan",
-      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:00077R_Baskunes_as_bronce.jpg"
-     },
-     {
-      "titulo": "00088A Baskunes as bronce.jpg",
-      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/00088A_Baskunes_as_bronce.jpg/500px-00088A_Baskunes_as_bronce.jpg",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/6/66/00088A_Baskunes_as_bronce.jpg",
-      "autor": "Museum of Navarre",
-      "licencia": "CC BY-SA 4.0",
-      "caption": "Brontzezko Barskunes denario bat, Nafarroako Museoan",
-      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:00088A_Baskunes_as_bronce.jpg"
-     },
-     {
-      "titulo": "20220427 172836 Arkeologi Museoa of Bilbao.jpg",
-      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/20220427_172836_Arkeologi_Museoa_of_Bilbao.jpg/500px-20220427_172836_Arkeologi_Museoa_of_Bilbao.jpg",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/20220427_172836_Arkeologi_Museoa_of_Bilbao.jpg",
-      "autor": "FLAVIVSAETIVS",
-      "licencia": "CC BY-SA 4.0",
-      "caption": "Denario de plata de tipo celtibérico de la ceca de los Barskunes del siglo I a.C. hallado en los sondeos del castro de Kosnoaga, Arkeologi Museoa of Bilbao",
-      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:20220427_172836_Arkeologi_Museoa_of_Bilbao.jpg"
-     },
-     {
-      "titulo": "Barscunes (Benkota).jpg",
-      "thumb": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Barscunes_%28Benkota%29.jpg",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Barscunes_%28Benkota%29.jpg",
-      "autor": "No machine-readable author provided. Aepef assumed (based on copyright claims).",
-      "licencia": "CC BY-SA 3.0",
-      "caption": "Anverso y reverso del Denario (moneda íbera) con la inscripción Benkota en esta imagen, Barskunes en su reverso. Denario (moneda ibérica ) de la ceca de Barscunes ( Pamplona o Rocafort ) del siglo I o II antes de Cristo",
-      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Barscunes_(Benkota).jpg"
-     },
-     {
-      "titulo": "Barscunes transparent.png",
-      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Barscunes_transparent.png/500px-Barscunes_transparent.png",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Barscunes_transparent.png",
-      "autor": "Barscunes.jpg : Aepef derivative work: Ruminaglass",
-      "licencia": "CC BY-SA 3.0",
-      "caption": "Front &amp; back of the Iberian coin with the inscription Barscunes.",
-      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Barscunes_transparent.png"
-     },
-     {
-      "titulo": "Barskunes txanpona, Euskal herriko historia 100 objetutan, Ikasi Otsorekin.png",
-      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Barskunes_txanpona%2C_Euskal_herriko_historia_100_objetutan%2C_Ikasi_Otsorekin.png/500px-Barskunes_txanpona%2C_Euskal_herriko_historia_100_objetutan%2C_Ikasi_Otsorekin.png",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Barskunes_txanpona%2C_Euskal_herriko_historia_100_objetutan%2C_Ikasi_Otsorekin.png",
-      "autor": "Eñaut Irribarrez",
-      "licencia": "CC BY-SA 4.0",
-      "caption": "Barskunes txanpona, Euskal herriko historia 100 objetutan, Ikasi Otsorekin",
-      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Barskunes_txanpona,_Euskal_herriko_historia_100_objetutan,_Ikasi_Otsorekin.png"
-     }
-    ],
-    "url_wikipedia_es": "https://es.wikipedia.org/wiki/Barscunes",
+    "imagen": null,
+    "imagenes": [],
+    "url_wikipedia_es": null,
     "url_wikipedia_ca": null,
     "url_oficial": null,
-    "fuente": "wikidata"
+    "fuente": "wikidata+incluido"
    }
   },
   {
@@ -2070,6 +1979,43 @@
     "url_wikipedia_ca": "https://ca.wikipedia.org/wiki/Carrilades_Ibero_Romanes_de_L'Énova",
     "url_oficial": "https://www.osoigo.com/eu/tomas-giner-para-cuando-la-declaracion-de-bic-del-parque-arqueologico-romano-de-l-enova.html",
     "fuente": "wikidata"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.666667,
+     41.983333
+    ]
+   },
+   "properties": {
+    "nombre_es": "Cascantum",
+    "nombre_ca": "Cascantum",
+    "civ": "vascones",
+    "tipo": "ciudad",
+    "epoca": "",
+    "siglo_inicio": null,
+    "siglo_fin": null,
+    "descripcion_es": "Cascantum —antes Kaiskata—, fue una ciudad romana construida sobre una celtíbera, conquistada por los vascones y que se correspondería con la actual Cascante, Navarra.  Cascantum se ubicaba sobre la vía romana que unía Caesaraugusta con Asturica Augusta. Llegó a acuñar moneda tanto en época celtibérica como romana.",
+    "descripcion_ca": "",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Bas%C3%ADlica_de_Nuestra_Se%C3%B1ora_del_Romero_%28Cascante%29_04.jpg/500px-Bas%C3%ADlica_de_Nuestra_Se%C3%B1ora_del_Romero_%28Cascante%29_04.jpg",
+    "imagenes": [
+     {
+      "titulo": "Basílica de Nuestra Señora del Romero (Cascante) 04.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Bas%C3%ADlica_de_Nuestra_Se%C3%B1ora_del_Romero_%28Cascante%29_04.jpg/500px-Bas%C3%ADlica_de_Nuestra_Se%C3%B1ora_del_Romero_%28Cascante%29_04.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Bas%C3%ADlica_de_Nuestra_Se%C3%B1ora_del_Romero_%28Cascante%29_04.jpg",
+      "autor": "Zarateman",
+      "licencia": "CC BY-SA 3.0",
+      "caption": "Basílica de Nuestra Señora del Romero (Cascante, Navarra)",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Bas%C3%ADlica_de_Nuestra_Se%C3%B1ora_del_Romero_(Cascante)_04.jpg"
+     }
+    ],
+    "url_wikipedia_es": "https://es.wikipedia.org/wiki/Cascantum",
+    "url_wikipedia_ca": null,
+    "url_oficial": null,
+    "fuente": "wikidata+incluido"
    }
   },
   {
@@ -11037,52 +10983,6 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -1.7,
-     42.8
-    ]
-   },
-   "properties": {
-    "nombre_es": "Ceca de Arsaos",
-    "nombre_ca": "Ceca de Arsaos",
-    "civ": "vascones",
-    "tipo": "yacimiento",
-    "epoca": "",
-    "siglo_inicio": null,
-    "siglo_fin": null,
-    "descripcion_es": "La ceca de Arsaos es un taller de emisión de moneda prerromano de los siglos II y I a. C., que emitió tres series de monedas, primero con módulos ibéricos y después romanos, cuyos tipos responden al denario, el as, el semis, y el cuadrante.",
-    "descripcion_ca": "",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Coins_of_Arsaos_in_Navarre_Spain_150BCE_100BCE_Roman_stylistic_influence.jpg/500px-Coins_of_Arsaos_in_Navarre_Spain_150BCE_100BCE_Roman_stylistic_influence.jpg",
-    "imagenes": [
-     {
-      "titulo": "Coins of Arsaos in Navarre Spain 150BCE 100BCE Roman stylistic influence.jpg",
-      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Coins_of_Arsaos_in_Navarre_Spain_150BCE_100BCE_Roman_stylistic_influence.jpg/500px-Coins_of_Arsaos_in_Navarre_Spain_150BCE_100BCE_Roman_stylistic_influence.jpg",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Coins_of_Arsaos_in_Navarre_Spain_150BCE_100BCE_Roman_stylistic_influence.jpg",
-      "autor": "Desconocido",
-      "licencia": "CC BY-SA 3.0",
-      "caption": "Coins_of_Arsaos_in_Navarre Spain_150BCE_100BCE_Roman_stylistic_influence",
-      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Coins_of_Arsaos_in_Navarre_Spain_150BCE_100BCE_Roman_stylistic_influence.jpg"
-     },
-     {
-      "titulo": "Arsaos en ibérico.png",
-      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Arsaos_en_ib%C3%A9rico.png/500px-Arsaos_en_ib%C3%A9rico.png",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Arsaos_en_ib%C3%A9rico.png",
-      "autor": "Jialxv",
-      "licencia": "CC BY-SA 4.0",
-      "caption": "Arsaos en ibérico",
-      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Arsaos_en_ib%C3%A9rico.png"
-     }
-    ],
-    "url_wikipedia_es": "https://es.wikipedia.org/wiki/Ceca_de_Arsaos",
-    "url_wikipedia_ca": null,
-    "url_oficial": "http://www.culturanavarra.es/es/trabajos-de-arqueologia-navarra",
-    "fuente": "wikidata"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
      -1.965033,
      42.303705
     ]
@@ -13461,6 +13361,33 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -2.183333,
+     42.566667
+    ]
+   },
+   "properties": {
+    "nombre_es": "Curnonium",
+    "nombre_ca": "Curnonium",
+    "civ": "vascones",
+    "tipo": "ciudad",
+    "epoca": "",
+    "siglo_inicio": null,
+    "siglo_fin": null,
+    "descripcion_es": "",
+    "descripcion_ca": "",
+    "imagen": null,
+    "imagenes": [],
+    "url_wikipedia_es": null,
+    "url_wikipedia_ca": null,
+    "url_oficial": null,
+    "fuente": "wikidata+incluido"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -3.6266,
      38.0347
     ]
@@ -14981,6 +14908,43 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -1.741111,
+     42.18
+    ]
+   },
+   "properties": {
+    "nombre_es": "Graccurris",
+    "nombre_ca": "Graccurris",
+    "civ": "vascones",
+    "tipo": "ciudad",
+    "epoca": "",
+    "siglo_inicio": null,
+    "siglo_fin": null,
+    "descripcion_es": "Graccurris​ fue una ciudad romana correspondiente a la actual Alfaro, La Rioja fundada por Tiberio Sempronio Graco en el 179 a. C. sobre una ciudad o poblado arévaco, celtíbero, llamado Ilurce o Ilurcís, para asentar a heridos romanos e indígenas durante su campaña contra los Celtíberos.​\nDurante el período de conquista, fue una fiel aliada de Roma, pero durante las guerras civiles entre Cayo Mario y Sila, se pasó al bando popular dirigido por Quinto Sertorio. Cuando este fue vencido, pasó a engrosar la clientela de Pompeyo en la Península.\nFue convertida en municipio romano bajo Julio César o Augusto, asignada a la provincia Hispania Citerior Tarraconensis, perteneciendo dentro de ella al Conventus iuridicus Caesaraugustanus.",
+    "descripcion_ca": "Graccurris fou una antiga ciutat dels vascons que correspon probablement a l'actual Alfaro, i que abans de la seva refundació pels romans es deia Ilurcis i va rebre el nom en honor de Tiberi Semproni Grac III.\nGraccurris, o també Gracurris, Gracuris o Graecuris, s'ubicava a la via entre Astorga i Tarragona, de la qual constituïa una mansió, situant-se entre les mansions de Barbanana (al Oeste) i de Balsio o Balsione (a l'est, en la via de Turiaso o Tarassona fins a Saragossa, les ruïnes de la qual s'aprecien actualment prop de Mallén), i a l'oest de Tutela (Tudela), que va haver de fundar-se per aquesta mateixa època.\nEs conserva part de l'aqüeducte que proveïa la ciutat. Alfaro se situa en la riba dreta del riu Alhama, a prop de l'Ebre, en un terreny pla amb pastures. No queden rastres de l'antiga Graccurris llevat de l'aqüeducte, i l'Alfaro actual va ser fundada pels àrabs.",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Alfaro_-_Ninfeo.JPG/500px-Alfaro_-_Ninfeo.JPG",
+    "imagenes": [
+     {
+      "titulo": "Alfaro - Ninfeo.JPG",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Alfaro_-_Ninfeo.JPG/500px-Alfaro_-_Ninfeo.JPG",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Alfaro_-_Ninfeo.JPG",
+      "autor": "Zarateman",
+      "licencia": "Public domain",
+      "caption": "Ninfeo romano de Alfaro (La Rioja, España)",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Alfaro_-_Ninfeo.JPG"
+     }
+    ],
+    "url_wikipedia_es": "https://es.wikipedia.org/wiki/Graccurris",
+    "url_wikipedia_ca": "https://ca.wikipedia.org/wiki/Graccurris",
+    "url_oficial": null,
+    "fuente": "wikidata+incluido"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      0.108611,
      38.840278
     ]
@@ -15501,43 +15465,6 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -1.589987,
-     43.009293
-    ]
-   },
-   "properties": {
-    "nombre_es": "Inscripción de Lanz",
-    "nombre_ca": "Inscripción de Lanz",
-    "civ": "vascones",
-    "tipo": "yacimiento",
-    "epoca": "s. I a.C.",
-    "siglo_inicio": -1,
-    "siglo_fin": -1,
-    "descripcion_es": "La inscripción de Lanz es una inscripción paleohispánica en escritura ibérica nororiental hallada en la cueva de Aierdi VIII, en la zona minera del municipio de Lanz, en Navarra, España, con una antigüedad aproximada de 2000 años;​​ siendo por lo tanto, del mismo período que la Mano de Irulegui.",
-    "descripcion_ca": "",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Ikae_hiru_ikur_2.jpg/500px-Ikae_hiru_ikur_2.jpg",
-    "imagenes": [
-     {
-      "titulo": "Ikae hiru ikur 2.jpg",
-      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Ikae_hiru_ikur_2.jpg/500px-Ikae_hiru_ikur_2.jpg",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Ikae_hiru_ikur_2.jpg",
-      "autor": "Gotzon",
-      "licencia": "CC BY-SA 4.0",
-      "caption": "Leintzeko idazkunean ageri diren ikurren transkripzioa",
-      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Ikae_hiru_ikur_2.jpg"
-     }
-    ],
-    "url_wikipedia_es": "https://es.wikipedia.org/wiki/Inscripción_de_Lanz",
-    "url_wikipedia_ca": null,
-    "url_oficial": null,
-    "fuente": "wikidata"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
      -5.405021,
      41.98634
     ]
@@ -15629,6 +15556,33 @@
     "imagen": null,
     "imagenes": [],
     "url_wikipedia_es": "https://es.wikipedia.org/wiki/Iruña-Veleia",
+    "url_wikipedia_ca": null,
+    "url_oficial": null,
+    "fuente": "curado"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.352,
+     42.996
+    ]
+   },
+   "properties": {
+    "nombre_es": "Iturissa (Turissa)",
+    "nombre_ca": "Iturissa (Turissa)",
+    "civ": "vascones",
+    "tipo": "ciudad",
+    "epoca": "",
+    "siglo_inicio": null,
+    "siglo_fin": null,
+    "descripcion_es": "Ciudad vascona citada por Ptolomeo al NE de Pompaelo; identificada en Espinal/Auritz (Navarra).",
+    "descripcion_ca": "",
+    "imagen": null,
+    "imagenes": [],
+    "url_wikipedia_es": "https://es.wikipedia.org/wiki/Turissa",
     "url_wikipedia_ca": null,
     "url_oficial": null,
     "fuente": "curado"
@@ -18791,6 +18745,70 @@
     "url_wikipedia_ca": "https://ca.wikipedia.org/wiki/Ocilis",
     "url_oficial": null,
     "fuente": "wikidata"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.78861,
+     43.34
+    ]
+   },
+   "properties": {
+    "nombre_es": "Oiasso",
+    "nombre_ca": "Oiaso",
+    "civ": "vascones",
+    "tipo": "ciudad",
+    "epoca": "",
+    "siglo_inicio": null,
+    "siglo_fin": null,
+    "descripcion_es": "Oiasso fue durante la antigüedad la ciudad o civitas portuaria de los vascones, situada en la desembocadura del río Bidasoa, en el emplazamiento de la moderna ciudad de Irún en Guipúzcoa, País Vasco (España). Durante el Imperio romano se convirtió en un importante centro de comunicaciones y de comercio del norte de Hispania, perteneciendo a la provincia Tarraconensis. Desde los años 1990 estudios arqueológicos han permitido un mayor conocimiento del contexto y realidad de la ciudad.\nCerca de la ubicación de Oiasso se encuentra el complejo minero de Arditurri, del cual la ciudad era la cabeza de su distrito minero, explotado desde época romana y asociado al puerto de Oiasso, aunque se estima que antes de la llegada de estos ya se explotaba el yacimiento.",
+    "descripcion_ca": "Oiaso (en llatí: Oeaso, en grec antic: Οἰασών) va ser una antiga ciutat dels vascons, que és l'actual Oiartzun. Com que es diu que aquesta era una ciutat vascona, la notícia de Pomponi Mela que els vàrduls arribaven fins als Pirineus seria errònia.\nOiaso era punt final de la via que des de Tàrraco (Tarragona) arribava a la mar Cantàbrica, passant per Pamplona. En parlen Estrabó, Plini el Vell i Claudi Ptolemeu.",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Oiasso_Museoko_barrualdea_02.jpg/500px-Oiasso_Museoko_barrualdea_02.jpg",
+    "imagenes": [
+     {
+      "titulo": "Oiasso Museoko barrualdea 02.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Oiasso_Museoko_barrualdea_02.jpg/500px-Oiasso_Museoko_barrualdea_02.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Oiasso_Museoko_barrualdea_02.jpg",
+      "autor": "Gipuzkoako Museoak, Gipuzkoako Foru Aldundia",
+      "licencia": "CC BY-SA 2.5",
+      "caption": "Irun heeriko Oiasso Museotik gertu dagoen, Ama Xantalen ermitako barrualdea",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Oiasso_Museoko_barrualdea_02.jpg"
+     },
+     {
+      "titulo": "Irun - Museo Romano Oiasso.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Irun_-_Museo_Romano_Oiasso.jpg/500px-Irun_-_Museo_Romano_Oiasso.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Irun_-_Museo_Romano_Oiasso.jpg",
+      "autor": "Zarateman",
+      "licencia": "CC0",
+      "caption": "Museo Romano Oiasso (Irún).",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Irun_-_Museo_Romano_Oiasso.jpg"
+     },
+     {
+      "titulo": "Oiasso Museoko barrualdea 01.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Oiasso_Museoko_barrualdea_01.jpg/500px-Oiasso_Museoko_barrualdea_01.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/31/Oiasso_Museoko_barrualdea_01.jpg",
+      "autor": "Gipuzkoako Museoak, Gipuzkoako Foru Aldundia",
+      "licencia": "CC BY-SA 2.5",
+      "caption": "Oiasso Museoko barrualdea",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Oiasso_Museoko_barrualdea_01.jpg"
+     },
+     {
+      "titulo": "Indusketak Santa Elena ermitan (Irun, Gipuzkoa).jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Indusketak_Santa_Elena_ermitan_%28Irun%2C_Gipuzkoa%29.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Indusketak_Santa_Elena_ermitan_%28Irun%2C_Gipuzkoa%29.jpg",
+      "autor": "Unknown author Unknown author",
+      "licencia": "CC BY 3.0",
+      "caption": "Indusketak Ama Xantalen ermitan (Irun, Gipuzkoa)",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Indusketak_Santa_Elena_ermitan_(Irun,_Gipuzkoa).jpg"
+     }
+    ],
+    "url_wikipedia_es": "https://es.wikipedia.org/wiki/Oiasso",
+    "url_wikipedia_ca": "https://ca.wikipedia.org/wiki/Oiaso",
+    "url_oficial": "http://www.diariovasco.com/pg060227/prensa/noticias/Cultura/200602/27/DVA-CUL-054.html",
+    "fuente": "wikidata+incluido"
    }
   },
   {
@@ -26769,33 +26787,6 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     2.932083,
-     41.72016
-    ]
-   },
-   "properties": {
-    "nombre_es": "Turissa",
-    "nombre_ca": "Turissa",
-    "civ": "vascones",
-    "tipo": "ciudad",
-    "epoca": "",
-    "siglo_inicio": null,
-    "siglo_fin": null,
-    "descripcion_es": "Iturissa fue una ciudad de los vascones. Ptolomeo la ubicaba al NE de Pompaelo, pero tanto en el Itinerario de Antonino (455, 6) como en el Anónimo de Rávena (311, 14) se sitúa al norte de esta ciudad.​\nEpigráficamente está documentado el nombre Eturissa.",
-    "descripcion_ca": "",
-    "imagen": null,
-    "imagenes": [],
-    "url_wikipedia_es": "https://es.wikipedia.org/wiki/Turissa",
-    "url_wikipedia_ca": null,
-    "url_oficial": "http://arqueologianavarra.blogspot.com.es/2012/03/iturissa-poblado-romano.html",
-    "fuente": "wikidata"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
      2.460709,
      41.600744
     ]
@@ -27135,6 +27126,61 @@
     "url_wikipedia_ca": null,
     "url_oficial": "http://www.patrimoniohistoricoclm.es/yacimiento-de-valeria/",
     "fuente": "wikidata"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.40657,
+     42.46082
+    ]
+   },
+   "properties": {
+    "nombre_es": "Vareia",
+    "nombre_ca": "Verela",
+    "civ": "vascones",
+    "tipo": "ciudad",
+    "epoca": "s. I a.C.",
+    "siglo_inicio": -1,
+    "siglo_fin": -1,
+    "descripcion_es": "Vareia fue una población romana de la Hispania Citerior Tarraconensis circunscrita en el Conventus Caesaraugustanus que fue fundada alrededor del siglo I a. C. tras las guerras sertorianas.  Sus restos muebles están ubicados debajo del actual casco urbano del barrio denominado Varea del municipio de Logroño en La Rioja (España).  Diversos trabajos arqueológicos han aflorado multitud de restos que son visibles y visitables en la actualidad.",
+    "descripcion_ca": "Vareia (llatí: Varia grec antic: Οὐάρεια) va ser una ciutat dels berons, a la província romana de la Tarraconense, a la riba de l'Ebre, allà on aquest riu començava a ser navegable, segons diu Plini el Vell. Una via creuava el riu entre Calagurris i Tritium.\nEstrabó l'esmenta com Varia però l'Itinerari d'Antoní li dona el nom de Verela. És probablement l'actual Varea, però d'altres diuen que és l'actual Logronyo i encara d'altres que és Murillo de Río Leza.",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Vareia-detailed-view.jpg/500px-Vareia-detailed-view.jpg",
+    "imagenes": [
+     {
+      "titulo": "Vareia-detailed-view.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Vareia-detailed-view.jpg/500px-Vareia-detailed-view.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Vareia-detailed-view.jpg",
+      "autor": "jynus",
+      "licencia": "CC BY 2.5",
+      "caption": "Closer view of Roman ruins in Varea, near Logroño (Spain). This old village was known as \"Vareia\".",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Vareia-detailed-view.jpg"
+     },
+     {
+      "titulo": "Vareia-general-view.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Vareia-general-view.jpg/500px-Vareia-general-view.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Vareia-general-view.jpg",
+      "autor": "jynus",
+      "licencia": "CC BY 2.5",
+      "caption": "General view of Roman ruins in Varea, near Logroño (Spain). This old village was known as \"Vareia\".",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Vareia-general-view.jpg"
+     },
+     {
+      "titulo": "Vareia Ruins in 2017.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Vareia_Ruins_in_2017.jpg/500px-Vareia_Ruins_in_2017.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Vareia_Ruins_in_2017.jpg",
+      "autor": "Jynus",
+      "licencia": "CC BY-SA 4.0",
+      "caption": "State of conservation of the Roman Ruins of Vareia in Varea, Logroño, La Rioja, Spain in 2017.",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Vareia_Ruins_in_2017.jpg"
+     }
+    ],
+    "url_wikipedia_es": "https://es.wikipedia.org/wiki/Vareia",
+    "url_wikipedia_ca": "https://ca.wikipedia.org/wiki/Vareia",
+    "url_oficial": null,
+    "fuente": "wikidata+incluido"
    }
   },
   {
@@ -31009,33 +31055,6 @@
     ],
     "url_wikipedia_es": "https://es.wikipedia.org/wiki/Arévacos",
     "url_wikipedia_ca": "https://ca.wikipedia.org/wiki/Arevacs",
-    "url_oficial": null,
-    "fuente": "wikidata"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -3.1,
-     42.633333
-    ]
-   },
-   "properties": {
-    "nombre_es": "batalla de Pancorbo",
-    "nombre_ca": "batalla de Pancorbo",
-    "civ": "vascones",
-    "tipo": "yacimiento",
-    "epoca": "",
-    "siglo_inicio": null,
-    "siglo_fin": null,
-    "descripcion_es": "La batalla de Pancorbo se libró en 816, cuando el ejército árabe, enviado al norte por el emir Alhakén I y dirigido por Abd al-Karim ibn Abd al-Wáhid ibn Mughith, intentó cruzar el paso de Pancorbo.",
-    "descripcion_ca": "La batalla de Pancorbo es va lliurar el 816 quan l'exèrcit àrab enviat al nord per l'emir al-Hàkam I i dirigit per Abd al-Karim ibn Abd al-Wahid ibn Mugit va intentar travessar el pas de Pancorbo.",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/2/28/Pen%C3%ADnsula_ib%C3%A8rica_814_catal%C3%A0.svg?utm_source=ca.wikipedia.org&utm_campaign=api&utm_content=original",
-    "imagenes": [],
-    "url_wikipedia_es": "https://es.wikipedia.org/wiki/Batalla_de_Pancorbo",
-    "url_wikipedia_ca": "https://ca.wikipedia.org/wiki/Batalla_de_Pancorbo",
     "url_oficial": null,
     "fuente": "wikidata"
    }

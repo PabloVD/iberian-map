@@ -11,3 +11,13 @@ Q5709588   tartesico        # Asta Regia (Mesas de Asta, Jerez) — turdetano/ta
 Q16144734  fenicio-punico   # Akra Leuke (fundación cartaginesa, Alicante)
 Q43175315  iberos           # Tossal de Manises / Lucentum (l'Albufereta, Alacant)
 Q3346918   fenicio-punico   # Puig des Molins: necrópolis púnica de Ebusus (Ibiza)
+
+# Ciudades vasconas (Anexo:Ciudades vasconas, es.wikipedia) con coordenadas
+Q3615328   vascones         # Andelos (Mendigorría, Navarra)
+Q653443    vascones         # Oiasso (Irún)
+Q5808431   vascones         # Graccurris (Alfaro/Corella, La Rioja)
+Q16516765  vascones         # Cascantum (Cascante, Navarra)
+Q16516817  vascones         # Curnonium
+Q4894734   vascones         # Vareia (Varea, Logroño)
+Q16516457  vascones         # Balsio
+Q16516038  vascones         # Alantone

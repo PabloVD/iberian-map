@@ -98,6 +98,7 @@ descripción escritas a mano); la fuente de la información es:
 | Cancho Roano | tartésico | [Wikipedia: Cancho Roano](https://es.wikipedia.org/wiki/Cancho_Roano) |
 | Iruña-Veleia | vascones | [Wikipedia: Iruña-Veleia](https://es.wikipedia.org/wiki/Iruña-Veleia) |
 | Gadir (Gades) | fenicio-púnico | [Wikipedia: Gadir](https://es.wikipedia.org/wiki/Gadir) — coordenadas aproximadas (casco antiguo de Cádiz) |
+| Iturissa (Turissa) | vascones | [Wikipedia: Turissa](https://es.wikipedia.org/wiki/Turissa) — el item de Wikidata tenía coords erróneas (Tossa de Mar); re-situada en Espinal/Auritz (Navarra) |
 
 Los sitios de `include_qids.txt` (Rode, Akra Leuke, Asta Regia, Lucentum) **no**
 se listan aquí porque sus datos vienen íntegros de Wikidata/Wikipedia, no a mano.

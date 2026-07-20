@@ -1511,6 +1511,17 @@
       "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Algeria_relief_location_map.jpg"
     }
   ],
+  "Q16516765": [
+    {
+      "titulo": "Basílica de Nuestra Señora del Romero (Cascante) 04.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Bas%C3%ADlica_de_Nuestra_Se%C3%B1ora_del_Romero_%28Cascante%29_04.jpg/500px-Bas%C3%ADlica_de_Nuestra_Se%C3%B1ora_del_Romero_%28Cascante%29_04.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Bas%C3%ADlica_de_Nuestra_Se%C3%B1ora_del_Romero_%28Cascante%29_04.jpg",
+      "autor": "Zarateman",
+      "licencia": "CC BY-SA 3.0",
+      "caption": "Basílica de Nuestra Señora del Romero (Cascante, Navarra)",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Bas%C3%ADlica_de_Nuestra_Se%C3%B1ora_del_Romero_(Cascante)_04.jpg"
+    }
+  ],
   "Q17596313": [
     {
       "titulo": "TOSSAL.jpg",
@@ -10307,6 +10318,17 @@
       "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:A_stream_in_the_mountains_(50545134041).jpg"
     }
   ],
+  "Q5808431": [
+    {
+      "titulo": "Alfaro - Ninfeo.JPG",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Alfaro_-_Ninfeo.JPG/500px-Alfaro_-_Ninfeo.JPG",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Alfaro_-_Ninfeo.JPG",
+      "autor": "Zarateman",
+      "licencia": "Public domain",
+      "caption": "Ninfeo romano de Alfaro (La Rioja, España)",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Alfaro_-_Ninfeo.JPG"
+    }
+  ],
   "Q609871": [
     {
       "titulo": "General view of Guelma.jpg",
@@ -13254,6 +13276,44 @@
       "licencia": "CC BY-SA 3.0",
       "caption": "Tripoli -Fragment Tempel Genius Coloniae",
       "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Tripoli_-_Fragment_Tempel_Genius_Coloniae.jpg"
+    }
+  ],
+  "Q653443": [
+    {
+      "titulo": "Oiasso Museoko barrualdea 02.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Oiasso_Museoko_barrualdea_02.jpg/500px-Oiasso_Museoko_barrualdea_02.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Oiasso_Museoko_barrualdea_02.jpg",
+      "autor": "Gipuzkoako Museoak, Gipuzkoako Foru Aldundia",
+      "licencia": "CC BY-SA 2.5",
+      "caption": "Irun heeriko Oiasso Museotik gertu dagoen, Ama Xantalen ermitako barrualdea",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Oiasso_Museoko_barrualdea_02.jpg"
+    },
+    {
+      "titulo": "Irun - Museo Romano Oiasso.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Irun_-_Museo_Romano_Oiasso.jpg/500px-Irun_-_Museo_Romano_Oiasso.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Irun_-_Museo_Romano_Oiasso.jpg",
+      "autor": "Zarateman",
+      "licencia": "CC0",
+      "caption": "Museo Romano Oiasso (Irún).",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Irun_-_Museo_Romano_Oiasso.jpg"
+    },
+    {
+      "titulo": "Oiasso Museoko barrualdea 01.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Oiasso_Museoko_barrualdea_01.jpg/500px-Oiasso_Museoko_barrualdea_01.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/31/Oiasso_Museoko_barrualdea_01.jpg",
+      "autor": "Gipuzkoako Museoak, Gipuzkoako Foru Aldundia",
+      "licencia": "CC BY-SA 2.5",
+      "caption": "Oiasso Museoko barrualdea",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Oiasso_Museoko_barrualdea_01.jpg"
+    },
+    {
+      "titulo": "Indusketak Santa Elena ermitan (Irun, Gipuzkoa).jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Indusketak_Santa_Elena_ermitan_%28Irun%2C_Gipuzkoa%29.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Indusketak_Santa_Elena_ermitan_%28Irun%2C_Gipuzkoa%29.jpg",
+      "autor": "Unknown author Unknown author",
+      "licencia": "CC BY 3.0",
+      "caption": "Indusketak Ama Xantalen ermitan (Irun, Gipuzkoa)",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Indusketak_Santa_Elena_ermitan_(Irun,_Gipuzkoa).jpg"
     }
   ],
   "Q77221": [
@@ -19560,6 +19620,35 @@
       "licencia": "CC BY-SA 4.0",
       "caption": "Roman bridge near Valeria",
       "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Valeria_roman_bridge.JPG"
+    }
+  ],
+  "Q4894734": [
+    {
+      "titulo": "Vareia-detailed-view.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Vareia-detailed-view.jpg/500px-Vareia-detailed-view.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Vareia-detailed-view.jpg",
+      "autor": "jynus",
+      "licencia": "CC BY 2.5",
+      "caption": "Closer view of Roman ruins in Varea, near Logroño (Spain). This old village was known as \"Vareia\".",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Vareia-detailed-view.jpg"
+    },
+    {
+      "titulo": "Vareia-general-view.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Vareia-general-view.jpg/500px-Vareia-general-view.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Vareia-general-view.jpg",
+      "autor": "jynus",
+      "licencia": "CC BY 2.5",
+      "caption": "General view of Roman ruins in Varea, near Logroño (Spain). This old village was known as \"Vareia\".",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Vareia-general-view.jpg"
+    },
+    {
+      "titulo": "Vareia Ruins in 2017.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Vareia_Ruins_in_2017.jpg/500px-Vareia_Ruins_in_2017.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Vareia_Ruins_in_2017.jpg",
+      "autor": "Jynus",
+      "licencia": "CC BY-SA 4.0",
+      "caption": "State of conservation of the Roman Ruins of Vareia in Varea, Logroño, La Rioja, Spain in 2017.",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Vareia_Ruins_in_2017.jpg"
     }
   ],
   "Q131425422": [

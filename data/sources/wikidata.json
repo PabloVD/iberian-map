@@ -103,6 +103,31 @@
     "fuente": "wikidata+incluido"
   },
   {
+    "qid": "Q16516038",
+    "nombre": "Alantone",
+    "nombre_es": "Alantone",
+    "nombre_ca": null,
+    "descripcion_es": "",
+    "descripcion_ca": "",
+    "lat": 42.9,
+    "lon": -1.8,
+    "civ": "vascones",
+    "siglo_inicio": null,
+    "siglo_fin": null,
+    "epoca": "",
+    "imagen_principal": null,
+    "commons_cat": null,
+    "p31": [
+      "Q2202509"
+    ],
+    "es_title": null,
+    "ca_title": null,
+    "url_wikipedia_es": null,
+    "url_wikipedia_ca": null,
+    "url_oficial": null,
+    "fuente": "wikidata+incluido"
+  },
+  {
     "qid": "Q2830654",
     "nombre": "Alarcos",
     "nombre_es": "Alarcos",
@@ -244,7 +269,7 @@
     "descripcion_ca": "",
     "lat": 42.599136,
     "lon": -1.859086,
-    "civ": "celtibero",
+    "civ": "vascones",
     "siglo_inicio": null,
     "siglo_fin": null,
     "epoca": "",
@@ -260,7 +285,7 @@
     "url_wikipedia_es": "https://es.wikipedia.org/wiki/Andelo",
     "url_wikipedia_ca": null,
     "url_oficial": "https://www.fundacioncajanavarra.es/es/educacioncultura/publicaciones",
-    "fuente": "wikidata"
+    "fuente": "wikidata+incluido"
   },
   {
     "qid": "Q85865312",
@@ -442,6 +467,31 @@
     "url_wikipedia_ca": "https://ca.wikipedia.org/wiki/Ausa",
     "url_oficial": "http://invarquit.cultura.gencat.cat/Cerca/Fitxa?index=0&consulta=&codi=256",
     "fuente": "wikidata"
+  },
+  {
+    "qid": "Q16516457",
+    "nombre": "Balsio",
+    "nombre_es": "Balsio",
+    "nombre_ca": null,
+    "descripcion_es": "ciudad romana en territorio vascón",
+    "descripcion_ca": "",
+    "lat": 41.91666667,
+    "lon": -1.41666667,
+    "civ": "vascones",
+    "siglo_inicio": null,
+    "siglo_fin": null,
+    "epoca": "",
+    "imagen_principal": null,
+    "commons_cat": null,
+    "p31": [
+      "Q2202509"
+    ],
+    "es_title": null,
+    "ca_title": null,
+    "url_wikipedia_es": null,
+    "url_wikipedia_ca": null,
+    "url_oficial": null,
+    "fuente": "wikidata+incluido"
   },
   {
     "qid": "Q10751701",
@@ -772,6 +822,31 @@
     "url_wikipedia_ca": "https://ca.wikipedia.org/wiki/Cartenna",
     "url_oficial": null,
     "fuente": "wikidata"
+  },
+  {
+    "qid": "Q16516765",
+    "nombre": "Cascantum",
+    "nombre_es": "Cascantum",
+    "nombre_ca": null,
+    "descripcion_es": "Cascantum —antes Kaiskata—, fue una ciudad romana construida sobre una celtíbera, conquistada por los vascones y que se correspondería con la actual Cascante, Navarra.  Cascantum se ubicaba sobre la vía romana que unía Caesaraugusta con Asturica Augusta. Llegó a acuñar moneda tanto en época celtibérica como romana.",
+    "descripcion_ca": "",
+    "lat": 41.98333333,
+    "lon": -1.66666667,
+    "civ": "vascones",
+    "siglo_inicio": null,
+    "siglo_fin": null,
+    "epoca": "",
+    "imagen_principal": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Iberian_Peninsula_location_map.svg",
+    "commons_cat": null,
+    "p31": [
+      "Q2202509"
+    ],
+    "es_title": "Cascantum",
+    "ca_title": null,
+    "url_wikipedia_es": "https://es.wikipedia.org/wiki/Cascantum",
+    "url_wikipedia_ca": null,
+    "url_oficial": null,
+    "fuente": "wikidata+incluido"
   },
   {
     "qid": "Q17596313",
@@ -5005,6 +5080,32 @@
     "fuente": "wikidata"
   },
   {
+    "qid": "Q16516817",
+    "nombre": "Curnonium",
+    "nombre_es": "Curnonium",
+    "nombre_ca": null,
+    "descripcion_es": "",
+    "descripcion_ca": "",
+    "lat": 42.56666667,
+    "lon": -2.18333333,
+    "civ": "vascones",
+    "siglo_inicio": null,
+    "siglo_fin": null,
+    "epoca": "",
+    "imagen_principal": null,
+    "commons_cat": null,
+    "p31": [
+      "Q839954",
+      "Q2202509"
+    ],
+    "es_title": null,
+    "ca_title": null,
+    "url_wikipedia_es": null,
+    "url_wikipedia_ca": null,
+    "url_oficial": null,
+    "fuente": "wikidata+incluido"
+  },
+  {
     "qid": "Q11916633",
     "nombre": "Darró",
     "nombre_es": null,
@@ -5602,6 +5703,32 @@
     "url_wikipedia_ca": null,
     "url_oficial": "http://www.iaph.es/patrimonio-inmueble-andalucia/resumen.do?id=i19640&ids=230090053",
     "fuente": "wikidata"
+  },
+  {
+    "qid": "Q5808431",
+    "nombre": "Graccurris",
+    "nombre_es": "Graccurris",
+    "nombre_ca": "Graccurris",
+    "descripcion_es": "Graccurris​ fue una ciudad romana correspondiente a la actual Alfaro, La Rioja fundada por Tiberio Sempronio Graco en el 179 a. C. sobre una ciudad o poblado arévaco, celtíbero, llamado Ilurce o Ilurcís, para asentar a heridos romanos e indígenas durante su campaña contra los Celtíberos.​\nDurante el período de conquista, fue una fiel aliada de Roma, pero durante las guerras civiles entre Cayo Mario y Sila, se pasó al bando popular dirigido por Quinto Sertorio. Cuando este fue vencido, pasó a engrosar la clientela de Pompeyo en la Península.\nFue convertida en municipio romano bajo Julio César o Augusto, asignada a la provincia Hispania Citerior Tarraconensis, perteneciendo dentro de ella al Conventus iuridicus Caesaraugustanus.",
+    "descripcion_ca": "Graccurris fou una antiga ciutat dels vascons que correspon probablement a l'actual Alfaro, i que abans de la seva refundació pels romans es deia Ilurcis i va rebre el nom en honor de Tiberi Semproni Grac III.\nGraccurris, o també Gracurris, Gracuris o Graecuris, s'ubicava a la via entre Astorga i Tarragona, de la qual constituïa una mansió, situant-se entre les mansions de Barbanana (al Oeste) i de Balsio o Balsione (a l'est, en la via de Turiaso o Tarassona fins a Saragossa, les ruïnes de la qual s'aprecien actualment prop de Mallén), i a l'oest de Tutela (Tudela), que va haver de fundar-se per aquesta mateixa època.\nEs conserva part de l'aqüeducte que proveïa la ciutat. Alfaro se situa en la riba dreta del riu Alhama, a prop de l'Ebre, en un terreny pla amb pastures. No queden rastres de l'antiga Graccurris llevat de l'aqüeducte, i l'Alfaro actual va ser fundada pels àrabs.",
+    "lat": 42.18,
+    "lon": -1.74111111,
+    "civ": "vascones",
+    "siglo_inicio": null,
+    "siglo_fin": null,
+    "epoca": "",
+    "imagen_principal": "https://upload.wikimedia.org/wikipedia/commons/1/14/Alfaro_-_Ninfeo.JPG",
+    "commons_cat": null,
+    "p31": [
+      "Q756780",
+      "Q839954"
+    ],
+    "es_title": "Graccurris",
+    "ca_title": "Graccurris",
+    "url_wikipedia_es": "https://es.wikipedia.org/wiki/Graccurris",
+    "url_wikipedia_ca": "https://ca.wikipedia.org/wiki/Graccurris",
+    "url_oficial": null,
+    "fuente": "wikidata+incluido"
   },
   {
     "qid": "Q609871",
@@ -7400,6 +7527,32 @@
     "url_wikipedia_ca": "https://ca.wikipedia.org/wiki/Oea",
     "url_oficial": null,
     "fuente": "wikidata"
+  },
+  {
+    "qid": "Q653443",
+    "nombre": "Oiasso",
+    "nombre_es": "Oiasso",
+    "nombre_ca": "Oiaso",
+    "descripcion_es": "Oiasso fue durante la antigüedad la ciudad o civitas portuaria de los vascones, situada en la desembocadura del río Bidasoa, en el emplazamiento de la moderna ciudad de Irún en Guipúzcoa, País Vasco (España). Durante el Imperio romano se convirtió en un importante centro de comunicaciones y de comercio del norte de Hispania, perteneciendo a la provincia Tarraconensis. Desde los años 1990 estudios arqueológicos han permitido un mayor conocimiento del contexto y realidad de la ciudad.\nCerca de la ubicación de Oiasso se encuentra el complejo minero de Arditurri, del cual la ciudad era la cabeza de su distrito minero, explotado desde época romana y asociado al puerto de Oiasso, aunque se estima que antes de la llegada de estos ya se explotaba el yacimiento.",
+    "descripcion_ca": "Oiaso (en llatí: Oeaso, en grec antic: Οἰασών) va ser una antiga ciutat dels vascons, que és l'actual Oiartzun. Com que es diu que aquesta era una ciutat vascona, la notícia de Pomponi Mela que els vàrduls arribaven fins als Pirineus seria errònia.\nOiaso era punt final de la via que des de Tàrraco (Tarragona) arribava a la mar Cantàbrica, passant per Pamplona. En parlen Estrabó, Plini el Vell i Claudi Ptolemeu.",
+    "lat": 43.34,
+    "lon": -1.78861,
+    "civ": "vascones",
+    "siglo_inicio": null,
+    "siglo_fin": null,
+    "epoca": "",
+    "imagen_principal": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Oiasso_Museoko_barrualdea_02.jpg",
+    "commons_cat": "Oiasso",
+    "p31": [
+      "Q2202509",
+      "Q2264924"
+    ],
+    "es_title": "Oiasso",
+    "ca_title": "Oiaso",
+    "url_wikipedia_es": "https://es.wikipedia.org/wiki/Oiasso",
+    "url_wikipedia_ca": "https://ca.wikipedia.org/wiki/Oiaso",
+    "url_oficial": "http://www.diariovasco.com/pg060227/prensa/noticias/Cultura/200602/27/DVA-CUL-054.html",
+    "fuente": "wikidata+incluido"
   },
   {
     "qid": "Q77221",
@@ -11364,6 +11517,32 @@
     "url_wikipedia_ca": null,
     "url_oficial": "http://www.patrimoniohistoricoclm.es/yacimiento-de-valeria/",
     "fuente": "wikidata"
+  },
+  {
+    "qid": "Q4894734",
+    "nombre": "Vareia",
+    "nombre_es": "Vareia",
+    "nombre_ca": "Verela",
+    "descripcion_es": "Vareia fue una población romana de la Hispania Citerior Tarraconensis circunscrita en el Conventus Caesaraugustanus que fue fundada alrededor del siglo I a. C. tras las guerras sertorianas.  Sus restos muebles están ubicados debajo del actual casco urbano del barrio denominado Varea del municipio de Logroño en La Rioja (España).  Diversos trabajos arqueológicos han aflorado multitud de restos que son visibles y visitables en la actualidad.",
+    "descripcion_ca": "Vareia (llatí: Varia grec antic: Οὐάρεια) va ser una ciutat dels berons, a la província romana de la Tarraconense, a la riba de l'Ebre, allà on aquest riu començava a ser navegable, segons diu Plini el Vell. Una via creuava el riu entre Calagurris i Tritium.\nEstrabó l'esmenta com Varia però l'Itinerari d'Antoní li dona el nom de Verela. És probablement l'actual Varea, però d'altres diuen que és l'actual Logronyo i encara d'altres que és Murillo de Río Leza.",
+    "lat": 42.46082,
+    "lon": -2.40657,
+    "civ": "vascones",
+    "siglo_inicio": -1,
+    "siglo_fin": -1,
+    "epoca": "s. I a.C.",
+    "imagen_principal": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Vareia-detailed-view.jpg",
+    "commons_cat": "Vareia",
+    "p31": [
+      "Q2202509",
+      "Q839954"
+    ],
+    "es_title": "Vareia",
+    "ca_title": "Vareia",
+    "url_wikipedia_es": "https://es.wikipedia.org/wiki/Vareia",
+    "url_wikipedia_ca": "https://ca.wikipedia.org/wiki/Vareia",
+    "url_oficial": null,
+    "fuente": "wikidata+incluido"
   },
   {
     "qid": "Q131425422",

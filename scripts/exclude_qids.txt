@@ -4,3 +4,5 @@
 #   Q12345  # motivo
 Q11948805  # sierra del Ventós: es un rango montañoso, no un yacimiento
 Q1094405   # Ciutadella de Roses: fortaleza renacentista (no prerromana); usamos Rode (Q4395887)
+Q6153974   # Turissa/Iturissa: item con coords erróneas (las de Tossa de Mar); se re-sitúa a mano
+Q130611895 # Inscripción de Lanz: es una inscripción, no un yacimiento/asentamiento

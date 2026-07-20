@@ -37,3 +37,6 @@ Q2941519   # Ulaca
 
 # --- Vascones ---
 Iruña      # Iruña-Veleia (curado; sin QID en el registro)
+Q653443    # Oiasso (Irún)
+Q3615328   # Andelos (Mendigorría)
+Iturissa   # ciudad vascona (curado; re-situada en Espinal)

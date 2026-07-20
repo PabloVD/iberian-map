@@ -58,6 +58,7 @@ BLOCKLIST_TYPES = {
     "Q2624046", "Q46831",                           # sierra / cordillera (rangos montañosos)
     "Q2074737", "Q123754112", "Q532",              # municipio(s) / pueblo
     "Q3257686", "Q11939023",                        # localidad / núcleo de población
+    "Q464780", "Q178561",                           # casa de moneda (ceca) / batalla
 }
 
 # --- Clasificación de tipo por P31 (prioridad de arriba a abajo) ---
