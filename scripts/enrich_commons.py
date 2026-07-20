@@ -28,10 +28,15 @@ IMG_EXT = (".jpg", ".jpeg", ".png", ".tif", ".tiff", ".webp")
 
 # Nombres de archivo que casi nunca son fotos del yacimiento.
 JUNK = re.compile(
-    r"(flag|coat|escudo|bandera|location_map|locator|logo|wikidata|commons-logo|"
-    r"map_of|mapa_de|blank|icon|símbolo|simbolo|star_of|red_pog|blue_pog)",
+    r"(flag|coat|escudo|bandera|location.?map|locator|relief.?map|topographic|"
+    r"logo|wikidata|commons-logo|map_of|mapa.?de|blank|icon|símbolo|simbolo|"
+    r"star_of|red_pog|blue_pog)",
     re.IGNORECASE,
 )
+
+# Si una imagen aparece en al menos estos yacimientos distintos, se considera
+# ilustrativa/de plantilla (no específica del sitio) y se retira de todos.
+SHARED_IMAGE_THRESHOLD = 3
 
 
 def canon_file(title):
@@ -164,6 +169,19 @@ def main():
                 gallery[res[0]] = res[1]
             if done % 50 == 0:
                 print(f"  {done}/{len(sites)} procesados...", flush=True)
+
+    # Retirar imágenes ilustrativas/de plantilla (aparecen en muchos yacimientos).
+    from collections import Counter
+    freq = Counter(im["titulo"] for ims in gallery.values() for im in ims)
+    shared = {t for t, c in freq.items() if c >= SHARED_IMAGE_THRESHOLD}
+    if shared:
+        print(f"Imágenes compartidas retiradas (>= {SHARED_IMAGE_THRESHOLD} sitios): {len(shared)}")
+        for t in sorted(shared):
+            print(f"   - {t} ({freq[t]} sitios)")
+        for qid in list(gallery):
+            gallery[qid] = [im for im in gallery[qid] if im["titulo"] not in shared]
+            if not gallery[qid]:
+                del gallery[qid]
 
     total = sum(len(v) for v in gallery.values())
     with open(OUT, "w", encoding="utf-8") as f:

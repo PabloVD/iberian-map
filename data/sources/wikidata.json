@@ -7810,6 +7810,32 @@
     "fuente": "wikidata"
   },
   {
+    "qid": "Q140632739",
+    "nombre": "Poblad ibero de la Rochina",
+    "nombre_es": "Poblad ibero de la Rochina",
+    "nombre_ca": "Poblat ibèric de la Rotxina",
+    "descripcion_es": "El Poblado ibero de la Rotxina fue una aldea ibera situada en el municipio valenciano de Sot de Ferrer. ​ ​  Estuvo poblada entre los siglos III y I aC. ​ Fue uno de los primeros yacimientos donde se aplicó la metodología científica en la excavación en el territorio valenciano.",
+    "descripcion_ca": "El Poblat ibèric de la Rotxina fou una aldea ibera situada al municipi de Sot de Ferrer, que va estar poblada entre els segles III i I a.C. Va ser un dels primers jaciments on es va aplicar la metodologia científica en la excavació al territori valencià.",
+    "lat": 39.7929514109534,
+    "lon": -0.39425759501749064,
+    "civ": "iberos",
+    "siglo_inicio": null,
+    "siglo_fin": null,
+    "epoca": "",
+    "imagen_principal": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Relief_map_of_Spain_Valencia.png",
+    "commons_cat": null,
+    "p31": [
+      "Q100268926",
+      "Q839954"
+    ],
+    "es_title": "Poblad ibero de la Rochina",
+    "ca_title": "Poblat ibèric de la Rotxina",
+    "url_wikipedia_es": "https://es.wikipedia.org/wiki/Poblad_ibero_de_la_Rochina",
+    "url_wikipedia_ca": "https://ca.wikipedia.org/wiki/Poblat_ibèric_de_la_Rotxina",
+    "url_oficial": null,
+    "fuente": "wikidata"
+  },
+  {
     "qid": "Q6081036",
     "nombre": "Poblado Ibérico Pico de los Ajos",
     "nombre_es": "Poblado Ibérico Pico de los Ajos",
@@ -9672,32 +9698,6 @@
     "ca_title": null,
     "url_wikipedia_es": null,
     "url_wikipedia_ca": null,
-    "url_oficial": null,
-    "fuente": "wikidata"
-  },
-  {
-    "qid": "Q140632739",
-    "nombre": "Q140632739",
-    "nombre_es": null,
-    "nombre_ca": null,
-    "descripcion_es": "El Poblado ibero de la Rotxina fue una aldea ibera situada en el municipio valenciano de Sot de Ferrer. ​ ​  Estuvo poblada entre los siglos III y I aC. ​ Fue uno de los primeros yacimientos donde se aplicó la metodología científica en la excavación en el territorio valenciano.",
-    "descripcion_ca": "El Poblat ibèric de la Rotxina fou una aldea ibera situada al municipi de Sot de Ferrer, que va estar poblada entre els segles III i I a.C. Va ser un dels primers jaciments on es va aplicar la metodologia científica en la excavació al territori valencià.",
-    "lat": 39.7929514109534,
-    "lon": -0.39425759501749064,
-    "civ": "iberos",
-    "siglo_inicio": null,
-    "siglo_fin": null,
-    "epoca": "",
-    "imagen_principal": null,
-    "commons_cat": null,
-    "p31": [
-      "Q100268926",
-      "Q839954"
-    ],
-    "es_title": "Poblad ibero de la Rochina",
-    "ca_title": "Poblat ibèric de la Rotxina",
-    "url_wikipedia_es": "https://es.wikipedia.org/wiki/Poblad_ibero_de_la_Rochina",
-    "url_wikipedia_ca": "https://ca.wikipedia.org/wiki/Poblat_ibèric_de_la_Rotxina",
     "url_oficial": null,
     "fuente": "wikidata"
   },

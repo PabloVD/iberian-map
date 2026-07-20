@@ -413,8 +413,10 @@ def main():
         url_oficial = p856[0] if p856 else link_map.get(qid)
 
         ini, fin, epoca = epoca_from_entity(ent, det_es, det_ca)
-        nombre_es = _label(ent, "es")
-        nombre_ca = _label(ent, "ca")
+        # Nombre: etiqueta de Wikidata; si falta, el título del artículo (mejor
+        # que mostrar el QID); en último caso el QID.
+        nombre_es = _label(ent, "es") or es_titles.get(qid)
+        nombre_ca = _label(ent, "ca") or ca_titles.get(qid)
         nombre = nombre_es or nombre_ca or _label(ent, "en") or qid
         p373 = _claim_value(ent, "P373")
 

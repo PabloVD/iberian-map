@@ -313,7 +313,9 @@ def main():
     for s in merged:
         imgs = galleries.get(s.get("qid"), []) if s.get("qid") else []
         # La imagen de hover = primera de la galería (coherente con el clic).
-        imagen = (imgs[0]["thumb"] if imgs else None) or s.get("imagen_principal")
+        # Hover = primera imagen de la galería ya depurada. Sin galería, sin
+        # imagen (no usamos la de cabecera del artículo: puede ser de plantilla).
+        imagen = imgs[0]["thumb"] if imgs else None
         tipo = s.get("tipo") or classify(s)
         ini, fin = plausible_epoch(s.get("siglo_inicio"), s.get("siglo_fin"))
         epoca = s.get("epoca", "") if ini is not None else ""
