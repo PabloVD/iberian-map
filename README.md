@@ -110,6 +110,40 @@ se listan aquí porque sus datos vienen íntegros de Wikidata/Wikipedia, no a ma
 Para **ampliar la cobertura** desde Wikipedia, añade categorías semilla en
 `SEED_CATEGORIES` dentro de `fetch_wikidata.py`.
 
+## Añadir un yacimiento prerromano (Wikidata → mapa)
+
+Para que un yacimiento hispano prerromano aparezca en el mapa basta un **ítem de
+Wikidata** (no hace falta artículo de Wikipedia). Crea el ítem en
+[`Special:NewItem`](https://www.wikidata.org/wiki/Special:NewItem) con:
+
+- **Etiquetas (labels)** en `es` y `ca` → es el nombre que se muestra.
+- **P31 «instancia de»** (define el tipo/icono):
+  - yacimiento arqueológico `Q839954` · oppidum `Q192601` · necrópolis `Q200141`
+    · mausoleo/sepulcro `Q162875` · santuario `Q29553` · cueva `Q35509` ·
+    castillo/fortificación `Q23413`.
+- **P625 «coordenadas»** — imprescindible.
+- **P2596 «cultura»** (define la civilización/color):
+  - íberos `Q190992` · celtíberos `Q5011445` · fenicios `Q1048468` /
+    púnicos `Q4383747` · colonización griega `Q828047` · Tartessos `Q320416` ·
+    vascones `Q1246837` · (celtas/atlánticos) lusitanos `Q837549`,
+    vetones `Q924779`, vacceos `Q2310278`, galaicos `Q1007723`,
+    cultura castreña `Q1049966`.
+- **P17 «país»**: España `Q29` · Portugal `Q45` · Andorra `Q228` · Francia `Q142`.
+- **Época** (para el filtro de siglos): **P571 «fundación»** y **P576 «disolución»**
+  con **precisión “siglo”** (teclea un año con signo `-` para a. C. y cambia la
+  precisión a *siglo*; p. ej. `-450` → s. V a. C.).
+- Opcional: **P18** imagen · **P373** categoría de Commons · **P856** web oficial.
+
+Con `P2596` + `P17` + `P625` el pipeline lo descubre solo; para asegurarlo, añade
+su QID a `scripts/include_qids.txt` (y a `anchor_sites.txt`) y re-ejecuta el
+pipeline. Wikidata tarda unos minutos en propagarse al Query Service.
+
+**Crear el artículo de Wikipedia a partir del ítem** (opcional): escribe el
+artículo con un infobox que lea Wikidata (p. ej. `{{Ficha de yacimiento
+arqueológico}}`) y, al publicarlo, **vincúlalo al ítem existente** añadiendo el
+*sitelink* `eswiki`/`cawiki` en Wikidata (no crees un ítem duplicado). Necesita
+fuentes/notabilidad propias de Wikipedia.
+
 ## Ver en local
 
 ```bash
