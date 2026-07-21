@@ -13,6 +13,7 @@ Q4745109   # Torreparedones
 Cástulo
 La Alcudia
 Q2660473   # Las Cogotas (vetón/íbero, Ávila)
+Q4708457   # Sepulcro de Pozo Moro
 
 # --- Celtíberos ---
 Q623407    # Numancia

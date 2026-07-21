@@ -2878,6 +2878,32 @@
     "fuente": "wikidata"
   },
   {
+    "qid": "Q20550673",
+    "nombre": "Castro de Punta Neixón",
+    "nombre_es": "Castro de Punta Neixón",
+    "nombre_ca": null,
+    "descripcion_es": "Castros de Punta Neixón son dos poblados castreños contiguos, Castro Pequeño y Castro Grande, situados en la península de Punta de Neixón, parroquia de Cespón, municipio de Boiro (A Coruña), en la orilla norte de la ría de Arousa. Su período de ocupación abarca desde finales de la Edad de Bronce hasta época tardorromana.",
+    "descripcion_ca": "",
+    "lat": 42.663838888889,
+    "lon": -8.8426833333333,
+    "civ": "celtas",
+    "siglo_inicio": null,
+    "siglo_fin": null,
+    "epoca": "",
+    "imagen_principal": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Castro_de_Neix%C3%B3n%2C_Cesp%C3%B3n%2C_Boiro_01-07.jpg",
+    "commons_cat": "Castros do Neixón",
+    "p31": [
+      "Q839954",
+      "Q744099"
+    ],
+    "es_title": "Castros de Punta Neixón",
+    "ca_title": null,
+    "url_wikipedia_es": "https://es.wikipedia.org/wiki/Castros_de_Punta_Neixón",
+    "url_wikipedia_ca": null,
+    "url_oficial": null,
+    "fuente": "wikidata"
+  },
+  {
     "qid": "Q10952202",
     "nombre": "Castro de Romariz",
     "nombre_es": null,
@@ -7365,7 +7391,7 @@
     "nombre": "Nertobriga",
     "nombre_es": "Nertobriga",
     "nombre_ca": null,
-    "descripcion_es": "Nertobriga fue una ciudad perteneciente al pueblo celtibero de los Belos que se situaría en la actual provincia de Zaragoza (España), entre las localidades de Ricla, Calatorao y La Almunia de Doña Godina. En el siglo III aparece relacionada en el Itinerario Antonino A-24 y en Itinerario Antonino A-25  encabezado con el título de Alio itinere ab Emerita Cesaragustam 369 que significa \"Otro camino de Mérida a Zaragoza, 369 millas\",  entre las plazas de Bilbilis y Segontia.\nLas actuales ruinas y los recientes descubrimientos de lo que fue la ciudad de Nertobriga se encuentran entre el término municipal de Calatorao y La Almunia de Doña Godina, ocupando más terreno de este último.",
+    "descripcion_es": "Nertobriga fue una ciudad perteneciente al pueblo celtÍbero de los Belos que se situaría en la actual provincia de Zaragoza (España), entre las localidades de Ricla, Calatorao y La Almunia de Doña Godina. En el siglo III aparece relacionada en el Itinerario Antonino A-24 y en Itinerario Antonino A-25  encabezado con el título de Alio itinere ab Emerita Cesaragustam 369 que significa \"Otro camino de Mérida a Zaragoza, 369 millas\",  entre las plazas de Bilbilis y Segontia.\nLas actuales ruinas y los recientes descubrimientos de lo que fue la ciudad de Nertobriga se encuentran entre el término municipal de Calatorao y La Almunia de Doña Godina, ocupando más terreno de este último.",
     "descripcion_ca": "",
     "lat": 41.53,
     "lon": -1.35,
@@ -7810,32 +7836,6 @@
     "fuente": "wikidata"
   },
   {
-    "qid": "Q140632739",
-    "nombre": "Poblad ibero de la Rochina",
-    "nombre_es": "Poblad ibero de la Rochina",
-    "nombre_ca": "Poblat ibèric de la Rotxina",
-    "descripcion_es": "El Poblado ibero de la Rotxina fue una aldea ibera situada en el municipio valenciano de Sot de Ferrer. ​ ​  Estuvo poblada entre los siglos III y I aC. ​ Fue uno de los primeros yacimientos donde se aplicó la metodología científica en la excavación en el territorio valenciano.",
-    "descripcion_ca": "El Poblat ibèric de la Rotxina fou una aldea ibera situada al municipi de Sot de Ferrer, que va estar poblada entre els segles III i I a.C. Va ser un dels primers jaciments on es va aplicar la metodologia científica en la excavació al territori valencià.",
-    "lat": 39.7929514109534,
-    "lon": -0.39425759501749064,
-    "civ": "iberos",
-    "siglo_inicio": -3,
-    "siglo_fin": -1,
-    "epoca": "s. III a.C. – s. I a.C.",
-    "imagen_principal": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Relief_map_of_Spain_Valencia.png",
-    "commons_cat": null,
-    "p31": [
-      "Q100268926",
-      "Q839954"
-    ],
-    "es_title": "Poblad ibero de la Rochina",
-    "ca_title": "Poblat ibèric de la Rotxina",
-    "url_wikipedia_es": "https://es.wikipedia.org/wiki/Poblad_ibero_de_la_Rochina",
-    "url_wikipedia_ca": "https://ca.wikipedia.org/wiki/Poblat_ibèric_de_la_Rotxina",
-    "url_oficial": null,
-    "fuente": "wikidata"
-  },
-  {
     "qid": "Q6081036",
     "nombre": "Poblado Ibérico Pico de los Ajos",
     "nombre_es": "Poblado Ibérico Pico de los Ajos",
@@ -8015,6 +8015,32 @@
     "url_wikipedia_es": "https://es.wikipedia.org/wiki/Poblado_fortificado_de_Vila_Nova_de_San_Pedro",
     "url_wikipedia_ca": "https://ca.wikipedia.org/wiki/Castro_de_Vila_Nova_de_São_Pedro",
     "url_oficial": "http://www.monumentos.gov.pt/Site/APP_PagesUser/SIPA.aspx?id=6278",
+    "fuente": "wikidata"
+  },
+  {
+    "qid": "Q140632739",
+    "nombre": "Poblado ibero de la Rochina",
+    "nombre_es": "Poblado ibero de la Rochina",
+    "nombre_ca": "Poblat ibèric de la Rotxina",
+    "descripcion_es": "El poblado ibero de la Rotxina fue una aldea ibera situada en el municipio valenciano de Sot de Ferrer. ​ ​  Estuvo poblada entre los siglos III y I aC. ​ Fue uno de los primeros yacimientos donde se aplicó la metodología científica en la excavación en el territorio valenciano.",
+    "descripcion_ca": "El Poblat ibèric de la Rotxina fou una aldea ibera situada al municipi de Sot de Ferrer, que va estar poblada entre els segles III i I a.C. Va ser un dels primers jaciments on es va aplicar la metodologia científica en la excavació al territori valencià.",
+    "lat": 39.7929514109534,
+    "lon": -0.39425759501749064,
+    "civ": "iberos",
+    "siglo_inicio": -3,
+    "siglo_fin": -1,
+    "epoca": "s. III a.C. – s. I a.C.",
+    "imagen_principal": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Relief_map_of_Spain_Valencia.png",
+    "commons_cat": null,
+    "p31": [
+      "Q100268926",
+      "Q839954"
+    ],
+    "es_title": "Poblado ibero de la Rochina",
+    "ca_title": "Poblat ibèric de la Rotxina",
+    "url_wikipedia_es": "https://es.wikipedia.org/wiki/Poblado_ibero_de_la_Rochina",
+    "url_wikipedia_ca": "https://ca.wikipedia.org/wiki/Poblat_ibèric_de_la_Rotxina",
+    "url_oficial": null,
     "fuente": "wikidata"
   },
   {
@@ -10152,7 +10178,7 @@
     "siglo_inicio": null,
     "siglo_fin": null,
     "epoca": "",
-    "imagen_principal": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Espa%C3%B1aLoc.svg",
+    "imagen_principal": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Saiti_2014.jpg",
     "commons_cat": null,
     "p31": [
       "Q2202509",
@@ -10447,6 +10473,32 @@
     "url_wikipedia_ca": "https://ca.wikipedia.org/wiki/Segòbriga",
     "url_oficial": "http://www.patrimoniohistoricoclm.es/parque-arqueologico-de-segobriga/",
     "fuente": "wikidata"
+  },
+  {
+    "qid": "Q4708457",
+    "nombre": "Sepulcro de Pozo Moro",
+    "nombre_es": "Sepulcro de Pozo Moro",
+    "nombre_ca": "sepulcre de Pozo Moro",
+    "descripcion_es": "El sepulcro de Pozo Moro es un monumento funerario turriforme de origen ibero datado hacia fines del siglo VI a. C., que fue encontrado en la población albaceteña de Chinchilla de Montearagón. Actualmente se encuentra en el Museo Arqueológico Nacional de España, en Madrid.",
+    "descripcion_ca": "El sepulcre de Pozo Moro és un monument en forma de torre d'origen iber datat cap a fins del segle vi aC., que va ser trobat a la població de Chinchilla de Monte-Aragón (província d'Albacete). Actualment es troba al Museu Arqueològic Nacional d'Espanya, a Madrid.",
+    "lat": 38.921769,
+    "lon": -1.730538,
+    "civ": "iberos",
+    "siglo_inicio": -6,
+    "siglo_fin": -6,
+    "epoca": "s. VI a.C.",
+    "imagen_principal": "https://upload.wikimedia.org/wikipedia/commons/7/73/Museo_Arqueol%C3%B3gico_Nacional_-_1999-76-A_-_Monumento_de_Pozo_Moro.jpg",
+    "commons_cat": "Monument of Pozo Moro",
+    "p31": [
+      "Q162875",
+      "Q2916962"
+    ],
+    "es_title": "Sepulcro de Pozo Moro",
+    "ca_title": "Sepulcre de Pozo Moro",
+    "url_wikipedia_es": "https://es.wikipedia.org/wiki/Sepulcro_de_Pozo_Moro",
+    "url_wikipedia_ca": "https://ca.wikipedia.org/wiki/Sepulcre_de_Pozo_Moro",
+    "url_oficial": "http://www.laiesken.net/arqueologia/pdf/2009/AI0201.pdf",
+    "fuente": "wikidata+incluido"
   },
   {
     "qid": "Q47766735",

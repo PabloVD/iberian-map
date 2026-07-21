@@ -63,7 +63,7 @@ BLOCKLIST_TYPES = {
 
 # --- Clasificación de tipo por P31 (prioridad de arriba a abajo) ---
 TYPE_BY_P31 = [
-    ("necrópolis",    {"Q200141", "Q173387", "Q56055312"}),
+    ("necrópolis",    {"Q200141", "Q173387", "Q56055312", "Q162875"}),  # + mausoleo
     ("santuario",     {"Q29553"}),
     ("cueva",         {"Q35509", "Q11269813"}),
     ("poblado",       {"Q100268926", "Q192601", "Q486972", "Q22674925", "Q350895"}),
@@ -75,7 +75,9 @@ TYPE_BY_P31 = [
 
 # Respaldo por palabras clave (multilingüe) cuando P31 no basta.
 TYPE_KEYWORDS = [
-    ("necrópolis",   ["necrópolis", "necropoli", "necrópoli", "necropolis"]),
+    ("necrópolis",   ["necrópolis", "necropoli", "necrópoli", "necropolis",
+                      "sepulcro", "sepulcre", "mausoleo", "mausoleu", "funerario",
+                      "funerari"]),
     ("santuario",    ["santuario", "santuari", "templo", "temple"]),
     ("cueva",        ["cueva", "cova", "abrigo", "gruta"]),
     ("fortificación", ["castillo", "castell", "muralla", "torre", "fortaleza", "fortalesa"]),

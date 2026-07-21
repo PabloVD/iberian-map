@@ -1,7 +1,7 @@
 {
  "type": "FeatureCollection",
  "metadata": {
-  "count": 482,
+  "count": 484,
   "descripcion": "Yacimientos de la cultura ibérica"
  },
  "features": [
@@ -7988,6 +7988,124 @@
      }
     ],
     "url_wikipedia_es": null,
+    "url_wikipedia_ca": null,
+    "url_oficial": null,
+    "fuente": "wikidata"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.842683,
+     42.663839
+    ]
+   },
+   "properties": {
+    "nombre_es": "Castro de Punta Neixón",
+    "nombre_ca": "Castro de Punta Neixón",
+    "civ": "celtas",
+    "tipo": "yacimiento",
+    "epoca": "",
+    "siglo_inicio": null,
+    "siglo_fin": null,
+    "descripcion_es": "Castros de Punta Neixón son dos poblados castreños contiguos, Castro Pequeño y Castro Grande, situados en la península de Punta de Neixón, parroquia de Cespón, municipio de Boiro (A Coruña), en la orilla norte de la ría de Arousa. Su período de ocupación abarca desde finales de la Edad de Bronce hasta época tardorromana.",
+    "descripcion_ca": "",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Castro_de_Neix%C3%B3n%2C_Cesp%C3%B3n%2C_Boiro_01-07.jpg/500px-Castro_de_Neix%C3%B3n%2C_Cesp%C3%B3n%2C_Boiro_01-07.jpg",
+    "imagenes": [
+     {
+      "titulo": "Castro de Neixón, Cespón, Boiro 01-07.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Castro_de_Neix%C3%B3n%2C_Cesp%C3%B3n%2C_Boiro_01-07.jpg/500px-Castro_de_Neix%C3%B3n%2C_Cesp%C3%B3n%2C_Boiro_01-07.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Castro_de_Neix%C3%B3n%2C_Cesp%C3%B3n%2C_Boiro_01-07.jpg",
+      "autor": "http://gl.wikipedia.org/w/index.php?title=User:Lameiro",
+      "licencia": "Public domain",
+      "caption": "Castro Pequeno de Neixón (Boiro, A Coruña).",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Castro_de_Neix%C3%B3n,_Cesp%C3%B3n,_Boiro_01-07.jpg"
+     },
+     {
+      "titulo": "Boiro, Cespón, Centro Arqueolóxico do Barbanza 02-08.JPG",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Boiro%2C_Cesp%C3%B3n%2C_Centro_Arqueol%C3%B3xico_do_Barbanza_02-08.JPG/500px-Boiro%2C_Cesp%C3%B3n%2C_Centro_Arqueol%C3%B3xico_do_Barbanza_02-08.JPG",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/58/Boiro%2C_Cesp%C3%B3n%2C_Centro_Arqueol%C3%B3xico_do_Barbanza_02-08.JPG",
+      "autor": "http://gl.wikipedia.org/w/index.php?title=User:Lameiro",
+      "licencia": "Public domain",
+      "caption": "Reconstrución ideal dunha casa do castro, no Centro Arqueolóxico do Barbanza.",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Boiro,_Cesp%C3%B3n,_Centro_Arqueol%C3%B3xico_do_Barbanza_02-08.JPG"
+     },
+     {
+      "titulo": "Castro de Neixón (48329981992).jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Castro_de_Neix%C3%B3n_%2848329981992%29.jpg/500px-Castro_de_Neix%C3%B3n_%2848329981992%29.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Castro_de_Neix%C3%B3n_%2848329981992%29.jpg",
+      "autor": "N O E L | F E A N S",
+      "licencia": "CC BY 2.0",
+      "caption": "Castro de Neixón",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Castro_de_Neix%C3%B3n_(48329981992).jpg"
+     },
+     {
+      "titulo": "Castro de Neixón (50679201993).jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Castro_de_Neix%C3%B3n_%2850679201993%29.jpg/500px-Castro_de_Neix%C3%B3n_%2850679201993%29.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/10/Castro_de_Neix%C3%B3n_%2850679201993%29.jpg",
+      "autor": "N O E L | F E A N S",
+      "licencia": "CC BY 2.0",
+      "caption": "Castro de Neixón",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Castro_de_Neix%C3%B3n_(50679201993).jpg"
+     },
+     {
+      "titulo": "Castro de Neixón, Cespón, Boiro 01-01.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Castro_de_Neix%C3%B3n%2C_Cesp%C3%B3n%2C_Boiro_01-01.jpg/500px-Castro_de_Neix%C3%B3n%2C_Cesp%C3%B3n%2C_Boiro_01-01.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Castro_de_Neix%C3%B3n%2C_Cesp%C3%B3n%2C_Boiro_01-01.jpg",
+      "autor": "http://gl.wikipedia.org/w/index.php?title=User:Lameiro",
+      "licencia": "Public domain",
+      "caption": "Cata no parapeto do Castro Grande de Neixón (Boiro, A Coruña).",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Castro_de_Neix%C3%B3n,_Cesp%C3%B3n,_Boiro_01-01.jpg"
+     },
+     {
+      "titulo": "Castro de Neixón, Cespón, Boiro 01-04.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Castro_de_Neix%C3%B3n%2C_Cesp%C3%B3n%2C_Boiro_01-04.jpg/500px-Castro_de_Neix%C3%B3n%2C_Cesp%C3%B3n%2C_Boiro_01-04.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Castro_de_Neix%C3%B3n%2C_Cesp%C3%B3n%2C_Boiro_01-04.jpg",
+      "autor": "http://gl.wikipedia.org/w/index.php?title=User:Lameiro",
+      "licencia": "Public domain",
+      "caption": "Castro Grande de Neixón (Boiro, A Coruña).",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Castro_de_Neix%C3%B3n,_Cesp%C3%B3n,_Boiro_01-04.jpg"
+     },
+     {
+      "titulo": "Castro de Neixón, Cespón, Boiro 01-06.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Castro_de_Neix%C3%B3n%2C_Cesp%C3%B3n%2C_Boiro_01-06.jpg/500px-Castro_de_Neix%C3%B3n%2C_Cesp%C3%B3n%2C_Boiro_01-06.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/db/Castro_de_Neix%C3%B3n%2C_Cesp%C3%B3n%2C_Boiro_01-06.jpg",
+      "autor": "http://gl.wikipedia.org/w/index.php?title=User:Lameiro",
+      "licencia": "Public domain",
+      "caption": "Castro Pequeno de Neixón (Boiro, A Coruña).",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Castro_de_Neix%C3%B3n,_Cesp%C3%B3n,_Boiro_01-06.jpg"
+     },
+     {
+      "titulo": "Castro de Neixón, Cespón, Boiro 01-10.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Castro_de_Neix%C3%B3n%2C_Cesp%C3%B3n%2C_Boiro_01-10.jpg/500px-Castro_de_Neix%C3%B3n%2C_Cesp%C3%B3n%2C_Boiro_01-10.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Castro_de_Neix%C3%B3n%2C_Cesp%C3%B3n%2C_Boiro_01-10.jpg",
+      "autor": "http://gl.wikipedia.org/w/index.php?title=User:Lameiro",
+      "licencia": "Public domain",
+      "caption": "Castro Grande de Neixón (Boiro, A Coruña).",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Castro_de_Neix%C3%B3n,_Cesp%C3%B3n,_Boiro_01-10.jpg"
+     },
+     {
+      "titulo": "Castro Grande de Neixón.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Castro_Grande_de_Neix%C3%B3n.jpg/500px-Castro_Grande_de_Neix%C3%B3n.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Castro_Grande_de_Neix%C3%B3n.jpg",
+      "autor": "Josi",
+      "licencia": "CC BY-SA 4.0",
+      "caption": "O Castro Grande de Neixón foi unha pequena aldea delimitada cunha serie de elementos defensivos cema son os fosos e terrapléns. Òs seushabitantes cultivaban cereáis, apañaban froitos silvestres, coidaban o gando e completaban a súa dieta coa pesca e actividades marisquieiras. Asemade, practicaban…",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Castro_Grande_de_Neix%C3%B3n.jpg"
+     },
+     {
+      "titulo": "Castro Pequeno de Neixón.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Castro_Pequeno_de_Neix%C3%B3n.jpg/500px-Castro_Pequeno_de_Neix%C3%B3n.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Castro_Pequeno_de_Neix%C3%B3n.jpg",
+      "autor": "Josi",
+      "licencia": "CC BY-SA 4.0",
+      "caption": "Castro Pequeno de Neixón constátase o paso dunha arquitectura feita con materiais perecedoiros a outra constituída por cabanas de planta circular con zócalos de pedra, paramentos de arxila e madeiras, e cuberta de palla, que son características dos primeiros momentos da cultura castrexa. Os prime…",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Castro_Pequeno_de_Neix%C3%B3n.jpg"
+     }
+    ],
+    "url_wikipedia_es": "https://es.wikipedia.org/wiki/Castros_de_Punta_Neixón",
     "url_wikipedia_ca": null,
     "url_oficial": null,
     "fuente": "wikidata"
@@ -17795,7 +17913,7 @@
     "epoca": "",
     "siglo_inicio": null,
     "siglo_fin": null,
-    "descripcion_es": "Nertobriga fue una ciudad perteneciente al pueblo celtibero de los Belos que se situaría en la actual provincia de Zaragoza (España), entre las localidades de Ricla, Calatorao y La Almunia de Doña Godina. En el siglo III aparece relacionada en el Itinerario Antonino A-24 y en Itinerario Antonino A-25  encabezado con el título de Alio itinere ab Emerita Cesaragustam 369 que significa \"Otro camino de Mérida a Zaragoza, 369 millas\",  entre las plazas de Bilbilis y Segontia.\nLas actuales ruinas y los recientes descubrimientos de lo que fue la ciudad de Nertobriga se encuentran entre el término municipal de Calatorao y La Almunia de Doña Godina, ocupando más terreno de este último.",
+    "descripcion_es": "Nertobriga fue una ciudad perteneciente al pueblo celtÍbero de los Belos que se situaría en la actual provincia de Zaragoza (España), entre las localidades de Ricla, Calatorao y La Almunia de Doña Godina. En el siglo III aparece relacionada en el Itinerario Antonino A-24 y en Itinerario Antonino A-25  encabezado con el título de Alio itinere ab Emerita Cesaragustam 369 que significa \"Otro camino de Mérida a Zaragoza, 369 millas\",  entre las plazas de Bilbilis y Segontia.\nLas actuales ruinas y los recientes descubrimientos de lo que fue la ciudad de Nertobriga se encuentran entre el término municipal de Calatorao y La Almunia de Doña Godina, ocupando más terreno de este último.",
     "descripcion_ca": "",
     "imagen": null,
     "imagenes": [],
@@ -18593,33 +18711,6 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -0.394258,
-     39.792951
-    ]
-   },
-   "properties": {
-    "nombre_es": "Poblad ibero de la Rochina",
-    "nombre_ca": "Poblat ibèric de la Rotxina",
-    "civ": "iberos",
-    "tipo": "poblado",
-    "epoca": "s. III a.C. – s. I a.C.",
-    "siglo_inicio": -3,
-    "siglo_fin": -1,
-    "descripcion_es": "El Poblado ibero de la Rotxina fue una aldea ibera situada en el municipio valenciano de Sot de Ferrer. ​ ​  Estuvo poblada entre los siglos III y I aC. ​ Fue uno de los primeros yacimientos donde se aplicó la metodología científica en la excavación en el territorio valenciano.",
-    "descripcion_ca": "El Poblat ibèric de la Rotxina fou una aldea ibera situada al municipi de Sot de Ferrer, que va estar poblada entre els segles III i I a.C. Va ser un dels primers jaciments on es va aplicar la metodologia científica en la excavació al territori valencià.",
-    "imagen": null,
-    "imagenes": [],
-    "url_wikipedia_es": "https://es.wikipedia.org/wiki/Poblad_ibero_de_la_Rochina",
-    "url_wikipedia_ca": "https://ca.wikipedia.org/wiki/Poblat_ibèric_de_la_Rotxina",
-    "url_oficial": null,
-    "fuente": "wikidata"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
      -0.943998,
      39.324538
     ]
@@ -19159,6 +19250,33 @@
     "url_wikipedia_es": "https://es.wikipedia.org/wiki/Poblado_fortificado_de_Vila_Nova_de_San_Pedro",
     "url_wikipedia_ca": "https://ca.wikipedia.org/wiki/Castro_de_Vila_Nova_de_São_Pedro",
     "url_oficial": "http://www.monumentos.gov.pt/Site/APP_PagesUser/SIPA.aspx?id=6278",
+    "fuente": "wikidata"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.394258,
+     39.792951
+    ]
+   },
+   "properties": {
+    "nombre_es": "Poblado ibero de la Rochina",
+    "nombre_ca": "Poblat ibèric de la Rotxina",
+    "civ": "iberos",
+    "tipo": "poblado",
+    "epoca": "s. III a.C. – s. I a.C.",
+    "siglo_inicio": -3,
+    "siglo_fin": -1,
+    "descripcion_es": "El poblado ibero de la Rotxina fue una aldea ibera situada en el municipio valenciano de Sot de Ferrer. ​ ​  Estuvo poblada entre los siglos III y I aC. ​ Fue uno de los primeros yacimientos donde se aplicó la metodología científica en la excavación en el territorio valenciano.",
+    "descripcion_ca": "El Poblat ibèric de la Rotxina fou una aldea ibera situada al municipi de Sot de Ferrer, que va estar poblada entre els segles III i I a.C. Va ser un dels primers jaciments on es va aplicar la metodologia científica en la excavació al territori valencià.",
+    "imagen": null,
+    "imagenes": [],
+    "url_wikipedia_es": "https://es.wikipedia.org/wiki/Poblado_ibero_de_la_Rochina",
+    "url_wikipedia_ca": "https://ca.wikipedia.org/wiki/Poblat_ibèric_de_la_Rotxina",
+    "url_oficial": null,
     "fuente": "wikidata"
    }
   },
@@ -23036,6 +23154,124 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -1.730538,
+     38.921769
+    ]
+   },
+   "properties": {
+    "nombre_es": "Sepulcro de Pozo Moro",
+    "nombre_ca": "sepulcre de Pozo Moro",
+    "civ": "iberos",
+    "tipo": "necrópolis",
+    "epoca": "s. VI a.C.",
+    "siglo_inicio": -6,
+    "siglo_fin": -6,
+    "descripcion_es": "El sepulcro de Pozo Moro es un monumento funerario turriforme de origen ibero datado hacia fines del siglo VI a. C., que fue encontrado en la población albaceteña de Chinchilla de Montearagón. Actualmente se encuentra en el Museo Arqueológico Nacional de España, en Madrid.",
+    "descripcion_ca": "El sepulcre de Pozo Moro és un monument en forma de torre d'origen iber datat cap a fins del segle vi aC., que va ser trobat a la població de Chinchilla de Monte-Aragón (província d'Albacete). Actualment es troba al Museu Arqueològic Nacional d'Espanya, a Madrid.",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Monumento_de_Pozo_Moro_%28M.A.N._Inv.1999-76-A%29_01.jpg/500px-Monumento_de_Pozo_Moro_%28M.A.N._Inv.1999-76-A%29_01.jpg",
+    "imagenes": [
+     {
+      "titulo": "Monumento de Pozo Moro (M.A.N. Inv.1999-76-A) 01.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Monumento_de_Pozo_Moro_%28M.A.N._Inv.1999-76-A%29_01.jpg/500px-Monumento_de_Pozo_Moro_%28M.A.N._Inv.1999-76-A%29_01.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Monumento_de_Pozo_Moro_%28M.A.N._Inv.1999-76-A%29_01.jpg",
+      "autor": "Desconocido",
+      "licencia": "CC BY-SA 3.0",
+      "caption": "Iberian mausoleum.",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Monumento_de_Pozo_Moro_(M.A.N._Inv.1999-76-A)_01.jpg"
+     },
+     {
+      "titulo": "Museo Arqueológico Nacional - 1999-76-A - Monumento de Pozo Moro.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/7/73/Museo_Arqueol%C3%B3gico_Nacional_-_1999-76-A_-_Monumento_de_Pozo_Moro.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Museo_Arqueol%C3%B3gico_Nacional_-_1999-76-A_-_Monumento_de_Pozo_Moro.jpg",
+      "autor": "Plana Torres, Lorenzo (photo)",
+      "licencia": "CC BY-SA 4.0",
+      "caption": "Monumento de Pozo Moro (Cultura ibérica). Número de inventario: 1999-76-A.",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Museo_Arqueol%C3%B3gico_Nacional_-_1999-76-A_-_Monumento_de_Pozo_Moro.jpg"
+     },
+     {
+      "titulo": "Museo Arqueológico Nacional - 1999-76-A-13 - Monumento de Pozo Moro (Sillar) 02.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Museo_Arqueol%C3%B3gico_Nacional_-_1999-76-A-13_-_Monumento_de_Pozo_Moro_%28Sillar%29_02.jpg/500px-Museo_Arqueol%C3%B3gico_Nacional_-_1999-76-A-13_-_Monumento_de_Pozo_Moro_%28Sillar%29_02.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Museo_Arqueol%C3%B3gico_Nacional_-_1999-76-A-13_-_Monumento_de_Pozo_Moro_%28Sillar%29_02.jpg",
+      "autor": "Otero, Miguel Angel (photo)",
+      "licencia": "CC BY-SA 4.0",
+      "caption": "Monumento de Pozo Moro (Sillar) (Cultura ibérica). Número de inventario: 1999-76-A-13.",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Museo_Arqueol%C3%B3gico_Nacional_-_1999-76-A-13_-_Monumento_de_Pozo_Moro_(Sillar)_02.jpg"
+     },
+     {
+      "titulo": "Museo Arqueológico Nacional - 1999-76-A-13 - Monumento de Pozo Moro (Sillar, detalle) 01.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Museo_Arqueol%C3%B3gico_Nacional_-_1999-76-A-13_-_Monumento_de_Pozo_Moro_%28Sillar%2C_detalle%29_01.jpg/500px-Museo_Arqueol%C3%B3gico_Nacional_-_1999-76-A-13_-_Monumento_de_Pozo_Moro_%28Sillar%2C_detalle%29_01.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Museo_Arqueol%C3%B3gico_Nacional_-_1999-76-A-13_-_Monumento_de_Pozo_Moro_%28Sillar%2C_detalle%29_01.jpg",
+      "autor": "Velasco Mora, Fernando (photo)",
+      "licencia": "CC BY-SA 4.0",
+      "caption": "Monumento de Pozo Moro (Sillar, detalle) (Cultura ibérica). Número de inventario: 1999-76-A-13.",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Museo_Arqueol%C3%B3gico_Nacional_-_1999-76-A-13_-_Monumento_de_Pozo_Moro_(Sillar,_detalle)_01.jpg"
+     },
+     {
+      "titulo": "Museo Arqueológico Nacional - 1999-76-3 - Monumento de Pozo Moro (Relieve).jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Museo_Arqueol%C3%B3gico_Nacional_-_1999-76-3_-_Monumento_de_Pozo_Moro_%28Relieve%29.jpg/500px-Museo_Arqueol%C3%B3gico_Nacional_-_1999-76-3_-_Monumento_de_Pozo_Moro_%28Relieve%29.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Museo_Arqueol%C3%B3gico_Nacional_-_1999-76-3_-_Monumento_de_Pozo_Moro_%28Relieve%29.jpg",
+      "autor": "Otero, Miguel Angel (photo)",
+      "licencia": "CC BY-SA 4.0",
+      "caption": "Sillar de arenisca perteneciente al primer cuerpo del Monumento con escena de hierogamia. Monumento de Pozo Moro (Relieve) (Cultura ibérica). Finales del siglo VI a. C. Procedencia: Necrópolis de Pozo Moro (Chinchilla de Monte-Aragón, Albacete). Monumento turriforme. Primer cuerpo (hilada 6) Núme…",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Museo_Arqueol%C3%B3gico_Nacional_-_1999-76-3_-_Monumento_de_Pozo_Moro_(Relieve).jpg"
+     },
+     {
+      "titulo": "Monumento de Pozo Moro (M.A.N. Inv.1999-76-A) 02.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Monumento_de_Pozo_Moro_%28M.A.N._Inv.1999-76-A%29_02.jpg/500px-Monumento_de_Pozo_Moro_%28M.A.N._Inv.1999-76-A%29_02.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Monumento_de_Pozo_Moro_%28M.A.N._Inv.1999-76-A%29_02.jpg",
+      "autor": "Desconocido",
+      "licencia": "CC BY-SA 3.0",
+      "caption": "Iberian relief .",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Monumento_de_Pozo_Moro_(M.A.N._Inv.1999-76-A)_02.jpg"
+     },
+     {
+      "titulo": "Replica sepulcro Pozo Moro.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Replica_sepulcro_Pozo_Moro.jpg/500px-Replica_sepulcro_Pozo_Moro.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Replica_sepulcro_Pozo_Moro.jpg",
+      "autor": "Profesor Mañas",
+      "licencia": "CC BY-SA 4.0",
+      "caption": "Réplica del sepulcro de Pozo Moro.",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Replica_sepulcro_Pozo_Moro.jpg"
+     },
+     {
+      "titulo": "Monumento de Pozo Moro (M.A.N. Inv.1999-76-A) 03.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Monumento_de_Pozo_Moro_%28M.A.N._Inv.1999-76-A%29_03.jpg/500px-Monumento_de_Pozo_Moro_%28M.A.N._Inv.1999-76-A%29_03.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Monumento_de_Pozo_Moro_%28M.A.N._Inv.1999-76-A%29_03.jpg",
+      "autor": "Desconocido",
+      "licencia": "CC BY-SA 3.0",
+      "caption": "Detail of the so-called Monument of Pozo Moro . Sandstone Iberian mausoleum, built at the end of the 6th century BC in Chinchilla de Monte-Aragón ( Province of Albacete , Castile-La Mancha , Spain ).",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Monumento_de_Pozo_Moro_(M.A.N._Inv.1999-76-A)_03.jpg"
+     },
+     {
+      "titulo": "Dama de Baza (HR) (24472141522).jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Dama_de_Baza_%28HR%29_%2824472141522%29.jpg/500px-Dama_de_Baza_%28HR%29_%2824472141522%29.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Dama_de_Baza_%28HR%29_%2824472141522%29.jpg",
+      "autor": "Ángel M. Felicísimo from Mérida, España",
+      "licencia": "CC BY 2.0",
+      "caption": "La Dama de Baza (siglo IV a.C.) se encontró el 20 de julio de 1971 en una cámara subterránea durante la excavación de la necrópolis ibérica del cerro del Santuario de Baza (Granada). Está tallada en una sola pieza de caliza, cubierta de estuco y pintada en tonos rojos, azules, blancos y negros. S…",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Dama_de_Baza_(HR)_(24472141522).jpg"
+     },
+     {
+      "titulo": "Madrid Pozo Moro 01.JPG",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Madrid_Pozo_Moro_01.JPG/500px-Madrid_Pozo_Moro_01.JPG",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Madrid_Pozo_Moro_01.JPG",
+      "autor": "Miguel Hermoso Cuesta",
+      "licencia": "CC BY-SA 4.0",
+      "caption": "Madrid, Museo Arqueológico Nacional. Monumento de Pozo Moro.",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Madrid_Pozo_Moro_01.JPG"
+     }
+    ],
+    "url_wikipedia_es": "https://es.wikipedia.org/wiki/Sepulcro_de_Pozo_Moro",
+    "url_wikipedia_ca": "https://ca.wikipedia.org/wiki/Sepulcre_de_Pozo_Moro",
+    "url_oficial": "http://www.laiesken.net/arqueologia/pdf/2009/AI0201.pdf",
+    "fuente": "wikidata+incluido"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -3.683333,
      36.733333
     ]
@@ -25620,7 +25856,7 @@
     "nombre_es": "Verraco de Cabizuela",
     "nombre_ca": "Verraco de Cabizuela",
     "civ": "celtas",
-    "tipo": "yacimiento",
+    "tipo": "necrópolis",
     "epoca": "s. I d.C.",
     "siglo_inicio": 1,
     "siglo_fin": 1,
@@ -26197,7 +26433,7 @@
     "nombre_es": "Verraco de San Miguel de Corneja",
     "nombre_ca": "Verraco de San Miguel de Corneja",
     "civ": "celtas",
-    "tipo": "yacimiento",
+    "tipo": "necrópolis",
     "epoca": "s. V a.C.",
     "siglo_inicio": -5,
     "siglo_fin": -5,
@@ -26828,7 +27064,7 @@
     "nombre_es": "Verraco de los Orihuelos, Solana de Rioalmar",
     "nombre_ca": "Verraco de los Orihuelos, Solana de Rioalmar",
     "civ": "celtas",
-    "tipo": "yacimiento",
+    "tipo": "necrópolis",
     "epoca": "s. V a.C.",
     "siglo_inicio": -5,
     "siglo_fin": -5,
@@ -30418,7 +30654,7 @@
     "nombre_es": "verraco de Larrodrigo",
     "nombre_ca": "verraco de Larrodrigo",
     "civ": "celtas",
-    "tipo": "yacimiento",
+    "tipo": "necrópolis",
     "epoca": "s. V a.C.",
     "siglo_inicio": -5,
     "siglo_fin": -5,

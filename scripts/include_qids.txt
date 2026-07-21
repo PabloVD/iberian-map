@@ -11,6 +11,7 @@ Q5709588   tartesico        # Asta Regia (Mesas de Asta, Jerez) — turdetano/ta
 Q16144734  fenicio-punico   # Akra Leuke (fundación cartaginesa, Alicante)
 Q43175315  iberos           # Tossal de Manises / Lucentum (l'Albufereta, Alacant)
 Q3346918   fenicio-punico   # Puig des Molins: necrópolis púnica de Ebusus (Ibiza)
+Q4708457   iberos           # Sepulcro de Pozo Moro (monumento funerario íbero, Albacete)
 
 # Ciudades vasconas (Anexo:Ciudades vasconas, es.wikipedia) con coordenadas
 Q3615328   vascones         # Andelos (Mendigorría, Navarra)
