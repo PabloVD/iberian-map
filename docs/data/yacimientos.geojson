@@ -1,7 +1,7 @@
 {
  "type": "FeatureCollection",
  "metadata": {
-  "count": 484,
+  "count": 485,
   "descripcion": "Yacimientos de la cultura ibérica"
  },
  "features": [
@@ -11510,6 +11510,43 @@
     "url_wikipedia_es": "https://es.wikipedia.org/wiki/Cerro_de_los_Santos",
     "url_wikipedia_ca": null,
     "url_oficial": "http://ceres.mcu.es/pages/ResultSearch?Museo=MAN&txtSimpleSearch=Santuario%3Cb%3E%20del%20Cerro%20%3C/b%3Ede%20los%20Santos&simpleSearch=0&hipertextSearch=1&search=advancedUnion&MuseumsSearch=MAN",
+    "fuente": "wikidata"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.739038,
+     37.513733
+    ]
+   },
+   "properties": {
+    "nombre_es": "Cerro del Santuario de Baza",
+    "nombre_ca": "Cerro del Santuario de Baza",
+    "civ": "iberos",
+    "tipo": "necrópolis",
+    "epoca": "s. IV a.C.",
+    "siglo_inicio": -4,
+    "siglo_fin": -4,
+    "descripcion_es": "El Cerro Santuario o Cerro del Santuario de Baza es un yacimiento arqueológico que corresponde a una necrópolis ibera del siglo IV a.C. Su relevancia se debe a ser el lugar donde fue encontrada la Dama de Baza en 1971.​",
+    "descripcion_ca": "",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Dama_de_Baza_-_M.A.N.jpg/500px-Dama_de_Baza_-_M.A.N.jpg",
+    "imagenes": [
+     {
+      "titulo": "Dama de Baza - M.A.N.jpg",
+      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Dama_de_Baza_-_M.A.N.jpg/500px-Dama_de_Baza_-_M.A.N.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/23/Dama_de_Baza_-_M.A.N.jpg",
+      "autor": "Unknown",
+      "licencia": "CC BY-SA 4.0",
+      "caption": "Iberian sculpture .",
+      "descripcion_pagina": "https://commons.wikimedia.org/wiki/File:Dama_de_Baza_-_M.A.N.jpg"
+     }
+    ],
+    "url_wikipedia_es": "https://es.wikipedia.org/wiki/Cerro_del_Santuario_de_Baza",
+    "url_wikipedia_ca": null,
+    "url_oficial": null,
     "fuente": "wikidata"
    }
   },

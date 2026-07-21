@@ -4382,6 +4382,31 @@
     "fuente": "wikidata"
   },
   {
+    "qid": "Q140644117",
+    "nombre": "Cerro del Santuario de Baza",
+    "nombre_es": "Cerro del Santuario de Baza",
+    "nombre_ca": null,
+    "descripcion_es": "El Cerro Santuario o Cerro del Santuario de Baza es un yacimiento arqueológico que corresponde a una necrópolis ibera del siglo IV a.C. Su relevancia se debe a ser el lugar donde fue encontrada la Dama de Baza en 1971.​",
+    "descripcion_ca": "",
+    "lat": 37.51373336587578,
+    "lon": -2.7390383862606886,
+    "civ": "iberos",
+    "siglo_inicio": -4,
+    "siglo_fin": -4,
+    "epoca": "s. IV a.C.",
+    "imagen_principal": "https://upload.wikimedia.org/wikipedia/commons/2/23/Dama_de_Baza_-_M.A.N.jpg",
+    "commons_cat": null,
+    "p31": [
+      "Q200141"
+    ],
+    "es_title": "Cerro del Santuario de Baza",
+    "ca_title": null,
+    "url_wikipedia_es": "https://es.wikipedia.org/wiki/Cerro_del_Santuario_de_Baza",
+    "url_wikipedia_ca": null,
+    "url_oficial": null,
+    "fuente": "wikidata"
+  },
+  {
     "qid": "Q5763446",
     "nombre": "Cerro del Villar",
     "nombre_es": "Cerro del Villar",
